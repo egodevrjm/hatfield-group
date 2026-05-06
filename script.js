@@ -290,128 +290,7 @@ const timelineCopy = {
   },
 };
 
-const storeProducts = [
-  {
-    id: "single-barrel",
-    name: "Hatfield Single Barrel",
-    category: "spirits",
-    department: "Spirits",
-    price: 74,
-    image: "assets/product-single-barrel.png",
-    badge: "8-year bourbon",
-    description: "Barrel-numbered Kentucky bourbon with the serious house profile.",
-  },
-  {
-    id: "small-batch",
-    name: "Hatfield Small Batch",
-    category: "spirits",
-    department: "Spirits",
-    price: 48,
-    image: "assets/product-small-batch.png",
-    badge: "6-year bourbon",
-    description: "The better house pour: accessible, warm, and built for neat pours or highballs.",
-  },
-  {
-    id: "cave-select",
-    name: "Hatfield Cave Select",
-    category: "spirits gifts",
-    department: "Spirits",
-    price: 185,
-    image: "assets/product-cave-select.png",
-    badge: "Allocated",
-    description: "Ultra-limited cave-aged bourbon for Stave shelves and collector gifting.",
-  },
-  {
-    id: "highland-gin",
-    name: "Hatfield Highland Gin",
-    category: "spirits",
-    department: "Spirits",
-    price: 52,
-    image: "assets/product-highland-gin.png",
-    badge: "Scotland",
-    description: "Floral, citrus-forward Highland gin designed for Limestone Springs tonic.",
-  },
-  {
-    id: "premium-tonic",
-    name: "Limestone Springs Premium Tonic",
-    category: "beverage",
-    department: "Limestone",
-    price: 8,
-    image: "assets/product-premium-tonic.png",
-    badge: "4-pack",
-    description: "Clean quinine, citrus lift, and Kentucky limestone minerality.",
-  },
-  {
-    id: "ginger-beer",
-    name: "Limestone Springs Ginger Beer",
-    category: "beverage",
-    department: "Limestone",
-    price: 8,
-    image: "assets/product-ginger-beer.png",
-    badge: "4-pack",
-    description: "Real ginger heat. The default Kentucky Mule mixer.",
-  },
-  {
-    id: "sparkling-water",
-    name: "Limestone Springs Sparkling Water",
-    category: "beverage",
-    department: "Limestone",
-    price: 18,
-    image: "assets/product-sparkling-water.png",
-    badge: "12 bottles",
-    description: "Fine-bubble mineral water served across Hatfield properties.",
-  },
-  {
-    id: "bbq-sauce",
-    name: "Hatfield Bourbon BBQ Sauce",
-    category: "provisions",
-    department: "Provisions",
-    price: 14,
-    image: "assets/product-bbq-sauce.png",
-    badge: "Pantry",
-    description: "Bourbon-laced sauce from the Bar & Grill provisions range.",
-  },
-  {
-    id: "hot-sauce",
-    name: "Hatfield Reserve Hot Sauce",
-    category: "provisions",
-    department: "Provisions",
-    price: 12,
-    image: "assets/product-hot-sauce.png",
-    badge: "Small batch",
-    description: "Premium table heat for gift baskets, home kitchens, and restaurant shelves.",
-  },
-  {
-    id: "rocks-glass",
-    name: "Heavy-Bottom Rocks Glass",
-    category: "barware",
-    department: "Barware",
-    price: 24,
-    image: "assets/product-rocks-glass.png",
-    badge: "Signature",
-    description: "The low, weighty Hatfield glass used for neat pours and rocks serves.",
-  },
-  {
-    id: "bar-kit",
-    name: "Hatfield Bar Tool Kit",
-    category: "barware gifts",
-    department: "Barware",
-    price: 68,
-    image: "assets/product-bar-kit.png",
-    badge: "Tools",
-    description: "Bar spoon, jigger, ice pick, and mixing glass for a polished home bar.",
-  },
-  {
-    id: "bourbon-mixer-gift",
-    name: "Bourbon & Limestone Gift Set",
-    category: "gifts beverage spirits",
-    department: "Gift sets",
-    price: 96,
-    image: "assets/product-gift-set.png",
-    badge: "Gift set",
-    description: "Hatfield bourbon paired with Limestone Springs tonic and ginger beer.",
-  },
-];
+let storeProducts = [];
 
 const catalogueProducts = [
   ["spirits", "Hatfield Original Bourbon", "Hatfield Distillery", "80 proof, 4-year Kentucky Straight Bourbon.", "$28-32", "Retail, restaurants, Hatfield venues"],
@@ -485,6 +364,22 @@ const catalogueProducts = [
   price,
   channel,
 }));
+
+storeProducts = catalogueProducts.map((product) => {
+  const numericPrice = extractStorePrice(product.price);
+  return {
+    id: slugifyProductName(product.name),
+    name: product.name,
+    category: storeCategoryFor(product),
+    department: storeDepartmentFor(product),
+    price: numericPrice,
+    displayPrice: product.price,
+    image: storeImageFor(product),
+    badge: storeBadgeFor(product),
+    description: product.detail,
+    channel: product.channel,
+  };
+});
 
 const cocktailIngredientLinks = [
   { aliases: ["single barrel bourbon"], label: "Hatfield Single Barrel Bourbon", href: "store.html?search=Single%20Barrel", channel: "Shop" },
@@ -866,6 +761,71 @@ function formatCurrency(value) {
   }).format(value);
 }
 
+function slugifyProductName(value) {
+  return value
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+function extractStorePrice(value) {
+  const match = String(value).match(/[\d,]+(?:\.\d+)?/);
+  return match ? Number(match[0].replace(/,/g, "")) : 0;
+}
+
+function storeDepartmentFor(product) {
+  const departments = {
+    spirits: "Spirits",
+    wines: "Wines",
+    limestone: "Limestone Springs",
+    provisions: "Provisions",
+    barware: product.division.includes("Merchandise") ? "Merchandise" : "Barware",
+    experiences: "Experiences",
+  };
+  return departments[product.category] || product.division;
+}
+
+function storeCategoryFor(product) {
+  const categories = [product.category];
+  if (product.category === "limestone") categories.push("beverage");
+  if (["barware", "experiences"].includes(product.category)) categories.push("gifts");
+  if (product.channel.toLowerCase().includes("gift")) categories.push("gifts");
+  return categories.join(" ");
+}
+
+function storeBadgeFor(product) {
+  if (product.category === "spirits") return product.detail.match(/\b\d+(?:-\d+)?-year\b/i)?.[0] || "Bottle";
+  if (product.category === "limestone") return product.price.includes("4-pack") ? "4-pack" : "Beverage";
+  if (product.category === "wines") return product.division.replace("Hatfield Wines ", "");
+  if (product.category === "experiences") return "Reservation";
+  if (product.division.includes("Merchandise")) return "Merch";
+  return product.channel.split(",")[0];
+}
+
+function storeImageFor(product) {
+  const name = product.name.toLowerCase();
+  if (name.includes("single barrel")) return "assets/product-single-barrel.png";
+  if (name.includes("small batch") || name.includes("original bourbon") || name.includes("wheated") || name.includes("bottled in bond") || name.includes("rye whiskey") || name.includes("straight malt")) return "assets/product-small-batch.png";
+  if (name.includes("reserve") || name.includes("cave select")) return "assets/product-cave-select.png";
+  if (name.includes("gin") || name.includes("single malt")) return "assets/product-highland-gin.png";
+  if (name.includes("tonic")) return "assets/product-premium-tonic.png";
+  if (name.includes("ginger beer") || name.includes("ginger ale")) return "assets/product-ginger-beer.png";
+  if (name.includes("sparkling water") || name.includes("still water") || name.includes("club soda")) return "assets/product-sparkling-water.png";
+  if (name.includes("bbq")) return "assets/product-bbq-sauce.png";
+  if (name.includes("hot sauce")) return "assets/product-hot-sauce.png";
+  if (name.includes("glass") || name.includes("decanter")) return "assets/product-rocks-glass.png";
+  if (name.includes("kit") || name.includes("spoon") || name.includes("jigger") || name.includes("ice pick")) return "assets/product-bar-kit.png";
+  if (product.category === "wines") return "assets/hatfield-wines-estate.png";
+  if (product.category === "experiences") return "assets/stave-club-hero.png";
+  if (product.category === "limestone") return "assets/product-gift-set.png";
+  return "assets/hatfield-product-system.png";
+}
+
+function formatStorePrice(product) {
+  return product.displayPrice || formatCurrency(product.price);
+}
+
 function initDivisionSpotlight() {
   const cards = document.querySelectorAll(".division-card");
   const filters = document.querySelectorAll(".filter");
@@ -1107,7 +1067,7 @@ function initStore() {
     const query = (search?.value || "").trim().toLowerCase();
     let list = storeProducts.filter((product) => {
       const categoryMatch = currentFilter === "all" || product.category.split(" ").includes(currentFilter);
-      const searchMatch = [product.name, product.department, product.badge, product.description]
+      const searchMatch = [product.name, product.department, product.badge, product.description, product.channel, product.displayPrice]
         .join(" ")
         .toLowerCase()
         .includes(query);
@@ -1126,14 +1086,14 @@ function initStore() {
     grid.innerHTML = productsToRender
       .map(
         (product) => `
-          <article class="store-product ${product.category.split(" ").includes("beverage") ? "is-limestone-product" : ""}">
+          <article class="store-product ${product.category.split(" ").includes("limestone") ? "is-limestone-product" : ""}">
             <img src="${product.image}" alt="" />
             <div>
               <span>${product.department} · ${product.badge}</span>
               <h3>${product.name}</h3>
               <p>${product.description}</p>
               <footer>
-                <strong>${formatCurrency(product.price)}</strong>
+                <strong>${formatStorePrice(product)}</strong>
                 <button type="button" data-add-product="${product.id}">Add</button>
               </footer>
             </div>
@@ -1174,7 +1134,7 @@ function initStore() {
               <img src="${product.image}" alt="" />
               <div>
                 <strong>${product.name}</strong>
-                <span>${formatCurrency(product.price)} each</span>
+                <span>${formatStorePrice(product)} each</span>
                 <div class="quantity-stepper">
                   <button type="button" data-cart-minus="${product.id}">−</button>
                   <output>${item.quantity}</output>

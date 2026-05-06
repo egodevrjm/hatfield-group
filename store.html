@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hatfield Group | Store</title>
-    <meta name="description" content="Hatfield online store with spirits, Limestone Springs beverages, provisions, barware, and gift sets." />
+    <meta name="description" content="Hatfield online store with spirits, Limestone Springs, wines, provisions, barware, merchandise, and experiences." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="store-page">
@@ -34,9 +35,9 @@
       <section class="store-hero">
         <div>
           <p class="eyebrow">Online store</p>
-          <h1>Shop Hatfield spirits, mixers, provisions, and gifts.</h1>
+          <h1>Shop the full Hatfield product catalogue.</h1>
           <p>
-            Browse products, add items to the cart, adjust quantities, apply a promo,
+            Browse spirits, Limestone Springs, wines, provisions, barware, merchandise, and experiences. Add items to the cart, adjust quantities, apply a promo,
             and review an order summary. Checkout is disabled in this prototype, so no
             payment, address, or personal data is collected.
           </p>
@@ -68,10 +69,11 @@
           <div class="store-filter-list" aria-label="Product filters">
             <button class="store-filter is-active" data-store-filter="all" type="button">All products</button>
             <button class="store-filter" data-store-filter="spirits" type="button">Spirits</button>
-            <button class="store-filter" data-store-filter="beverage" type="button">Limestone Springs</button>
+            <button class="store-filter" data-store-filter="limestone" type="button">Limestone Springs</button>
+            <button class="store-filter" data-store-filter="wines" type="button">Wines</button>
             <button class="store-filter" data-store-filter="provisions" type="button">Provisions</button>
             <button class="store-filter" data-store-filter="barware" type="button">Barware</button>
-            <button class="store-filter" data-store-filter="gifts" type="button">Gift sets</button>
+            <button class="store-filter" data-store-filter="experiences" type="button">Experiences</button>
           </div>
           <label class="store-search">
             <span>Search</span>
@@ -111,7 +113,7 @@
           </div>
 
           <div class="store-status" aria-live="polite">
-            <span id="store-result-count">12 products</span>
+            <span id="store-result-count">Products loading</span>
             <span id="store-active-filter">All products</span>
           </div>
 
@@ -170,7 +172,7 @@
         <span class="brand-name">Hatfield</span>
         <small>Store</small>
       </div>
-      <div><h2>Departments</h2><p><a href="products.html">Full catalogue</a> · Spirits · Mixers · Provisions · Barware · Gifts</p></div>
+      <div><h2>Departments</h2><p><a href="products.html">Full catalogue</a> · Spirits · Limestone Springs · Wines · Provisions · Barware · Experiences</p></div>
       <div><h2>Checkout</h2><p>Prototype checkout only. No real orders are placed.</p></div>
       <div class="walker-footer">
         <a class="walker-footer-link" href="walker-holdings.html" aria-label="Walker Holdings">
