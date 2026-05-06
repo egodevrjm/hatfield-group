@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hatfield Group | Store</title>
+    <meta name="description" content="Demo Hatfield storefront with cart, filters, product details, and simulated checkout." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="store-page">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Hatfield Group home">
+        <span class="brand-mark" aria-hidden="true">H<i></i></span>
+        <span class="brand-name">Hatfield</span>
+        <small>Store</small>
+      </a>
+      <nav class="nav-links" aria-label="Main menu">
+        <a href="group.html">Group</a>
+        <a href="spirits.html">Spirits</a>
+        <a href="hospitality.html">Hospitality</a>
+        <a href="beverages.html">Limestone</a>
+        <a href="store.html" aria-current="page">Store</a>
+        <a href="news.html">News</a>
+      </nav>
+      <button class="header-action cart-open" type="button">
+        Cart <span class="cart-count" aria-live="polite">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="store-hero">
+        <div>
+          <p class="eyebrow">Demo storefront</p>
+          <h1>Shop the Hatfield world without leaving the page.</h1>
+          <p>
+            This is a local storefront simulation: browse canon products, add items,
+            adjust quantities, apply a demo promo, and generate a mock order summary.
+            No payment, address, or personal data is collected.
+          </p>
+          <div class="store-hero-actions">
+            <button class="button primary cart-open" type="button">Open cart</button>
+            <a class="button secondary" href="#catalog">Browse catalog</a>
+          </div>
+        </div>
+        <div class="store-hero-board" aria-label="Featured store departments">
+          <article>
+            <img src="assets/hero-bourbon-lounge.png" alt="" />
+            <span>Spirits</span>
+          </article>
+          <article>
+            <img src="assets/limestone-lifestyle.png" alt="" />
+            <span>Mixers</span>
+          </article>
+          <article>
+            <img src="assets/bar-grill-inns.png" alt="" />
+            <span>Provisions</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="store-shell" id="catalog" aria-labelledby="catalog-title">
+        <aside class="store-sidebar">
+          <p class="eyebrow">Catalog</p>
+          <h2 id="catalog-title">Filters</h2>
+          <div class="store-filter-list" aria-label="Product filters">
+            <button class="store-filter is-active" data-store-filter="all" type="button">All products</button>
+            <button class="store-filter" data-store-filter="spirits" type="button">Spirits</button>
+            <button class="store-filter" data-store-filter="beverage" type="button">Limestone Springs</button>
+            <button class="store-filter" data-store-filter="provisions" type="button">Provisions</button>
+            <button class="store-filter" data-store-filter="barware" type="button">Barware</button>
+            <button class="store-filter" data-store-filter="gifts" type="button">Gift sets</button>
+          </div>
+          <label class="store-search">
+            <span>Search</span>
+            <input type="search" id="store-search" placeholder="Try ginger, glass, rye..." />
+          </label>
+          <div class="store-note">
+            <strong>Demo mode</strong>
+            <p>Checkout generates a local mock confirmation only. Alcohol items are represented as fictional canon products.</p>
+          </div>
+        </aside>
+
+        <div class="store-main">
+          <section class="store-brand-strip" aria-label="Limestone Springs brand feature">
+            <div class="ls-lockup-small">
+              <span class="ls-mark" aria-hidden="true"><b>L</b><b>S</b><i></i></span>
+              <span class="ls-wordmark">Limestone</span>
+              <small>Springs Beverage Co.</small>
+            </div>
+            <p>Kentucky water. Naturally better. Sodas, mixers, sparkling waters.</p>
+            <a href="beverages.html">View brand</a>
+          </section>
+
+          <div class="store-toolbar">
+            <div>
+              <p class="eyebrow">Products</p>
+              <h2>Hatfield Store</h2>
+            </div>
+            <label>
+              <span>Sort</span>
+              <select id="store-sort">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: low to high</option>
+                <option value="price-high">Price: high to low</option>
+                <option value="name">Name</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="store-status" aria-live="polite">
+            <span id="store-result-count">12 products</span>
+            <span id="store-active-filter">All products</span>
+          </div>
+
+          <div class="store-grid" id="store-grid" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-panel">
+        <div class="cart-header">
+          <div>
+            <p class="eyebrow">Your cart</p>
+            <h2>Hatfield order</h2>
+          </div>
+          <button class="cart-close" type="button" aria-label="Close cart">×</button>
+        </div>
+
+        <div class="cart-empty">
+          <h3>Your cart is empty.</h3>
+          <p>Add products from the catalog and they will appear here.</p>
+        </div>
+
+        <div class="cart-items"></div>
+
+        <div class="cart-summary">
+          <label class="promo-field">
+            <span>Demo promo</span>
+            <div>
+              <input id="promo-code" type="text" placeholder="HATFIELD10" />
+              <button id="apply-promo" type="button">Apply</button>
+            </div>
+          </label>
+
+          <div class="fulfilment-toggle" aria-label="Fulfilment method">
+            <button class="fulfilment-choice is-active" data-fulfilment="ship" type="button">Ship</button>
+            <button class="fulfilment-choice" data-fulfilment="pickup" type="button">Pick up</button>
+          </div>
+
+          <dl>
+            <div><dt>Subtotal</dt><dd id="cart-subtotal">$0.00</dd></div>
+            <div><dt>Promo</dt><dd id="cart-discount">-$0.00</dd></div>
+            <div><dt>Estimated fulfilment</dt><dd id="cart-shipping">$0.00</dd></div>
+            <div class="cart-total"><dt>Total</dt><dd id="cart-total">$0.00</dd></div>
+          </dl>
+
+          <button class="button primary checkout-button" type="button">Generate demo order</button>
+          <p class="checkout-note" aria-live="polite">No payment or personal details will be requested.</p>
+        </div>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">H<i></i></span>
+        <span class="brand-name">Hatfield</span>
+        <small>Store</small>
+      </div>
+      <div><h2>Departments</h2><p>Spirits · Mixers · Provisions · Barware · Gifts</p></div>
+      <div><h2>Mode</h2><p>Local demo storefront. No real orders are placed.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

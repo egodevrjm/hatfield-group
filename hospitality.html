@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hatfield Group | Hospitality</title>
+    <meta name="description" content="Hatfield Bar & Grill, Inns, The Stave, and Still House hospitality network." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Hatfield Group home">
+        <span class="brand-mark" aria-hidden="true">H<i></i></span>
+        <span class="brand-name">Hatfield</span>
+        <small>Inn</small>
+      </a>
+      <nav class="nav-links" aria-label="Main menu">
+        <a href="group.html">Group</a>
+        <a href="spirits.html">Spirits</a>
+        <a href="hospitality.html" aria-current="page">Hospitality</a>
+        <a href="beverages.html">Limestone</a>
+        <a href="store.html">Store</a>
+        <a href="news.html">News</a>
+      </nav>
+      <a class="header-action" href="#club">Explore</a>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div>
+          <p class="eyebrow">Rooms with a point of view</p>
+          <h1>Restaurants, inns, clubs, and destination dining that all pour from the same well.</h1>
+          <p>
+            Hatfield's hospitality layer turns the product company into a physical
+            world: public restaurants, boutique hotels, members' clubs, and Still House
+            restaurants on distillery grounds.
+          </p>
+        </div>
+        <img src="assets/bar-grill-inns.png" alt="Premium Hatfield restaurant and inn interior" />
+      </section>
+
+      <section class="page-section venue-tabs" id="club" aria-labelledby="club-title">
+        <div class="section-heading">
+          <p class="eyebrow">Venue explorer</p>
+          <h2 id="club-title">Pick a hospitality format.</h2>
+        </div>
+        <div class="tab-bar" role="tablist" aria-label="Hospitality formats">
+          <button class="venue-tab is-active" data-venue="bar" role="tab">Bar & Grill</button>
+          <button class="venue-tab" data-venue="inns" role="tab">Inns</button>
+          <button class="venue-tab" data-venue="stave" role="tab">The Stave</button>
+          <button class="venue-tab" data-venue="still" role="tab">Still House</button>
+        </div>
+        <article class="venue-panel" aria-live="polite">
+          <img id="venue-image" src="assets/bar-grill-inns.png" alt="" />
+          <div>
+            <span id="venue-kicker">16 company-owned locations</span>
+            <h3 id="venue-title">Hatfield Bar & Grill</h3>
+            <p id="venue-copy">
+              The most public-facing Hatfield venue brand: bourbon-forward, upscale casual,
+              restaurant-scale, and the proving ground for franchise expansion.
+            </p>
+            <dl>
+              <div><dt>Revenue</dt><dd id="venue-revenue">~$140M</dd></div>
+              <div><dt>Signal</dt><dd id="venue-signal">Bourbon trial channel</dd></div>
+            </dl>
+          </div>
+        </article>
+      </section>
+
+      <section class="page-section map-board">
+        <div>
+          <p class="eyebrow">The Stave network</p>
+          <h2>Eight open clubs, with the listening room protected inside the larger social business.</h2>
+        </div>
+        <div class="city-grid" aria-label="Open Stave cities">
+          <button data-city="London">London</button>
+          <button data-city="New York">New York</button>
+          <button data-city="Los Angeles">Los Angeles</button>
+          <button data-city="Nashville">Nashville</button>
+          <button data-city="Miami">Miami</button>
+          <button data-city="Austin">Austin</button>
+          <button data-city="Paris">Paris</button>
+          <button data-city="Dubai">Dubai</button>
+        </div>
+        <p class="city-note" aria-live="polite">Select a city to spotlight the network.</p>
+      </section>
+
+      <section class="page-section two-up-media">
+        <article>
+          <img src="assets/the-stave-listening-room.png" alt="" />
+          <h2>Listening rooms</h2>
+          <p>No phones, no talking, no background chatter. The room is serious because the rules are enforced.</p>
+        </article>
+        <article>
+          <img src="assets/distillery-origin.png" alt="" />
+          <h2>Still House</h2>
+          <p>Bardstown is established and James Beard-recognised; Perthshire brings the same seriousness to a different landscape.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true">H<i></i></span><span class="brand-name">Hatfield</span><small>Inn</small></div>
+      <div><h2>Next</h2><p><a href="beverages.html">Explore Limestone Springs</a></p></div>
+      <div><h2>Related</h2><p><a href="news.html">Read recent stories</a></p></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hatfield Group | Spirits</title>
+    <meta name="description" content="Hatfield bourbon, rye, Cave Select, Highland gin, and the Scotland single malt programme." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Hatfield Group home">
+        <span class="brand-mark" aria-hidden="true">H<i></i></span>
+        <span class="brand-name">Hatfield</span>
+        <small>Distillery</small>
+      </a>
+      <nav class="nav-links" aria-label="Main menu">
+        <a href="group.html">Group</a>
+        <a href="spirits.html" aria-current="page">Spirits</a>
+        <a href="hospitality.html">Hospitality</a>
+        <a href="beverages.html">Limestone</a>
+        <a href="store.html">Store</a>
+        <a href="news.html">News</a>
+      </nav>
+      <a class="header-action" href="#range">Range</a>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div>
+          <p class="eyebrow">Bardstown to Perthshire</p>
+          <h1>Bourbon credibility now. Scotch patience for later.</h1>
+          <p>
+            Hatfield Distillery & Spirits anchors the company in Kentucky bourbon.
+            Hatfield Scotland extends that seriousness into Highland gin now and
+            a maturing single malt programme later.
+          </p>
+        </div>
+        <img src="assets/distillery-origin.png" alt="Hatfield-style distillery exterior" />
+      </section>
+
+      <section class="page-section product-lab" id="range" aria-labelledby="range-title">
+        <div>
+          <p class="eyebrow">Product lab</p>
+          <h2 id="range-title">Choose an expression.</h2>
+          <p>
+            This selector uses the canon product range: Original, Small Batch, Single
+            Barrel, Rye, Reserve, Cave Select, Wheated, Bottled in Bond, Kentucky Straight
+            Malt, and Scotland gin.
+          </p>
+          <div class="division-controls vertical">
+            <button class="product-choice is-active" data-product="single">Single Barrel</button>
+            <button class="product-choice" data-product="cave">Cave Select</button>
+            <button class="product-choice" data-product="rye">Hatfield Rye</button>
+            <button class="product-choice" data-product="gin">Highland Gin</button>
+            <button class="product-choice" data-product="malt">Perthshire Single Malt</button>
+          </div>
+        </div>
+        <article class="product-card" aria-live="polite">
+          <span id="product-kicker">94 proof · 8-year bourbon</span>
+          <h3 id="product-title">Hatfield Single Barrel</h3>
+          <p id="product-copy">
+            Alex's usual Hatfield pour: a serious, barrel-numbered bourbon with enough age
+            to carry weight without becoming a museum bottle.
+          </p>
+          <dl>
+            <div><dt>Status</dt><dd id="product-status">Core range</dd></div>
+            <div><dt>Scene role</dt><dd id="product-role">Whiskey-educated drinker marker</dd></div>
+            <div><dt>Channel</dt><dd id="product-channel">Retail, bars, Hatfield properties</dd></div>
+          </dl>
+        </article>
+      </section>
+
+      <section class="page-section split-panel dark-panel">
+        <div>
+          <p class="eyebrow">Scotland rule</p>
+          <h2>The Scotch is not ready. That is the point.</h2>
+        </div>
+        <p>
+          Hatfield Perthshire Single Malt began filling barrels in 2025. The earliest
+          legal Scotch release would be 2028, but Fiona MacAllister is building a longer
+          maturation programme. The current commercial product is Hatfield Highland Gin.
+        </p>
+      </section>
+
+      <section class="page-section two-up-media">
+        <article>
+          <img src="assets/hero-bourbon-lounge.png" alt="" />
+          <h2>Bardstown</h2>
+          <p>Carolyn Hatfield-Moore leads the bourbon programme: Original, Small Batch, Single Barrel, Reserve, Cave Select, rye, wheated, bonded, and experimental malt whiskey.</p>
+        </article>
+        <article>
+          <img src="assets/the-stave-listening-room.png" alt="" />
+          <h2>Perthshire</h2>
+          <p>Fiona MacAllister and Rory Irvine run the Scotland programme: gin in market, new make in barrel, Still House Scotland on the grounds.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true">H<i></i></span><span class="brand-name">Hatfield</span><small>Distillery</small></div>
+      <div><h2>Next</h2><p><a href="hospitality.html">Explore hospitality</a></p></div>
+      <div><h2>Related</h2><p><a href="beverages.html">Limestone Springs pairings</a></p></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
