@@ -66,7 +66,7 @@ const divisionSpotlight = {
   licensing: {
     title: "Licensing, Provisions & Merchandise",
     copy:
-      "Hatfield's licensing division turns restaurants, inns, provisions, barware, apparel, and supply requirements into a worldwide brand footprint.",
+      "Hatfield's licensing division connects restaurants, inns, provisions, barware, apparel, and supply requirements into a global brand footprint.",
     revenue: "~$115M",
     role: "Franchise and brand-extension engine",
     reach: "~33-42 franchised locations open or in build-out",
@@ -78,16 +78,16 @@ const products = {
     kicker: "94 proof · 8-year bourbon",
     title: "Hatfield Single Barrel",
     copy:
-      "Alex's usual Hatfield pour: a serious, barrel-numbered bourbon with enough age to carry weight without becoming a museum bottle.",
+      "A barrel-numbered bourbon with eight years of age, structured oak, and the depth expected from Hatfield's core Kentucky range.",
     status: "Core range",
-    role: "Whiskey-educated drinker marker",
+    role: "Premium single-barrel expression",
     channel: "Retail, bars, Hatfield properties",
   },
   cave: {
     kicker: "15-21 year · cave-aged bourbon",
     title: "Hatfield Cave Select",
     copy:
-      "Ultra-limited bourbon tied to Hatfield's cave programme, most legible at Hatfield properties and through The Stave membership world.",
+      "Ultra-limited cave-aged bourbon positioned for premium hospitality, collector gifting, and selective allocation.",
     status: "Ultra-limited",
     role: "Allocated prestige bottle",
     channel: "Hatfield properties, The Stave, limited allocation",
@@ -116,7 +116,7 @@ const products = {
     copy:
       "Production began in 2025. The first legal release could be 2028, but the serious programme is built around patience, not a rushed three-year bottle.",
     status: "Maturing",
-    role: "Long-term Scotch prestige play",
+    role: "Long-term Scotch prestige programme",
     channel: "Future release",
   },
 };
@@ -145,7 +145,7 @@ const venues = {
     kicker: "8 open clubs · ~41,000 members",
     title: "The Stave",
     copy:
-      "A premium whiskey-and-music members' club network where the public club can be social and hot while the listening room stays serious.",
+      "A premium whiskey-and-music members' club network built around hospitality, curated programming, and serious listening rooms.",
     revenue: "~$95M",
     signal: "Cultural heat plus protected listening rooms",
   },
@@ -177,7 +177,7 @@ const pairings = {
       "The flagship tonic is deliberately cleaner and less sweet, with a mineral profile that bridges bourbon's caramel-oak notes.",
     product: "Limestone Springs Premium Tonic",
     channel: "On-trade, retail, Hatfield bars",
-    signal: "Bourbon-water story made practical",
+    signal: "Bourbon and mixer compatibility",
   },
   gin: {
     kicker: "Highland gin · premium tonic",
@@ -478,7 +478,7 @@ function initCityGrid() {
   cities.forEach((city) => {
     city.addEventListener("click", () => {
       cities.forEach((item) => item.classList.toggle("is-active", item === city));
-      note.textContent = `${city.dataset.city} is part of The Stave's open eight-club network, with local membership culture and the same protected listening-room rule.`;
+      note.textContent = `${city.dataset.city} is part of The Stave's open eight-club network, with local membership culture and a consistent listening-room format.`;
     });
   });
 }
@@ -732,7 +732,7 @@ function initStore() {
 
   document.querySelector("#apply-promo")?.addEventListener("click", () => {
     promoApplied = (promoInput?.value || "").trim().toUpperCase() === "HATFIELD10";
-    if (note) note.textContent = promoApplied ? "HATFIELD10 applied for this local demo order." : "Try HATFIELD10 for the demo promo.";
+    if (note) note.textContent = promoApplied ? "HATFIELD10 applied to this order preview." : "Try HATFIELD10 for the promo preview.";
     renderCart();
   });
 
@@ -746,11 +746,11 @@ function initStore() {
 
   document.querySelector(".checkout-button")?.addEventListener("click", () => {
     if (!cart.length) {
-      if (note) note.textContent = "Add at least one product to generate a demo order.";
+      if (note) note.textContent = "Add at least one product to review an order.";
       return;
     }
     const reference = `HF-${Math.floor(100000 + Math.random() * 900000)}`;
-    if (note) note.textContent = `Demo order ${reference} generated locally. No payment, address, or external order was created.`;
+    if (note) note.textContent = `Order preview ${reference} created. Checkout is not connected to payment, address, or fulfilment systems.`;
   });
 
   renderProducts();

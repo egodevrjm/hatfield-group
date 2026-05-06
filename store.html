@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hatfield Group | Store</title>
-    <meta name="description" content="Demo Hatfield storefront with cart, filters, product details, and simulated checkout." />
+    <meta name="description" content="Hatfield online store with spirits, Limestone Springs beverages, provisions, barware, and gift sets." />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="store-page">
@@ -30,12 +30,12 @@
     <main>
       <section class="store-hero">
         <div>
-          <p class="eyebrow">Demo storefront</p>
-          <h1>Shop the Hatfield world without leaving the page.</h1>
+          <p class="eyebrow">Online store</p>
+          <h1>Shop Hatfield spirits, mixers, provisions, and gifts.</h1>
           <p>
-            This is a local storefront simulation: browse canon products, add items,
-            adjust quantities, apply a demo promo, and generate a mock order summary.
-            No payment, address, or personal data is collected.
+            Browse products, add items to the cart, adjust quantities, apply a promo,
+            and review an order summary. Checkout is disabled in this prototype, so no
+            payment, address, or personal data is collected.
           </p>
           <div class="store-hero-actions">
             <button class="button primary cart-open" type="button">Open cart</button>
@@ -75,8 +75,8 @@
             <input type="search" id="store-search" placeholder="Try ginger, glass, rye..." />
           </label>
           <div class="store-note">
-            <strong>Demo mode</strong>
-            <p>Checkout generates a local mock confirmation only. Alcohol items are represented as fictional canon products.</p>
+            <strong>Checkout preview</strong>
+            <p>The cart demonstrates the purchase flow. Final payment and fulfilment are not connected.</p>
           </div>
         </aside>
 
@@ -136,7 +136,7 @@
 
         <div class="cart-summary">
           <label class="promo-field">
-            <span>Demo promo</span>
+            <span>Promo code</span>
             <div>
               <input id="promo-code" type="text" placeholder="HATFIELD10" />
               <button id="apply-promo" type="button">Apply</button>
@@ -155,7 +155,7 @@
             <div class="cart-total"><dt>Total</dt><dd id="cart-total">$0.00</dd></div>
           </dl>
 
-          <button class="button primary checkout-button" type="button">Generate demo order</button>
+          <button class="button primary checkout-button" type="button">Review order</button>
           <p class="checkout-note" aria-live="polite">No payment or personal details will be requested.</p>
         </div>
       </div>
@@ -168,7 +168,7 @@
         <small>Store</small>
       </div>
       <div><h2>Departments</h2><p>Spirits · Mixers · Provisions · Barware · Gifts</p></div>
-      <div><h2>Mode</h2><p>Local demo storefront. No real orders are placed.</p></div>
+      <div><h2>Checkout</h2><p>Prototype checkout only. No real orders are placed.</p></div>
     </footer>
 
     <script src="script.js"></script>
