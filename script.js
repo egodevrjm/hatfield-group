@@ -2,7 +2,7 @@ const divisionSpotlight = {
   distillery: {
     title: "Hatfield Distillery & Spirits",
     copy:
-      "The Bardstown distillery is Hatfield's original business: a respected Kentucky bourbon house with national and international distribution, led by Master Distiller Carolyn Hatfield-Moore.",
+      "The Bardstown distillery is Hatfield's original business: a Kentucky bourbon house founded in the 1800s, acquired by Walker Holdings in 1978, and led today by Master Distiller Carolyn Hatfield-Moore.",
     revenue: "~$115M",
     role: "Original credibility anchor",
     reach: "All 50 states, UK, EU, Japan, Australia, duty-free",
@@ -50,7 +50,7 @@ const divisionSpotlight = {
   limestone: {
     title: "Limestone Springs Beverage Co.",
     copy:
-      "Limestone Springs is a breakout premium beverage company spanning tonics, mixers, sodas, sparkling water, still water, hotel channels, airlines, retail, and e-commerce.",
+      "Limestone Springs is a Kentucky beverage company established in 1952 and acquired by Hatfield in 2002, spanning tonics, mixers, sodas, sparkling water, still water, hotel channels, airlines, retail, and e-commerce.",
     revenue: "~$110M",
     role: "Premium non-alcoholic beverage engine",
     reach: "30+ countries",
