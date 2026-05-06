@@ -355,6 +355,21 @@ h3 {
   color: #3d3229;
 }
 
+.text-link {
+  display: inline-flex;
+  width: max-content;
+  margin-top: 0.9rem;
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.text-link:hover {
+  color: var(--white);
+}
+
 .hero-media {
   position: relative;
   min-height: 38rem;
@@ -2397,6 +2412,293 @@ h3 {
   background: rgba(255, 253, 248, 0.42);
 }
 
+.stave-page {
+  background:
+    linear-gradient(90deg, rgba(5, 22, 18, 0.08), transparent 34rem),
+    #eee7dc;
+}
+
+.stave-page .site-header {
+  background: rgba(238, 231, 220, 0.9);
+}
+
+.stave-header-brand .brand-name,
+.stave-page .brand-name {
+  letter-spacing: 0.2em;
+}
+
+.stave-mark {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: 2.45rem;
+  line-height: 1;
+}
+
+.stave-mark b {
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+}
+
+.stave-mark::before,
+.stave-mark::after,
+.stave-mark i {
+  position: absolute;
+  left: 50%;
+  width: 78%;
+  height: 0.18rem;
+  border-top: 2px solid var(--gold);
+  border-radius: 50%;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.stave-mark::before {
+  top: 36%;
+}
+
+.stave-mark i {
+  top: 50%;
+}
+
+.stave-mark::after {
+  top: 64%;
+}
+
+.stave-hero {
+  display: grid;
+  grid-template-columns: minmax(24rem, 0.85fr) minmax(28rem, 1.15fr);
+  gap: clamp(2.5rem, 6vw, 6.5rem);
+  align-items: center;
+  min-height: calc(100svh - 96px);
+  padding: clamp(2rem, 5vw, 5rem) 3.2vw;
+  border-bottom: 1px solid rgba(5, 22, 18, 0.18);
+  background:
+    linear-gradient(120deg, rgba(9, 38, 30, 0.98), rgba(18, 19, 18, 0.96) 52%, rgba(9, 38, 30, 0.9)),
+    var(--green);
+  color: var(--white);
+}
+
+.stave-hero-copy > img {
+  width: min(18rem, 62vw);
+  margin-bottom: clamp(1.4rem, 3vw, 2.8rem);
+  border: 1px solid rgba(255, 253, 248, 0.18);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
+}
+
+.stave-hero h1 {
+  max-width: 12ch;
+}
+
+.stave-hero p {
+  max-width: 45rem;
+  margin: 1.45rem 0 0;
+  color: rgba(255, 253, 248, 0.78);
+  font-size: clamp(1rem, 1.45vw, 1.2rem);
+}
+
+.stave-hero .button.secondary {
+  border-color: rgba(255, 253, 248, 0.26);
+  color: var(--white);
+}
+
+.stave-hero-image {
+  position: relative;
+  min-height: 39rem;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.stave-hero-image img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+}
+
+.stave-hero-image figcaption {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stave-hero-image figcaption span {
+  min-height: 32px;
+  padding: 0.5rem 0.75rem;
+  background: rgba(9, 38, 30, 0.76);
+  color: rgba(255, 253, 248, 0.86);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.stave-metrics {
+  background: #121312;
+  color: var(--white);
+}
+
+.stave-metrics article {
+  border-color: rgba(255, 253, 248, 0.14);
+}
+
+.stave-format-section {
+  background: rgba(255, 253, 248, 0.34);
+}
+
+.stave-format-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.stave-format-grid article {
+  min-height: 18rem;
+  padding: 1.25rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 253, 248, 0.58);
+}
+
+.stave-format-grid span,
+.stave-form span,
+.stave-rules span {
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.stave-format-grid h3 {
+  margin-top: 1.15rem;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 2.4vw, 2.35rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.stave-format-grid p,
+.stave-request p,
+.stave-rules li {
+  color: var(--muted);
+}
+
+.stave-network p:not(.eyebrow) {
+  max-width: 37rem;
+  color: rgba(255, 253, 248, 0.72);
+}
+
+.stave-request {
+  display: grid;
+  grid-template-columns: minmax(20rem, 0.78fr) minmax(28rem, 1.22fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: start;
+}
+
+.request-copy h2 {
+  max-width: 12ch;
+}
+
+.stave-rules {
+  margin-top: 1.4rem;
+  padding: 1rem;
+  border-left: 3px solid var(--gold);
+  background: rgba(255, 253, 248, 0.54);
+}
+
+.stave-rules ul {
+  margin: 0.65rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.stave-form {
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 253, 248, 0.72);
+  box-shadow: var(--shadow);
+}
+
+.request-mode {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.stave-mode {
+  min-height: 42px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--green);
+  cursor: pointer;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.stave-mode.is-active {
+  background: var(--green);
+  color: var(--white);
+}
+
+.stave-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.stave-form label,
+.stave-notes {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.stave-form input,
+.stave-form select,
+.stave-form textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 0.8rem;
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+}
+
+.stave-form textarea {
+  min-height: 8rem;
+  padding-top: 0.75rem;
+  resize: vertical;
+}
+
+.stave-notes,
+.stave-submit {
+  margin-top: 0.95rem;
+}
+
+.stave-confirmation {
+  display: block;
+  min-height: 0;
+  margin-top: 1rem;
+  color: var(--green);
+  font-weight: 800;
+}
+
 @media (max-width: 1050px) {
   .site-header {
     grid-template-columns: auto auto;
@@ -2493,8 +2795,19 @@ h3 {
   }
 
   .catalogue-grid,
-  .cocktail-grid {
+  .cocktail-grid,
+  .stave-format-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stave-hero,
+  .stave-request {
+    grid-template-columns: 1fr;
+  }
+
+  .stave-hero-image {
+    min-height: 34rem;
+    order: -1;
   }
 }
 
@@ -2609,6 +2922,26 @@ h3 {
   .limestone-pillars,
   .lineup-grid,
   .store-brand-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .stave-hero,
+  .stave-request {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .stave-hero {
+    min-height: auto;
+  }
+
+  .stave-hero-image {
+    min-height: 26rem;
+  }
+
+  .stave-format-grid,
+  .request-mode,
+  .stave-form-grid {
     grid-template-columns: 1fr;
   }
 

@@ -141,7 +141,7 @@ const venues = {
     signal: "Bourbon tourism and urban lodging",
   },
   stave: {
-    image: "assets/the-stave-listening-room.png",
+    image: "assets/stave-club-hero.png",
     kicker: "8 open clubs · ~41,000 members",
     title: "The Stave",
     copy:
@@ -226,7 +226,7 @@ const stories = {
     title: "The Stave Dubai opens as the network's eighth club.",
     body:
       "The DIFC club adds a carefully controlled luxury and business bridge to a network already spanning London, New York, Los Angeles, Nashville, Miami, Austin, and Paris, while retaining the protected listening-room principle.",
-    link: "hospitality.html",
+    link: "stave.html",
   },
   wines: {
     date: "May 9, 2025",
@@ -234,6 +234,41 @@ const stories = {
     body:
       "Hatfield Wines now works as a premium wine and estate hospitality pillar, with Napa and Chianti Classico production, tasting rooms, restaurants, events, and private villa guesthouse layers.",
     link: "group.html",
+  },
+  stavePipeline: {
+    date: "April 24, 2025",
+    title: "The Stave confirms Chicago, Tokyo, Milan, and Toronto as priority pipeline cities.",
+    body:
+      "Hatfield's members' club network is evaluating Chicago for 2026, Tokyo and Milan for 2027, and Toronto for 2028, with each site required to include the network listening-room specification before member preview.",
+    link: "stave.html",
+  },
+  products: {
+    date: "April 16, 2025",
+    title: "Hatfield product catalogue expands across spirits, Limestone Springs, wines, provisions, and barware.",
+    body:
+      "The product team has formalised a broader catalogue covering bourbon, rye, gin, maturing Scotch, Napa and Tuscan wines, mixers, sauces, bitters, glassware, apparel, tours, memberships, and venue-led experiences.",
+    link: "products.html",
+  },
+  cocktails: {
+    date: "April 8, 2025",
+    title: "Hatfield publishes a hospitality serve library for bourbon, Limestone Springs, and low-ABV formats.",
+    body:
+      "The cocktail library gives restaurants, clubs, store customers, and home hosts a clearer serve system: classic bourbon builds, Limestone highballs, aperitivo-length drinks, and non-alcoholic premium serves.",
+    link: "cocktails.html",
+  },
+  stillHouse: {
+    date: "March 27, 2025",
+    title: "Still House Scotland opens private-dining previews on the Perthshire distillery grounds.",
+    body:
+      "The restaurant format is being used to introduce Hatfield Scotland's gin programme while the single malt matures, pairing destination dining with the distillery's long-term spirits project.",
+    link: "hospitality.html",
+  },
+  inns: {
+    date: "March 13, 2025",
+    title: "Hatfield Inns introduces member-rate alignment with The Stave network.",
+    body:
+      "The hospitality team is aligning select Inns inventory with Stave member and guest travel patterns, strengthening the bridge between lodging, private clubs, restaurants, and Hatfield's spirits portfolio.",
+    link: "hospitality.html",
   },
 };
 
@@ -687,8 +722,51 @@ function initCityGrid() {
   cities.forEach((city) => {
     city.addEventListener("click", () => {
       cities.forEach((item) => item.classList.toggle("is-active", item === city));
-      note.textContent = `${city.dataset.city} is part of The Stave's open eight-club network, with local membership culture and a consistent listening-room format.`;
+      note.textContent = city.dataset.members
+        ? `${city.dataset.city}: ${city.dataset.members}.`
+        : `${city.dataset.city} is part of The Stave's open eight-club network, with local membership culture and a consistent listening-room format.`;
     });
+  });
+}
+
+function initStavePage() {
+  const form = document.querySelector(".stave-form");
+  if (!form) return;
+
+  const modes = document.querySelectorAll(".stave-mode");
+  const note = document.querySelector("#stave-form-note");
+  const confirmation = document.querySelector(".stave-confirmation");
+  const room = document.querySelector("#stave-room");
+  let activeMode = "membership";
+
+  const modeCopy = {
+    membership: "Membership inquiry selected. The committee route, city, and sponsor context matter most.",
+    guest: "Guest request selected. This creates a front-desk preview for a hosted visit.",
+    listening: "Listening-room request selected. Party size is capped by room availability and session rules.",
+    private: "Private-event request selected. Use the note field for timing, host, and room requirements.",
+  };
+
+  modes.forEach((mode) => {
+    mode.addEventListener("click", () => {
+      activeMode = mode.dataset.staveMode;
+      modes.forEach((item) => item.classList.toggle("is-active", item === mode));
+      if (note) note.textContent = modeCopy[activeMode];
+      if (room && activeMode === "listening") room.value = "Listening room";
+      if (room && activeMode === "private") room.value = "Private dining";
+    });
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const city = document.querySelector("#stave-city")?.value || "London";
+    const date = document.querySelector("#stave-date")?.value || "date pending";
+    const time = document.querySelector("#stave-time")?.value || "time pending";
+    const party = document.querySelector("#stave-party")?.value || "2";
+    const route = document.querySelector("#stave-route")?.value || "General inquiry";
+    const roomChoice = room?.value || "Main dining";
+    const reference = `STV-${Math.floor(100000 + Math.random() * 900000)}`;
+    const label = activeMode.replace("-", " ");
+    confirmation.textContent = `${reference}: ${label} preview for ${city}, ${date} at ${time}, ${party} guest${party === "1" ? "" : "s"}, ${roomChoice.toLowerCase()}, via ${route.toLowerCase()}. No external booking has been placed.`;
   });
 }
 
@@ -1067,3 +1145,4 @@ initTimeline();
 initStore();
 initCatalogue();
 initCocktails();
+initStavePage();
