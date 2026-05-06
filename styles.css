@@ -82,6 +82,19 @@ button {
   min-width: 12rem;
 }
 
+.walker-brand {
+  display: inline-flex;
+  align-items: center;
+  width: clamp(11rem, 16vw, 16rem);
+}
+
+.walker-brand img {
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
 .brand-mark {
   position: relative;
   display: inline-grid;
@@ -715,6 +728,50 @@ h3 {
   text-transform: none;
 }
 
+.walker-footer {
+  grid-column: 1 / -1;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(42, 35, 28, 0.14);
+}
+
+.walker-footer-link {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  max-width: 34rem;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.site-footer .walker-footer-link,
+.site-footer .walker-footer-link:hover {
+  text-decoration: none;
+}
+
+.walker-footer-link img {
+  width: min(28rem, 100%);
+  aspect-ratio: 3 / 1;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.walker-footer-link span {
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 2.2vw, 1.8rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.walker-footer-link small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .page-hero {
   display: grid;
   grid-template-columns: minmax(22rem, 0.92fr) minmax(25rem, 1.08fr);
@@ -897,6 +954,151 @@ h3 {
 .source-note h2,
 .source-note p {
   max-width: 64rem;
+}
+
+.walker-page {
+  background:
+    linear-gradient(90deg, rgba(184, 138, 58, 0.08), transparent 34rem),
+    var(--paper);
+}
+
+.walker-hero {
+  display: grid;
+  grid-template-columns: minmax(23rem, 0.96fr) minmax(24rem, 0.82fr);
+  gap: clamp(2.4rem, 6vw, 6.5rem);
+  align-items: stretch;
+  min-height: calc(100svh - 96px);
+  padding: clamp(3rem, 6vw, 6rem) 3.2vw;
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(255, 253, 248, 0.68), rgba(244, 239, 231, 0.2)),
+    radial-gradient(circle at 12% 12%, rgba(184, 138, 58, 0.18), transparent 32rem);
+}
+
+.walker-hero-copy {
+  align-self: center;
+}
+
+.walker-hero-copy > img {
+  width: min(31rem, 100%);
+  margin-bottom: clamp(2rem, 4vw, 3.4rem);
+  mix-blend-mode: multiply;
+}
+
+.walker-hero h1 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 6vw, 6.35rem);
+}
+
+.walker-hero p {
+  max-width: 48rem;
+  margin: 1.55rem 0 0;
+  color: #514941;
+  font-size: clamp(1rem, 1.4vw, 1.18rem);
+}
+
+.walker-portrait {
+  position: relative;
+  align-self: stretch;
+  min-height: 38rem;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #2a241f;
+}
+
+.walker-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.walker-portrait figcaption {
+  position: absolute;
+  left: 1.2rem;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  padding: 1rem;
+  background: rgba(244, 239, 231, 0.86);
+  backdrop-filter: blur(14px);
+}
+
+.walker-portrait strong,
+.walker-portrait span {
+  display: block;
+}
+
+.walker-portrait strong {
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  font-weight: 400;
+}
+
+.walker-portrait span {
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.walker-metrics strong {
+  font-size: clamp(1.6rem, 2.55vw, 2.65rem);
+}
+
+.walker-portfolio {
+  background: rgba(255, 253, 248, 0.36);
+}
+
+.walker-unit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.walker-unit-grid article {
+  min-height: 17rem;
+  padding: 1.4rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 253, 248, 0.5);
+}
+
+.walker-unit-grid span {
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.walker-unit-grid h3 {
+  margin-top: 1.1rem;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 2.5vw, 2.45rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.walker-unit-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.walker-leadership {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.walker-leadership .leadership-panel {
+  margin: 0;
 }
 
 .product-lab {
@@ -2060,7 +2262,10 @@ h3 {
   .store-hero,
   .store-shell,
   .limestone-identity,
-  .limestone-lineup {
+  .limestone-lineup,
+  .walker-hero,
+  .walker-unit-grid,
+  .walker-leadership {
     grid-template-columns: 1fr;
   }
 
@@ -2160,6 +2365,8 @@ h3 {
   .channel-map,
   .site-footer,
   .fact-grid,
+  .walker-unit-grid,
+  .walker-leadership,
   .timeline,
   .product-card dl,
   .venue-panel dl,
@@ -2179,6 +2386,19 @@ h3 {
   .limestone-lineup {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .walker-hero {
+    min-height: auto;
+    padding: 2rem 1rem 3rem;
+  }
+
+  .walker-brand {
+    width: 10rem;
+  }
+
+  .walker-portrait {
+    min-height: 32rem;
   }
 
   .page-hero img {
