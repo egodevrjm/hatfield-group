@@ -378,6 +378,215 @@ const storeProducts = [
   },
 ];
 
+const catalogueProducts = [
+  ["spirits", "Hatfield Original Bourbon", "Hatfield Distillery", "80 proof, 4-year Kentucky Straight Bourbon.", "$28-32", "Retail, restaurants, Hatfield venues"],
+  ["spirits", "Hatfield Small Batch Bourbon", "Hatfield Distillery", "90 proof, 6-year bourbon batched from 15-20 barrels.", "$45-55", "Retail, bars, restaurant house pour"],
+  ["spirits", "Hatfield Single Barrel Bourbon", "Hatfield Distillery", "94 proof, 8-year hand-selected single barrels with barrel numbers.", "$75-90", "Retail, bars, Hatfield properties"],
+  ["spirits", "Hatfield Rye Whiskey", "Hatfield Distillery", "92 proof, 5-year Kentucky Straight Rye with a spice-forward profile.", "$38-45", "Retail, cocktails, on-trade"],
+  ["spirits", "Hatfield Reserve", "Hatfield Distillery", "100 proof, 12-year annual limited release selected from top barrels.", "$175-200", "Allocated, premium retail, Hatfield properties"],
+  ["spirits", "Hatfield Cave Select", "Hatfield Distillery", "15-21 year cave-aged bourbon from the limestone cave programme.", "$500-800", "Hatfield properties, allocation, The Stave"],
+  ["spirits", "Hatfield Wheated Bourbon", "Hatfield Distillery", "90 proof, 7-year wheat-mash bourbon with a softer profile.", "$55-65", "Retail and whiskey-led bars"],
+  ["spirits", "Hatfield Bottled in Bond", "Hatfield Distillery", "100 proof bonded bourbon from a single distillery and single season.", "$42-50", "Retail, whiskey education, bar programmes"],
+  ["spirits", "Hatfield Kentucky Straight Malt Whiskey", "Hatfield Distillery", "Limited 88 proof American malt whiskey aged in Kentucky.", "$85-100", "Limited retail, The Stave, Still House"],
+  ["spirits", "Hatfield Highland Gin", "Hatfield Scotland", "43.5% ABV Highland gin with clean juniper, citrus, and heather notes.", "£38-42", "UK, US, EU, Hatfield venues"],
+  ["spirits", "Hatfield Highland Gin Cask Rested", "Hatfield Scotland", "46% ABV gin rested three months in ex-bourbon casks.", "£48-55", "Premium bars, Hatfield Scotland, limited retail"],
+  ["spirits", "Hatfield Perthshire Single Malt", "Hatfield Scotland", "Highland single malt maturing in Perthshire with a long release horizon.", "Coming soon", "Future prestige release"],
+  ["wines", "The Hollow Cabernet", "Hatfield Wines", "Napa Cabernet from old-vine estate fruit.", "$175-200", "Wine estate, premium retail, restaurants"],
+  ["wines", "Radio Silence Red Blend", "Hatfield Wines", "Bordeaux-style Napa red blend of Cabernet, Merlot, Cabernet Franc, and Petit Verdot.", "$85-110", "Restaurants, wine estate, retail"],
+  ["wines", "A Still Small Voice White", "Hatfield Wines", "Chardonnay with 12 months in French oak.", "$55-70", "Dining, tasting rooms, retail"],
+  ["wines", "Starlight & Steel Sparkling", "Hatfield Wines", "Traditional-method sparkling wine: Chardonnay and Pinot Noir.", "$75-95", "Events, brunch, receptions"],
+  ["wines", "Estate Rose", "Hatfield Wines", "Seasonal Grenache and Mourvedre rose made for terrace service.", "$32-38", "Seasonal retail and hospitality"],
+  ["wines", "Hatfield Chianti Classico", "Hatfield Wines Tuscany", "DOCG Sangiovese-dominant Chianti Classico from the Tuscany estate.", "$45-60", "Tasting room, Italian restaurant, retail"],
+  ["wines", "Hatfield Gran Selezione", "Hatfield Wines Tuscany", "Single-vineyard old-vine Sangiovese with extended oak ageing.", "$95-140", "Premium Italian wine channel"],
+  ["wines", "Hatfield Toscana IGT", "Hatfield Wines Tuscany", "Sangiovese-forward Super Tuscan-style estate wine.", "$55-75", "Restaurant and retail"],
+  ["limestone", "Limestone Springs Sparkling Water", "Limestone Springs", "Fine-bubble mineral water from Kentucky limestone water.", "$2.50-4", "Tableside, room service, retail"],
+  ["limestone", "Limestone Springs Still Water", "Limestone Springs", "Still mineral water with clean, slightly sweet profile.", "$2-3.50", "Hatfield properties, retail"],
+  ["limestone", "Limestone Springs Premium Tonic", "Limestone Springs", "Natural quinine, restrained sweetness, built for gin and bourbon highballs.", "$6-8 / 4-pack", "Bars, retail, cocktail kits"],
+  ["limestone", "Limestone Springs Light Tonic", "Limestone Springs", "Lower sugar and calorie tonic with the same limestone water base.", "$6-8 / 4-pack", "Retail and premium mixers"],
+  ["limestone", "Limestone Springs Elderflower Tonic", "Limestone Springs", "Floral tonic designed for gin, aperitif, and low-ABV serves.", "$6-8 / 4-pack", "UK/EU bars and retail"],
+  ["limestone", "Limestone Springs Aromatic Tonic", "Limestone Springs", "Pink aromatic tonic with bitter and spice notes.", "$6-8 / 4-pack", "Gin, bourbon highballs, premium bars"],
+  ["limestone", "Limestone Springs Ginger Beer", "Limestone Springs", "Real ginger root, visible heat, and the default Kentucky Mule mixer.", "$6-8 / 4-pack", "Bars, retail, Hatfield properties"],
+  ["limestone", "Limestone Springs Ginger Ale", "Limestone Springs", "Traditional whiskey highball mixer with a lighter ginger profile.", "$2.50-3.50", "Retail, bars, room service"],
+  ["limestone", "Limestone Springs Cola", "Limestone Springs", "Craft cola with real vanilla, kola nut, cinnamon, and no HFCS.", "$2.50-3.50", "Retail and bourbon-and-cola service"],
+  ["limestone", "Limestone Springs Lemon", "Limestone Springs", "Adult lemon soda with real lemon juice and light sweetness.", "$2.50-3.50", "Retail and hospitality"],
+  ["limestone", "Limestone Springs Blood Orange", "Limestone Springs", "Tart Sicilian blood orange soda with a bitter citrus edge.", "$2.50-3.50", "Retail and premium soda shelves"],
+  ["limestone", "Limestone Springs Root Beer", "Limestone Springs", "Kentucky heritage root beer with sassafras, vanilla, and wintergreen.", "$2.50-3.50", "Retail, restaurants, cookouts"],
+  ["limestone", "Limestone Springs Cream Soda", "Limestone Springs", "Vanilla cream soda made with real vanilla bean.", "$2.50-3.50", "Retail and casual soda service"],
+  ["limestone", "Limestone Springs Bitter Lemon", "Limestone Springs", "Quinine and lemon mixer with strong European bar logic.", "$2.50-3.50", "Bars, retail, aperitif serves"],
+  ["limestone", "Limestone Springs Club Soda", "Limestone Springs", "Pure carbonated limestone water for highballs and spritzes.", "$2-3.50", "Bar rail and retail"],
+  ["limestone", "Limestone Springs Tonic Syrup", "Limestone Springs", "Concentrated tonic syrup for home and professional bar programmes.", "$14-18", "Home bar, cocktail kits, professional bars"],
+  ["provisions", "Hatfield Original Hot Sauce", "Hatfield Provisions", "Cayenne-forward vinegar table sauce.", "$7-9", "Retail, restaurant tables, gift sets"],
+  ["provisions", "Hatfield Reserve Hot Sauce", "Hatfield Provisions", "Premium hot sauce with apple cider base and Small Batch reduction.", "$12-15", "Limited retail and gift sets"],
+  ["provisions", "Hatfield Bourbon BBQ Sauce", "Hatfield Provisions", "Smoky sauce with bourbon reduction for grilling and pantry use.", "$9-12", "Retail, cookouts, gift baskets"],
+  ["provisions", "Hatfield Smoky Dry Rub", "Hatfield Provisions", "Smoked paprika, brown sugar, and garlic blend.", "$8-10", "Retail and grilling season"],
+  ["provisions", "Hatfield Steak Sauce", "Hatfield Provisions", "Dried fruit and malt vinegar premium table sauce.", "$8-10", "Bar & Grill, retail, pantry"],
+  ["provisions", "Hatfield Bourbon Mustard", "Hatfield Provisions", "Whole-grain bourbon-infused mustard.", "$7-9", "Retail and charcuterie boards"],
+  ["provisions", "Hatfield Cocktail Cherries", "Hatfield Provisions", "Premium cherries soaked in Hatfield bourbon.", "$14-16", "Home bar, cocktail kits"],
+  ["provisions", "Hatfield Barrel-Aged Honey", "Hatfield Provisions", "Kentucky honey aged in spent bourbon barrels.", "$12-15", "Breakfast, cheese boards, gift sets"],
+  ["provisions", "Hatfield Smoked Salt", "Hatfield Provisions", "Hardwood smoked finishing salt.", "$9-11", "Kitchen, cocktails, gifting"],
+  ["provisions", "Hatfield Aromatic Bitters", "Hatfield Provisions", "Aromatic bitters for Old Fashioneds, Manhattans, and bar kits.", "$12-14", "Home bar and gift bundles"],
+  ["provisions", "Hatfield Orange Bitters", "Hatfield Provisions", "Citrus-forward bitters for whiskey and aperitif serves.", "$12-14", "Home bar and gift bundles"],
+  ["barware", "Hatfield Heavy-Bottom Rocks Glass", "Hatfield Barware", "Weighted double rocks glass used across Hatfield bars.", "$28 / $95 set", "Store, Bar & Grill, The Stave"],
+  ["barware", "Hatfield Highball Glass", "Hatfield Barware", "Tall glass with weighted base for highballs and Limestone pairings.", "$75 set", "Store and bar service"],
+  ["barware", "Hatfield Tasting Glass", "Hatfield Barware", "Tulip-style nosing glass for tastings and distillery tours.", "$22 / $75 set", "Distillery, store, The Stave"],
+  ["barware", "Hatfield Decanter", "Hatfield Barware", "Lead-free crystal decanter with clean lines.", "$125", "Store and premium gifting"],
+  ["barware", "Hatfield Cocktail Kit", "Hatfield Barware", "Spoon, jigger, strainer, muddler, and ice pick in a leather roll.", "$120", "Holiday and home bar gifting"],
+  ["barware", "Hatfield Bar Spoon", "Hatfield Barware", "Long-handled bar spoon with weighted tip.", "$18", "Store and cocktail kits"],
+  ["barware", "Hatfield Jigger", "Hatfield Barware", "Weighted 1oz/2oz jigger.", "$22", "Store and cocktail kits"],
+  ["barware", "Hatfield Ice Pick", "Hatfield Barware", "Tool for hand-chipping ice, used at Still House.", "$35", "Store and premium barware"],
+  ["barware", "Hatfield Logo Tee", "Hatfield Merchandise", "Heavyweight cotton tee with minimal branding.", "$35", "Venue retail and DTC"],
+  ["barware", "Hatfield Work Shirt", "Hatfield Merchandise", "Chambray work shirt with embroidered chest logo.", "$75", "Venue retail and DTC"],
+  ["barware", "Hatfield Apron", "Hatfield Merchandise", "Waxed canvas apron based on Bar & Grill staff kit.", "$65", "Store, food, gifting"],
+  ["barware", "Hatfield Cap", "Hatfield Merchandise", "Structured cap with embroidered logo.", "$30-45", "Venue retail and DTC"],
+  ["experiences", "Hatfield Cave Experience", "Hatfield Distillery", "Three-hour distillery and cave tasting for 4-6 guests.", "$250", "Reservation-only visitor experience"],
+  ["experiences", "Still House Tasting Menu", "Still House", "Seven-course menu by Marcus Boyle with optional pairing.", "$165 + pairing", "Bardstown and Perthshire dining"],
+  ["experiences", "The Stave Membership London", "The Stave", "Annual private club membership in Soho.", "£3,500 / year", "Members' club"],
+  ["experiences", "The Stave Membership NYC", "The Stave", "Annual private club membership in Tribeca.", "$5,000 / year", "Members' club"],
+].map(([category, name, division, detail, price, channel]) => ({
+  category,
+  name,
+  division,
+  detail,
+  price,
+  channel,
+}));
+
+const cocktails = [
+  {
+    category: "bourbon classic",
+    name: "Rickhouse Julep",
+    build: "Hatfield Reserve, mint, Demerara syrup, shaved ice",
+    method: "Muddle mint gently with syrup, add bourbon, pack with shaved ice, and crown with fresh mint.",
+    note: "A Kentucky house serve: cold, aromatic, and built around bourbon rather than sugar.",
+  },
+  {
+    category: "bourbon classic",
+    name: "The Phoenix",
+    build: "Hatfield Reserve, Angostura, orange bitters, cherry, orange peel",
+    method: "Build in a rocks glass over a large cube and stir until polished.",
+    note: "Old Fashioned structure with enough restraint to let the whiskey stay in charge.",
+  },
+  {
+    category: "bourbon classic",
+    name: "Backroad Manhattan",
+    build: "Hatfield Reserve, sweet vermouth, Angostura, black walnut bitters",
+    method: "Stir cold, strain up, and finish with a cherry.",
+    note: "A deeper, rounder Manhattan for late dinners and listening-room service.",
+  },
+  {
+    category: "bourbon hosting",
+    name: "Derby Week",
+    build: "Bourbon, mint, lemon, barrel-aged honey syrup, sparkling rose float",
+    method: "Shake the bourbon, lemon, mint, and honey syrup; strain over ice and top lightly.",
+    note: "Bright, festive, and built for brunch tables rather than race-day cliche.",
+  },
+  {
+    category: "bourbon classic",
+    name: "Paper Plane",
+    build: "Bourbon, Aperol, Amaro Nonino, lemon",
+    method: "Shake equal parts hard and strain into a coupe.",
+    note: "The modern bourbon classic: bitter, sour, balanced, and hard to improve.",
+  },
+  {
+    category: "limestone bourbon",
+    name: "Kentucky Mule",
+    build: "Hatfield Small Batch, Limestone Springs Ginger Beer, lime",
+    method: "Build tall over ice, squeeze lime, top with ginger beer, and stir once.",
+    note: "The ginger beer does the work: real heat, clean finish, no syrupy drag.",
+  },
+  {
+    category: "limestone bourbon",
+    name: "Bourbon & Tonic",
+    build: "Hatfield Single Barrel, Limestone Springs Premium Tonic, orange peel",
+    method: "Build over clear ice in a highball glass and express orange oil over the top.",
+    note: "A cleaner highball where quinine and limestone minerality bridge the bourbon's oak.",
+  },
+  {
+    category: "limestone classic",
+    name: "Highland G&T",
+    build: "Hatfield Highland Gin, Limestone Springs Premium Tonic, lemon peel",
+    method: "Build over large ice with a gentle lift from the spoon.",
+    note: "The current Scotland serve while the single malt matures.",
+  },
+  {
+    category: "limestone low-abv",
+    name: "Zero-Proof Highball",
+    build: "Limestone Springs Bitter Lemon, Sparkling Water, citrus",
+    method: "Build tall over ice and finish with lemon or grapefruit peel.",
+    note: "A proper non-alcoholic serve: bitter, bright, and not pretending to be a cocktail.",
+  },
+  {
+    category: "classic bourbon",
+    name: "Old Fashioned",
+    build: "Bourbon or rye, Demerara, Angostura, orange",
+    method: "Build in the glass over a large cube. Stir until integrated.",
+    note: "No theatre required. The drink already works.",
+  },
+  {
+    category: "classic bourbon",
+    name: "Manhattan",
+    build: "Hatfield Rye, sweet vermouth, Angostura, cherry",
+    method: "Stir cold and strain up.",
+    note: "Rye gives the structure; vermouth gives the room tone.",
+  },
+  {
+    category: "classic bourbon",
+    name: "Boulevardier",
+    build: "Bourbon, Campari, sweet vermouth",
+    method: "Stir equal parts and serve over ice or up.",
+    note: "The winter cousin of the Negroni and a natural Hatfield bar call.",
+  },
+  {
+    category: "classic bourbon",
+    name: "Whiskey Sour",
+    build: "Bourbon, lemon, simple syrup, egg white",
+    method: "Dry shake, shake with ice, strain, and finish with bitters.",
+    note: "A proper sour: texture matters as much as balance.",
+  },
+  {
+    category: "low-abv limestone",
+    name: "Americano",
+    build: "Campari, sweet vermouth, Limestone Springs Club Soda, orange",
+    method: "Build tall over ice and top with soda.",
+    note: "First drink of the night: bitter, long, and easy to stay with.",
+  },
+  {
+    category: "low-abv limestone",
+    name: "Sbagliato",
+    build: "Campari, sweet vermouth, sparkling wine",
+    method: "Build over ice and lift gently.",
+    note: "Low-ABV without feeling like a compromise.",
+  },
+  {
+    category: "low-abv limestone",
+    name: "Hugo Spritz",
+    build: "Elderflower, sparkling wine, Limestone Springs Club Soda, mint, lime",
+    method: "Build in a wine glass with plenty of ice and fresh mint.",
+    note: "Alpine summer energy, useful for terraces and afternoon service.",
+  },
+  {
+    category: "hosting classic",
+    name: "Batched Negroni",
+    build: "Gin, Campari, sweet vermouth",
+    method: "Batch equal parts ahead, chill, and serve over ice with fresh orange peel.",
+    note: "Party serve with no bottleneck at the bar.",
+  },
+  {
+    category: "hosting limestone",
+    name: "Pitcher Paloma",
+    build: "Tequila blanco, grapefruit, lime, salt, Limestone Springs Sparkling Water",
+    method: "Batch citrus and tequila, pour over ice, and lengthen with sparkling water.",
+    note: "A clean cookout serve that stays bright across a long afternoon.",
+  },
+  {
+    category: "hosting low-abv",
+    name: "Pitcher Americano",
+    build: "Campari, sweet vermouth, Limestone Springs Club Soda, orange",
+    method: "Batch the bitter base, pour tall, and top each glass with soda.",
+    note: "Aperitif service that scales without losing its edge.",
+  },
+];
+
 function setText(id, value) {
   const node = document.querySelector(id);
   if (node) node.textContent = value;
@@ -757,6 +966,97 @@ function initStore() {
   renderCart();
 }
 
+function initCatalogue() {
+  const grid = document.querySelector("#catalogue-grid");
+  if (!grid) return;
+
+  const filters = document.querySelectorAll(".catalogue-filter");
+  const search = document.querySelector("#catalogue-search");
+  const count = document.querySelector("#catalogue-result-count");
+  let currentFilter = "all";
+
+  function renderCatalogue() {
+    const query = (search?.value || "").trim().toLowerCase();
+    const visible = catalogueProducts.filter((product) => {
+      const categoryMatch = currentFilter === "all" || product.category === currentFilter;
+      const searchMatch = [product.name, product.division, product.detail, product.price, product.channel]
+        .join(" ")
+        .toLowerCase()
+        .includes(query);
+      return categoryMatch && searchMatch;
+    });
+
+    grid.innerHTML = visible
+      .map(
+        (product) => `
+          <article class="catalogue-card" data-category="${product.category}">
+            <span>${product.division}</span>
+            <h3>${product.name}</h3>
+            <p>${product.detail}</p>
+            <dl>
+              <div><dt>Price</dt><dd>${product.price}</dd></div>
+              <div><dt>Channel</dt><dd>${product.channel}</dd></div>
+            </dl>
+          </article>
+        `,
+      )
+      .join("");
+
+    if (count) count.textContent = `${visible.length} product${visible.length === 1 ? "" : "s"}`;
+  }
+
+  filters.forEach((filter) => {
+    filter.addEventListener("click", () => {
+      currentFilter = filter.dataset.catalogueFilter;
+      filters.forEach((item) => item.classList.toggle("is-active", item === filter));
+      renderCatalogue();
+    });
+  });
+
+  search?.addEventListener("input", renderCatalogue);
+  renderCatalogue();
+}
+
+function initCocktails() {
+  const grid = document.querySelector("#cocktail-grid");
+  if (!grid) return;
+
+  const filters = document.querySelectorAll(".cocktail-filter");
+  let currentFilter = "all";
+
+  function renderCocktails() {
+    const visible = cocktails.filter((cocktail) => {
+      return currentFilter === "all" || cocktail.category.split(" ").includes(currentFilter);
+    });
+
+    grid.innerHTML = visible
+      .map(
+        (cocktail) => `
+          <article class="cocktail-card">
+            <span>${cocktail.category.replaceAll("-", " ")}</span>
+            <h3>${cocktail.name}</h3>
+            <p>${cocktail.note}</p>
+            <dl>
+              <div><dt>Build</dt><dd>${cocktail.build}</dd></div>
+              <div><dt>Method</dt><dd>${cocktail.method}</dd></div>
+            </dl>
+          </article>
+        `,
+      )
+      .join("");
+  }
+
+  filters.forEach((filter) => {
+    filter.addEventListener("click", () => {
+      currentFilter = filter.dataset.cocktailFilter;
+      filters.forEach((item) => item.classList.toggle("is-active", item === filter));
+      renderCocktails();
+    });
+  });
+
+  renderCocktails();
+}
+
 initDivisionSpotlight();
 initProductExplorer();
 initVenueExplorer();
@@ -765,3 +1065,5 @@ initPairingExplorer();
 initNews();
 initTimeline();
 initStore();
+initCatalogue();
+initCocktails();

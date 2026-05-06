@@ -211,9 +211,9 @@ button {
 .nav-links {
   display: flex;
   justify-content: center;
-  gap: clamp(1rem, 2.2vw, 2.4rem);
+  gap: clamp(0.75rem, 1.65vw, 1.8rem);
   color: #302a24;
-  font-size: 0.76rem;
+  font-size: 0.73rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1740,6 +1740,32 @@ h3 {
   color: rgba(255, 253, 248, 0.76);
 }
 
+.product-system-section {
+  display: grid;
+  grid-template-columns: minmax(20rem, 1fr) auto;
+  gap: 2rem;
+  align-items: end;
+  padding: clamp(4rem, 8vw, 7.5rem) 3.2vw;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 253, 248, 0.5);
+}
+
+.product-system-section h2 {
+  max-width: 13ch;
+}
+
+.product-system-section p {
+  max-width: 47rem;
+  color: var(--muted);
+}
+
+.system-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
 .cart-count {
   display: inline-grid;
   place-items: center;
@@ -2235,6 +2261,142 @@ h3 {
   font-size: 0.92rem;
 }
 
+.catalogue-shell {
+  display: grid;
+  grid-template-columns: minmax(17rem, 0.34fr) minmax(0, 1fr);
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: start;
+}
+
+.catalogue-sidebar {
+  position: sticky;
+  top: 7rem;
+}
+
+.catalogue-sidebar h2 {
+  font-size: clamp(2rem, 3.4vw, 3.35rem);
+}
+
+.catalogue-main {
+  min-width: 0;
+}
+
+.catalogue-count {
+  color: var(--gold);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.catalogue-filter,
+.cocktail-filter {
+  min-height: 42px;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 253, 248, 0.52);
+  color: #332d27;
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-align: left;
+  text-transform: uppercase;
+  transition: color 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.catalogue-filter:hover,
+.cocktail-filter:hover {
+  border-color: rgba(23, 57, 46, 0.38);
+}
+
+.catalogue-filter.is-active,
+.cocktail-filter.is-active {
+  background: var(--green);
+  color: var(--white);
+}
+
+.catalogue-grid,
+.cocktail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.catalogue-card,
+.cocktail-card {
+  min-height: 19rem;
+  padding: 1.35rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 253, 248, 0.56);
+}
+
+.catalogue-card[data-category="spirits"],
+.cocktail-card {
+  background: rgba(255, 253, 248, 0.68);
+}
+
+.catalogue-card[data-category="limestone"] {
+  background: rgba(185, 200, 189, 0.22);
+}
+
+.catalogue-card[data-category="wines"] {
+  background: rgba(126, 68, 26, 0.08);
+}
+
+.catalogue-card span,
+.cocktail-card span {
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.catalogue-card h3,
+.cocktail-card h3 {
+  margin-top: 1rem;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 2.15vw, 2.15rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.catalogue-card p,
+.cocktail-card p {
+  color: var(--muted);
+}
+
+.catalogue-card dl,
+.cocktail-card dl {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+}
+
+.catalogue-card dt,
+.cocktail-card dt {
+  color: var(--gold);
+  font-size: 0.64rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.catalogue-card dd,
+.cocktail-card dd {
+  margin: 0.16rem 0 0;
+  color: #453e36;
+}
+
+.cocktail-library {
+  background: rgba(255, 253, 248, 0.42);
+}
+
 @media (max-width: 1050px) {
   .site-header {
     grid-template-columns: auto auto;
@@ -2265,7 +2427,9 @@ h3 {
   .limestone-lineup,
   .walker-hero,
   .walker-unit-grid,
-  .walker-leadership {
+  .walker-leadership,
+  .catalogue-shell,
+  .product-system-section {
     grid-template-columns: 1fr;
   }
 
@@ -2321,6 +2485,15 @@ h3 {
   }
 
   .store-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .catalogue-sidebar {
+    position: static;
+  }
+
+  .catalogue-grid,
+  .cocktail-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -2380,10 +2553,12 @@ h3 {
   .page-section,
   .news-preview,
   .store-teaser,
+  .product-system-section,
   .store-hero,
   .store-shell,
   .limestone-identity,
-  .limestone-lineup {
+  .limestone-lineup,
+  .catalogue-shell {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -2427,6 +2602,8 @@ h3 {
 
   .store-hero-board,
   .store-grid,
+  .catalogue-grid,
+  .cocktail-grid,
   .store-toolbar,
   .cart-item,
   .limestone-pillars,

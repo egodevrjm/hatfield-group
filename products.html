@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hatfield Group | Product Catalogue</title>
+    <meta
+      name="description"
+      content="Hatfield Group product catalogue: bourbon, rye, gin, wines, Limestone Springs beverages, provisions, barware, merchandise, and experiences."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Hatfield Group home">
+        <span class="brand-mark" aria-hidden="true">H<i></i></span>
+        <span class="brand-name">Hatfield</span>
+        <small>Products</small>
+      </a>
+      <nav class="nav-links" aria-label="Main menu">
+        <a href="group.html">Group</a>
+        <a href="spirits.html">Spirits</a>
+        <a href="hospitality.html">Hospitality</a>
+        <a href="beverages.html">Limestone</a>
+        <a href="products.html" aria-current="page">Products</a>
+        <a href="cocktails.html">Cocktails</a>
+        <a href="store.html">Store</a>
+        <a href="news.html">News</a>
+      </nav>
+      <a class="header-action" href="store.html">Store</a>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <div>
+          <p class="eyebrow">Catalogue</p>
+          <h1>Every bottle, sauce, glass, and serve has a job to do.</h1>
+          <p>
+            Hatfield's product system stretches from Kentucky bourbon and Scottish gin
+            to Napa and Tuscan wines, Limestone Springs mixers, pantry provisions,
+            barware, apparel, memberships, tours, and hospitality experiences.
+          </p>
+        </div>
+        <img src="assets/hero-bourbon-lounge.png" alt="Hatfield bourbon and glassware" />
+      </section>
+
+      <section class="page-section catalogue-shell" aria-labelledby="catalogue-title">
+        <aside class="catalogue-sidebar">
+          <p class="eyebrow">Browse</p>
+          <h2 id="catalogue-title">Product families</h2>
+          <div class="store-filter-list" aria-label="Catalogue filters">
+            <button class="catalogue-filter is-active" data-catalogue-filter="all" type="button">All products</button>
+            <button class="catalogue-filter" data-catalogue-filter="spirits" type="button">Spirits</button>
+            <button class="catalogue-filter" data-catalogue-filter="limestone" type="button">Limestone Springs</button>
+            <button class="catalogue-filter" data-catalogue-filter="wines" type="button">Wines</button>
+            <button class="catalogue-filter" data-catalogue-filter="provisions" type="button">Provisions</button>
+            <button class="catalogue-filter" data-catalogue-filter="barware" type="button">Barware & merch</button>
+            <button class="catalogue-filter" data-catalogue-filter="experiences" type="button">Experiences</button>
+          </div>
+          <label class="store-search">
+            <span>Search catalogue</span>
+            <input type="search" id="catalogue-search" placeholder="Try Cave Select, tonic, Chianti..." />
+          </label>
+          <div class="store-note">
+            <strong>Channel logic</strong>
+            <p>Some products are retail goods; some are venue-only, allocated, membership-led, or experiential.</p>
+          </div>
+        </aside>
+
+        <div class="catalogue-main">
+          <div class="store-toolbar">
+            <div>
+              <p class="eyebrow">Full range</p>
+              <h2>Hatfield Product Catalogue</h2>
+            </div>
+            <span id="catalogue-result-count" class="catalogue-count" aria-live="polite">0 products</span>
+          </div>
+          <div class="catalogue-grid" id="catalogue-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="store-teaser" aria-labelledby="catalogue-serve-title">
+        <div>
+          <p class="eyebrow">Serve strategy</p>
+          <h2 id="catalogue-serve-title">Bourbon, mixers, glassware, and bar products are designed to work together.</h2>
+          <p>
+            Hatfield Single Barrel belongs in the heavy-bottom rocks glass. Limestone
+            Springs Ginger Beer anchors the Kentucky Mule. Cocktail cherries, bitters,
+            smoked salt, and tonic syrup turn the product catalogue into a bar programme.
+          </p>
+        </div>
+        <a class="button primary" href="cocktails.html">Open cocktail library</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true">H<i></i></span><span class="brand-name">Hatfield</span><small>Products</small></div>
+      <div><h2>Shop</h2><p><a href="store.html">Open store prototype</a></p></div>
+      <div><h2>Serves</h2><p><a href="cocktails.html">Cocktail and serve library</a></p></div>
+      <div class="walker-footer">
+        <a class="walker-footer-link" href="walker-holdings.html" aria-label="Walker Holdings">
+          <img src="assets/walker-holdings-logo.png" alt="Walker Holdings" />
+          <span>Walker Holdings</span>
+          <small>Strategic parent and majority owner of Hatfield Group</small>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
