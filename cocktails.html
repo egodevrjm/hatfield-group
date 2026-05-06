@@ -32,30 +32,39 @@
     </header>
 
     <main>
-      <section class="page-hero">
+      <section class="page-hero cocktail-hero">
         <div>
-          <p class="eyebrow">Serve library</p>
-          <h1>Classic builds, Kentucky muscle, and Limestone lift.</h1>
+          <p class="eyebrow">Recipe guide</p>
+          <h1>A virtual recipe guide shared by Hatfield.</h1>
           <p>
-            A public-facing serve library for Hatfield bars, restaurants, store bundles,
-            and home use: bourbon standards, Limestone Springs highballs, low-ABV
-            afternoon drinks, and batch formats for hosting.
+            Browse the house recipe list from Hatfield: whiskey drinks, gin
+            serves, wine spritzes, no-proof Limestone builds, and modern guest
+            recipes. Ingredients link through to the Hatfield shop or product
+            catalogue where the product exists.
           </p>
         </div>
-        <img src="assets/hero-bourbon-lounge.png" alt="Hatfield cocktail service" />
+        <img src="assets/hatfield-product-system.png" alt="Hatfield cocktail ingredients and product system" />
       </section>
 
       <section class="page-section cocktail-library" id="library" aria-labelledby="cocktail-title">
         <div class="section-heading">
-          <p class="eyebrow">Cocktails</p>
-          <h2 id="cocktail-title">Filter by mood, base, or service occasion.</h2>
+          <p class="eyebrow">Hatfield recipes</p>
+          <h2 id="cocktail-title">Find a drink, then follow the build.</h2>
         </div>
-        <div class="division-controls" aria-label="Cocktail filters">
+        <div class="cocktail-guide-tools">
+          <label class="store-search cocktail-search">
+            <span>Search recipes</span>
+            <input type="search" id="cocktail-search" placeholder="Try Kentucky Mule, Ginger Beer, bitters..." />
+          </label>
+          <span id="cocktail-result-count" class="catalogue-count" aria-live="polite">0 recipes</span>
+        </div>
+        <div class="division-controls cocktail-filter-row" aria-label="Cocktail filters">
           <button class="cocktail-filter is-active" data-cocktail-filter="all" type="button">All</button>
-          <button class="cocktail-filter" data-cocktail-filter="bourbon" type="button">Bourbon</button>
+          <button class="cocktail-filter" data-cocktail-filter="whiskey" type="button">Whiskey</button>
+          <button class="cocktail-filter" data-cocktail-filter="gin" type="button">Gin</button>
+          <button class="cocktail-filter" data-cocktail-filter="wine" type="button">Wine & spritz</button>
           <button class="cocktail-filter" data-cocktail-filter="limestone" type="button">Limestone</button>
-          <button class="cocktail-filter" data-cocktail-filter="classic" type="button">Classics</button>
-          <button class="cocktail-filter" data-cocktail-filter="low-abv" type="button">Low ABV</button>
+          <button class="cocktail-filter" data-cocktail-filter="zero-proof" type="button">No-proof</button>
           <button class="cocktail-filter" data-cocktail-filter="hosting" type="button">Hosting</button>
         </div>
         <div class="cocktail-grid" id="cocktail-grid" aria-live="polite"></div>

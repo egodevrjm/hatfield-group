@@ -486,145 +486,377 @@ const catalogueProducts = [
   channel,
 }));
 
+const cocktailIngredientLinks = [
+  { aliases: ["single barrel bourbon"], label: "Hatfield Single Barrel Bourbon", href: "store.html?search=Single%20Barrel", channel: "Shop" },
+  { aliases: ["small batch bourbon"], label: "Hatfield Small Batch Bourbon", href: "store.html?search=Small%20Batch", channel: "Shop" },
+  { aliases: ["bottled in bond bourbon"], label: "Hatfield Bottled in Bond", href: "products.html?search=Bottled%20in%20Bond", channel: "Products" },
+  { aliases: ["reserve bourbon"], label: "Hatfield Reserve", href: "products.html?search=Reserve", channel: "Products" },
+  { aliases: ["wheated bourbon", "wheated"], label: "Hatfield Wheated Bourbon", href: "products.html?search=Wheated", channel: "Products" },
+  { aliases: ["rye whiskey"], label: "Hatfield Rye Whiskey", href: "products.html?search=Rye%20Whiskey", channel: "Products" },
+  { aliases: ["bourbon", "original"], label: "Hatfield Original Bourbon", href: "products.html?search=Original%20Bourbon", channel: "Products" },
+  { aliases: ["cask rested gin"], label: "Hatfield Highland Gin Cask Rested", href: "products.html?search=Cask%20Rested%20Gin", channel: "Products" },
+  { aliases: ["highland gin"], label: "Hatfield Highland Gin", href: "store.html?search=Highland%20Gin", channel: "Shop" },
+  { aliases: ["starlight & steel sparkling"], label: "Starlight & Steel Sparkling", href: "products.html?search=Starlight%20Steel", channel: "Products" },
+  { aliases: ["estate rose", "estate rosé"], label: "Estate Rose", href: "products.html?search=Estate%20Rose", channel: "Products" },
+  { aliases: ["red blend"], label: "Radio Silence Red Blend", href: "products.html?search=Radio%20Silence", channel: "Products" },
+  { aliases: ["chardonnay"], label: "A Still Small Voice White", href: "products.html?search=Still%20Small%20Voice", channel: "Products" },
+  { aliases: ["chianti"], label: "Hatfield Chianti Classico", href: "products.html?search=Chianti", channel: "Products" },
+  { aliases: ["premium tonic"], label: "Limestone Springs Premium Tonic", href: "store.html?search=Premium%20Tonic", channel: "Shop" },
+  { aliases: ["elderflower tonic"], label: "Limestone Springs Elderflower Tonic", href: "products.html?search=Elderflower%20Tonic", channel: "Products" },
+  { aliases: ["aromatic tonic"], label: "Limestone Springs Aromatic Tonic", href: "products.html?search=Aromatic%20Tonic", channel: "Products" },
+  { aliases: ["ginger beer"], label: "Limestone Springs Ginger Beer", href: "store.html?search=Ginger%20Beer", channel: "Shop" },
+  { aliases: ["ginger ale"], label: "Limestone Springs Ginger Ale", href: "products.html?search=Ginger%20Ale", channel: "Products" },
+  { aliases: ["blood orange"], label: "Limestone Springs Blood Orange", href: "products.html?search=Blood%20Orange", channel: "Products" },
+  { aliases: ["root beer"], label: "Limestone Springs Root Beer", href: "products.html?search=Root%20Beer", channel: "Products" },
+  { aliases: ["cream soda"], label: "Limestone Springs Cream Soda", href: "products.html?search=Cream%20Soda", channel: "Products" },
+  { aliases: ["bitter lemon"], label: "Limestone Springs Bitter Lemon", href: "products.html?search=Bitter%20Lemon", channel: "Products" },
+  { aliases: ["sparkling water"], label: "Limestone Springs Sparkling Water", href: "store.html?search=Sparkling%20Water", channel: "Shop" },
+  { aliases: ["still water"], label: "Limestone Springs Still Water", href: "products.html?search=Still%20Water", channel: "Products" },
+  { aliases: ["club soda"], label: "Limestone Springs Club Soda", href: "products.html?search=Club%20Soda", channel: "Products" },
+  { aliases: ["cola"], label: "Limestone Springs Cola", href: "products.html?search=Cola", channel: "Products" },
+  { aliases: ["lemon soda", "lemon"], label: "Limestone Springs Lemon", href: "products.html?search=Lemon", channel: "Products" },
+  { aliases: ["tonic syrup"], label: "Limestone Springs Tonic Syrup", href: "products.html?search=Tonic%20Syrup", channel: "Products" },
+  { aliases: ["barrel-aged honey"], label: "Hatfield Barrel-Aged Honey", href: "products.html?search=Barrel-Aged%20Honey", channel: "Products" },
+  { aliases: ["smoked salt"], label: "Hatfield Smoked Salt", href: "products.html?search=Smoked%20Salt", channel: "Products" },
+  { aliases: ["aromatic bitters", "bitters"], label: "Hatfield Aromatic Bitters", href: "products.html?search=Aromatic%20Bitters", channel: "Products" },
+  { aliases: ["orange bitters"], label: "Hatfield Orange Bitters", href: "products.html?search=Orange%20Bitters", channel: "Products" },
+  { aliases: ["cherry"], label: "Hatfield Cocktail Cherries", href: "products.html?search=Cocktail%20Cherries", channel: "Products" },
+  { aliases: ["tonic"], label: "Limestone Springs Premium Tonic", href: "store.html?search=Premium%20Tonic", channel: "Shop" },
+];
+
 const cocktails = [
   {
-    category: "bourbon classic",
-    name: "Rickhouse Julep",
-    build: "Hatfield Reserve, mint, Demerara syrup, shaved ice",
-    method: "Muddle mint gently with syrup, add bourbon, pack with shaved ice, and crown with fresh mint.",
-    note: "A Kentucky house serve: cold, aromatic, and built around bourbon rather than sugar.",
+    name: "The Stump",
+    ingredients: ["2 oz Bourbon", "Root Beer", "Fresh lime zest"],
+    method: "Pour bourbon over ice. Top with Root Beer. Express lime zest over surface and drop in.",
   },
   {
-    category: "bourbon classic",
-    name: "The Phoenix",
-    build: "Hatfield Reserve, Angostura, orange bitters, cherry, orange peel",
-    method: "Build in a rocks glass over a large cube and stir until polished.",
-    note: "Old Fashioned structure with enough restraint to let the whiskey stay in charge.",
-  },
-  {
-    category: "bourbon classic",
-    name: "Backroad Manhattan",
-    build: "Hatfield Reserve, sweet vermouth, Angostura, black walnut bitters",
-    method: "Stir cold, strain up, and finish with a cherry.",
-    note: "A deeper, rounder Manhattan for late dinners and listening-room service.",
-  },
-  {
-    category: "bourbon hosting",
-    name: "Derby Week",
-    build: "Bourbon, mint, lemon, barrel-aged honey syrup, sparkling rose float",
-    method: "Shake the bourbon, lemon, mint, and honey syrup; strain over ice and top lightly.",
-    note: "Bright, festive, and built for brunch tables rather than race-day cliche.",
-  },
-  {
-    category: "bourbon classic",
-    name: "Paper Plane",
-    build: "Bourbon, Aperol, Amaro Nonino, lemon",
-    method: "Shake equal parts hard and strain into a coupe.",
-    note: "The modern bourbon classic: bitter, sour, balanced, and hard to improve.",
-  },
-  {
-    category: "limestone bourbon",
     name: "Kentucky Mule",
-    build: "Hatfield Small Batch, Limestone Springs Ginger Beer, lime",
-    method: "Build tall over ice, squeeze lime, top with ginger beer, and stir once.",
-    note: "The ginger beer does the work: real heat, clean finish, no syrupy drag.",
+    ingredients: ["2 oz Bourbon", "4 oz Ginger Beer", "3/4 oz lime juice", "2 dashes Aromatic Bitters"],
+    method: "Pour bourbon and lime over ice. Top with ginger beer and bitters. Stir once.",
   },
   {
-    category: "limestone bourbon",
-    name: "Bourbon & Tonic",
-    build: "Hatfield Single Barrel, Limestone Springs Premium Tonic, orange peel",
-    method: "Build over clear ice in a highball glass and express orange oil over the top.",
-    note: "A cleaner highball where quinine and limestone minerality bridge the bourbon's oak.",
+    name: "The Hollow",
+    ingredients: ["2 oz Single Barrel Bourbon", "1 bar spoon Barrel-Aged Honey", "3 dashes Aromatic Bitters", "1 Cherry"],
+    method: "Stir honey and bitters. Add ice and bourbon. Stir 20 rotations. Garnish with orange peel and cherry.",
   },
   {
-    category: "limestone classic",
-    name: "Highland G&T",
-    build: "Hatfield Highland Gin, Limestone Springs Premium Tonic, lemon peel",
-    method: "Build over large ice with a gentle lift from the spoon.",
-    note: "The current Scotland serve while the single malt matures.",
+    name: "Cave Highball",
+    ingredients: ["2 oz Small Batch Bourbon", "4 oz Premium Tonic", "1 dash Orange Bitters"],
+    method: "Fill glass with ice. Add bourbon, then tonic, then bitters. Stir gently.",
   },
   {
-    category: "limestone low-abv",
-    name: "Zero-Proof Highball",
-    build: "Limestone Springs Bitter Lemon, Sparkling Water, citrus",
-    method: "Build tall over ice and finish with lemon or grapefruit peel.",
-    note: "A proper non-alcoholic serve: bitter, bright, and not pretending to be a cocktail.",
+    name: "Bardstown Sour",
+    ingredients: ["2 oz Bottled in Bond Bourbon", "3/4 oz lemon juice", "3/4 oz honey syrup", "1 egg white", "2 dashes Aromatic Bitters"],
+    method: "Dry shake all but bitters. Add ice and shake hard. Double strain. Dash bitters on foam.",
   },
   {
-    category: "classic bourbon",
-    name: "Old Fashioned",
-    build: "Bourbon or rye, Demerara, Angostura, orange",
-    method: "Build in the glass over a large cube. Stir until integrated.",
-    note: "No theatre required. The drink already works.",
+    name: "Rye Manhattan",
+    ingredients: ["2 oz Rye Whiskey", "1 oz sweet vermouth", "3 dashes Aromatic Bitters", "1 Cherry"],
+    method: "Stir ingredients with ice for 30 rotations. Strain into chilled coupe. Add cherry.",
   },
   {
-    category: "classic bourbon",
-    name: "Manhattan",
-    build: "Hatfield Rye, sweet vermouth, Angostura, cherry",
-    method: "Stir cold and strain up.",
-    note: "Rye gives the structure; vermouth gives the room tone.",
+    name: "Wheated & Cola",
+    ingredients: ["2 oz Wheated Bourbon", "Cola", "Lime wedge"],
+    method: "Pour bourbon over ice. Top with cola. Squeeze and drop lime.",
   },
   {
-    category: "classic bourbon",
-    name: "Boulevardier",
-    build: "Bourbon, Campari, sweet vermouth",
-    method: "Stir equal parts and serve over ice or up.",
-    note: "The winter cousin of the Negroni and a natural Hatfield bar call.",
+    name: "The Reserve Sipper",
+    ingredients: ["2 oz Reserve Bourbon", "1 drop Still Water (optional)"],
+    method: "Pour neat. Add water drop if desired. Serve in rocks glass.",
   },
   {
-    category: "classic bourbon",
-    name: "Whiskey Sour",
-    build: "Bourbon, lemon, simple syrup, egg white",
-    method: "Dry shake, shake with ice, strain, and finish with bitters.",
-    note: "A proper sour: texture matters as much as balance.",
+    name: "Smoky Paloma",
+    ingredients: ["2 oz Rye Whiskey", "1 oz grapefruit juice", "1/2 oz lime juice", "Lemon soda", "Smoked Salt rim"],
+    method: "Rim glass with salt. Shake rye and juices. Strain into glass over ice. Top with lemon soda.",
   },
   {
-    category: "low-abv limestone",
-    name: "Americano",
-    build: "Campari, sweet vermouth, Limestone Springs Club Soda, orange",
-    method: "Build tall over ice and top with soda.",
-    note: "First drink of the night: bitter, long, and easy to stay with.",
+    name: "Rickhouse Julep",
+    ingredients: ["2 1/2 oz Small Batch Bourbon", "1 bar spoon honey", "8 mint leaves", "Crushed ice"],
+    method: "Muddle mint and honey. Fill with crushed ice. Add bourbon. Stir until frosted. Garnish with mint.",
   },
   {
-    category: "low-abv limestone",
-    name: "Sbagliato",
-    build: "Campari, sweet vermouth, sparkling wine",
-    method: "Build over ice and lift gently.",
-    note: "Low-ABV without feeling like a compromise.",
+    name: "Bourbon Ginger Smash",
+    ingredients: ["2 oz Original", "3 ginger slices", "3/4 oz lemon juice", "1/2 oz simple syrup", "Ginger Ale"],
+    method: "Muddle ginger. Add bourbon, lemon, and syrup. Shake hard. Double strain over ice. Top with ginger ale.",
   },
   {
-    category: "low-abv limestone",
-    name: "Hugo Spritz",
-    build: "Elderflower, sparkling wine, Limestone Springs Club Soda, mint, lime",
-    method: "Build in a wine glass with plenty of ice and fresh mint.",
-    note: "Alpine summer energy, useful for terraces and afternoon service.",
+    name: "Rye Sazerac",
+    ingredients: ["2 oz Rye Whiskey", "1 sugar cube", "3 dashes Aromatic Bitters", "Absinthe rinse", "Lemon peel"],
+    method: "Rinse glass with absinthe. Muddle sugar, bitters, and water. Add rye and ice. Stir and strain neat. Express lemon peel and discard.",
   },
   {
-    category: "hosting classic",
-    name: "Batched Negroni",
-    build: "Gin, Campari, sweet vermouth",
-    method: "Batch equal parts ahead, chill, and serve over ice with fresh orange peel.",
-    note: "Party serve with no bottleneck at the bar.",
+    name: "Wheated Cherry Sour",
+    ingredients: ["2 oz Wheated", "1 oz cherry juice", "3/4 oz lemon juice", "1 egg white", "2 dashes Orange Bitters"],
+    method: "Dry shake all but bitters. Add ice and shake hard. Double strain. Add bitters and cherry.",
   },
   {
-    category: "hosting limestone",
-    name: "Pitcher Paloma",
-    build: "Tequila blanco, grapefruit, lime, salt, Limestone Springs Sparkling Water",
-    method: "Batch citrus and tequila, pour over ice, and lengthen with sparkling water.",
-    note: "A clean cookout serve that stays bright across a long afternoon.",
+    name: "BiB Hot Toddy",
+    ingredients: ["2 oz Bottled in Bond Bourbon", "1 tbsp honey", "1/2 oz lemon juice", "4 oz hot water", "Cinnamon stick"],
+    method: "Combine honey, lemon, and bourbon in mug. Top with hot water. Stir with cinnamon stick.",
   },
   {
-    category: "hosting low-abv",
-    name: "Pitcher Americano",
-    build: "Campari, sweet vermouth, Limestone Springs Club Soda, orange",
-    method: "Batch the bitter base, pour tall, and top each glass with soda.",
-    note: "Aperitif service that scales without losing its edge.",
+    name: "Blood Orange Boulevardier",
+    ingredients: ["1 1/2 oz Single Barrel Bourbon", "1 oz Campari", "1 oz sweet vermouth", "1/2 oz Blood Orange"],
+    method: "Stir bourbon, Campari, and vermouth. Strain over large ice cube. Top with blood orange soda.",
   },
-];
+  {
+    name: "Perthshire Negroni",
+    ingredients: ["1 oz Cask Rested Gin", "1 oz Campari", "1 oz sweet vermouth", "1 dash Orange Bitters"],
+    method: "Stir all ingredients with ice. Strain into rocks glass over large cube.",
+  },
+  {
+    name: "Highland & Tonic",
+    ingredients: ["2 oz Highland Gin", "4 oz Elderflower Tonic"],
+    method: "Build in glass over ice. Do not stir.",
+  },
+  {
+    name: "Highland Gimlet",
+    ingredients: ["2 oz Highland Gin", "3/4 oz lime juice", "1/2 oz simple syrup"],
+    method: "Shake hard with ice. Double strain into chilled coupe.",
+  },
+  {
+    name: "Aromatic Highball",
+    ingredients: ["2 oz Highland Gin", "4 oz Aromatic Tonic", "1 dash Aromatic Bitters"],
+    method: "Pour gin over ice. Top with tonic and bitters. Stir once.",
+  },
+  {
+    name: "Heather Collins",
+    ingredients: ["2 oz Highland Gin", "1 oz lemon juice", "1/2 oz simple syrup", "Club Soda"],
+    method: "Shake gin, lemon, and syrup. Strain over ice. Top with club soda.",
+  },
+  {
+    name: "Cask Rested Old Fashioned",
+    ingredients: ["2 oz Cask Rested Gin", "1 bar spoon honey", "2 dashes Orange Bitters", "1 dash Aromatic Bitters"],
+    method: "Stir honey and bitters. Add large cube and gin. Stir 20 rotations. Express orange peel.",
+  },
+  {
+    name: "Bitter Lemon & Gin",
+    ingredients: ["2 oz Highland Gin", "4 oz Bitter Lemon"],
+    method: "Build in glass over ice. Stir once.",
+  },
+  {
+    name: "The Last Light",
+    ingredients: ["1 1/2 oz Highland Gin", "3/4 oz elderflower liqueur", "3/4 oz lemon juice", "Sparkling Water"],
+    method: "Shake gin, liqueur, and lemon. Strain into flute or coupe. Top with sparkling water.",
+  },
+  {
+    name: "Rose Spritz",
+    ingredients: ["3 oz Estate Rose", "2 oz Sparkling Water", "1 oz Blood Orange"],
+    method: "Build over ice in wine glass. Stir gently.",
+  },
+  {
+    name: "Starlight Royale",
+    ingredients: ["5 oz Starlight & Steel Sparkling", "1 bar spoon honey", "2 dashes Orange Bitters"],
+    method: "Add honey and bitters to flute. Top slowly with sparkling wine.",
+  },
+  {
+    name: "Still Small Spritz",
+    ingredients: ["3 oz Chardonnay", "2 oz Elderflower Tonic", "cucumber", "mint"],
+    method: "Build over ice. Add cucumber, top with tonic. Garnish with mint.",
+  },
+  {
+    name: "Radio Silence Sangria",
+    ingredients: ["1 bottle Red Blend", "2 oz honey", "4 oz Blood Orange", "Seasonal fruit", "Cinnamon"],
+    method: "Steep wine, honey, and fruit 4+ hours. Serve over ice topped with blood orange soda.",
+  },
+  {
+    name: "Tuscan Spritz",
+    ingredients: ["3 oz Chianti", "2 oz Ginger Ale", "Rosemary sprig"],
+    method: "Build over ice in wine glass. Top with ginger ale. Add slapped rosemary.",
+  },
+  {
+    name: "Sparkling Lemon Drop",
+    ingredients: ["3 oz Starlight & Steel Sparkling", "1/2 oz lemon juice", "1/4 oz simple syrup", "1 oz Lemon"],
+    method: "Shake lemon and syrup. Strain into flute. Top with sparkling wine and lemon soda.",
+  },
+  {
+    name: "Rose Paloma",
+    ingredients: ["3 oz Estate Rose", "1 oz grapefruit juice", "1 oz Club Soda", "Smoked Salt rim"],
+    method: "Rim glass with salt. Build over ice. Top with club soda.",
+  },
+  {
+    name: "Chardonnay Ginger Fizz",
+    ingredients: ["3 oz Chardonnay", "2 oz Ginger Beer", "Lemon zest"],
+    method: "Build over ice. Top with ginger beer. Add lemon zest.",
+  },
+  {
+    name: "Wake Up Call",
+    ingredients: ["6 oz Cola", "1 cooled espresso shot", "Lemon zest"],
+    method: "Pour espresso over ice. Top slowly with cola. Express lemon zest.",
+  },
+  {
+    name: "Cherry Float",
+    ingredients: ["8 oz Cream Soda", "1 scoop vanilla gelato", "1 squeezed cherry"],
+    method: "Place gelato in glass. Squeeze cherry over top. Top slowly with cream soda.",
+  },
+  {
+    name: "Golden Child",
+    ingredients: ["5 oz Ginger Beer", "2 oz blood orange juice", "Lemon zest"],
+    method: "Pour juice over ice. Top with ginger beer. Express lemon zest.",
+  },
+  {
+    name: "Limestone Spritz",
+    ingredients: ["4 oz Blood Orange", "2 oz Aromatic Tonic", "Rosemary"],
+    method: "Build over ice. Add slapped rosemary.",
+  },
+  {
+    name: "The Stillwater",
+    ingredients: ["6 oz Elderflower Tonic", "1/2 oz Tonic Syrup", "Cucumber", "Mint"],
+    method: "Muddle cucumber and mint. Add ice and syrup. Top with tonic.",
+  },
+  {
+    name: "Porch Swing",
+    ingredients: ["6 oz Lemon", "1 bar spoon honey", "4 mint leaves", "1/2 oz lemon juice"],
+    method: "Dissolve honey in lemon juice. Add ice and mint. Top with lemon soda.",
+  },
+  {
+    name: "Root Beer Float",
+    ingredients: ["8 oz Root Beer", "2 scoops vanilla ice cream"],
+    method: "Place ice cream in glass. Top slowly with root beer.",
+  },
+  {
+    name: "Bitter Sunset",
+    ingredients: ["5 oz Bitter Lemon", "1 oz grapefruit juice", "1/4 oz Tonic Syrup", "Smoked Salt rim"],
+    method: "Rim glass with salt. Combine juice and syrup. Top with bitter lemon.",
+  },
+  {
+    name: "Ginger Highball",
+    ingredients: ["6 oz Ginger Ale", "1/2 oz lime juice", "Mint", "1 dash Bitters"],
+    method: "Build over ice. Add lime and ginger ale. Float bitters and add mint.",
+  },
+  {
+    name: "Sparkling Honey Lemon",
+    ingredients: ["6 oz Sparkling Water", "1 tsp honey", "1/2 oz lemon juice", "pinch Smoked Salt"],
+    method: "Dissolve honey in lemon juice and salt. Add ice. Top with sparkling water.",
+  },
+  {
+    name: "Cola Lime Cooler",
+    ingredients: ["4 oz Cola", "2 oz Club Soda", "1 oz lime juice"],
+    method: "Add lime and cola to ice. Top with club soda.",
+  },
+  {
+    name: "Cream & Orange",
+    ingredients: ["4 oz Cream Soda", "4 oz Blood Orange"],
+    method: "Build over crushed ice. Layer cream soda over blood orange using a spoon.",
+  },
+  {
+    name: "The Architect",
+    ingredients: ["2 oz Vodka", "1 oz blackberry puree", "3/4 oz lemon juice", "2 oz Ginger Beer"],
+    method: "Shake vodka, puree, and lemon. Strain over crushed ice. Top with ginger beer.",
+  },
+  {
+    name: "Botanical Garden",
+    ingredients: ["2 oz Gin", "3/4 oz grapefruit juice", "1/2 oz simple syrup", "3 basil leaves", "Splash of Tonic"],
+    method: "Muddle basil. Add gin, grapefruit, and syrup. Shake hard. Strain over fresh ice. Top with tonic.",
+  },
+  {
+    name: "The Journeyman",
+    ingredients: ["2 oz Aged Rum", "1/2 oz cold brew coffee", "1/4 oz maple syrup", "2 dashes Orange Bitters"],
+    method: "Stir all ingredients with ice for 20 rotations. Serve over a large cube with an orange peel.",
+  },
+  {
+    name: "Bluegrass Botanical",
+    ingredients: ["2 oz Vodka", "3/4 oz elderflower liqueur", "1/2 oz lime juice", "cucumber slice", "black pepper"],
+    method: "Muddle cucumber. Shake with vodka, liqueur, and lime. Strain into a coupe. Garnish with cracked black pepper.",
+  },
+  {
+    name: "Appalachian Smoke",
+    ingredients: ["2 oz Blanco Tequila", "1/2 oz Mezcal", "3/4 oz lime juice", "1/2 oz smoked honey syrup"],
+    method: "Shake all ingredients with ice. Strain into a rocks glass over fresh ice. Garnish with a lime wheel.",
+  },
+  {
+    name: "The Plumb Line",
+    ingredients: ["2 oz Bourbon", "1 tbsp plum jam", "3/4 oz lemon juice", "2 dashes Aromatic Bitters"],
+    method: "Shake bourbon, jam, lemon, and bitters vigorously. Double strain into a chilled coupe.",
+  },
+  {
+    name: "Sunset Over Frankfort",
+    ingredients: ["1 oz Bourbon", "1 oz Aperol", "3/4 oz lemon juice", "2 oz grapefruit soda"],
+    method: "Shake bourbon, Aperol, and lemon. Strain into a Collins glass over ice. Top with grapefruit soda.",
+  },
+  {
+    name: "Spiced Pear Smash",
+    ingredients: ["2 oz Vodka", "1 oz pear nectar", "1/2 oz lemon juice", "pinch of cinnamon"],
+    method: "Shake all ingredients with ice. Strain into a rocks glass. Garnish with a cinnamon stick.",
+  },
+].map(decorateCocktail);
+
+function normalizeIngredient(value) {
+  return value
+    .toLowerCase()
+    .replaceAll("rosé", "rose")
+    .replace(/^\d+(\s+\d\/\d|\/\d)?\s*/g, "")
+    .replace(/^(oz|tbsp|tsp|bar spoon|bottle|scoop|scoops|dashes?|dash|drop|pinch)\s+/g, "")
+    .replace(/[()]/g, "")
+    .trim();
+}
+
+function ingredientProductLink(ingredient) {
+  const normalized = normalizeIngredient(ingredient);
+  if (
+    /juice|zest|wedge|peel|slice|mint|cucumber|rosemary|cinnamon|seasonal fruit|gelato|ice cream|espresso|simple syrup|honey syrup|smoked honey|maple syrup|pear nectar|blackberry|plum jam|sweet vermouth|campari|aperol|vodka|tequila|mezcal|rum|absinthe|egg white|hot water|sugar cube|basil|pepper/.test(normalized)
+  ) {
+    return null;
+  }
+  return cocktailIngredientLinks.find((link) =>
+    link.aliases.some((alias) => normalized.includes(alias.toLowerCase().replaceAll("rosé", "rose"))),
+  );
+}
+
+function decorateCocktail(recipe) {
+  const text = `${recipe.name} ${recipe.ingredients.join(" ")}`.toLowerCase();
+  const tags = [];
+  if (/bourbon|rye|wheated|bottled in bond|original|reserve/.test(text)) tags.push("whiskey");
+  if (/gin|negroni/.test(text)) tags.push("gin");
+  if (/rose|rosé|chardonnay|chianti|red blend|starlight/.test(text)) tags.push("wine");
+  if (/root beer|ginger beer|ginger ale|tonic|cola|cream soda|blood orange|bitter lemon|club soda|sparkling water|lemon soda|tonic syrup/.test(text)) tags.push("limestone");
+  if (!/bourbon|rye|wheated|gin|vodka|tequila|mezcal|rum|campari|aperol|vermouth|liqueur|wine|chianti|chardonnay|rose|rosé|blend|sparkling/.test(text)) {
+    tags.push("zero-proof");
+  }
+  if (/build|pour|top slowly|top with/i.test(recipe.method)) tags.push("built");
+  if (/shake|dry shake/i.test(recipe.method)) tags.push("shaken");
+  if (/stir/i.test(recipe.method)) tags.push("stirred");
+  if (/1 bottle|4\+ hours|sangria|float|porch|cooler|spritz/i.test(`${recipe.name} ${recipe.method}`)) tags.push("hosting");
+
+  const uniqueTags = [...new Set(tags.length ? tags : ["house"])];
+  const linkedIngredients = recipe.ingredients.map((ingredient) => ({
+    name: ingredient,
+    product: ingredientProductLink(ingredient) || null,
+  }));
+  const productCount = linkedIngredients.filter((ingredient) => ingredient.product).length;
+
+  return {
+    ...recipe,
+    category: uniqueTags.join(" "),
+    tags: uniqueTags,
+    linkedIngredients,
+    productCount,
+    service: uniqueTags.includes("zero-proof")
+      ? "No-proof"
+      : uniqueTags.includes("wine")
+        ? "Wine & spritz"
+        : uniqueTags.includes("gin")
+          ? "Gin"
+          : uniqueTags.includes("whiskey")
+            ? "Whiskey"
+            : "House",
+  };
+}
 
 function setText(id, value) {
   const node = document.querySelector(id);
   if (node) node.textContent = value;
+}
+
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#039;",
+  })[char]);
 }
 
 function formatCurrency(value) {
@@ -865,6 +1097,11 @@ function initStore() {
   let cart = [];
   let promoApplied = false;
   let fulfilment = "ship";
+  const params = new URLSearchParams(window.location.search);
+  const initialSearch = params.get("search");
+  const initialFilter = params.get("filter");
+  if (initialSearch && search) search.value = initialSearch;
+  if (initialFilter) currentFilter = initialFilter;
 
   function filteredProducts() {
     const query = (search?.value || "").trim().toLowerCase();
@@ -1031,6 +1268,10 @@ function initStore() {
     });
   });
 
+  filters.forEach((filter) => {
+    filter.classList.toggle("is-active", filter.dataset.storeFilter === currentFilter);
+  });
+
   document.querySelector(".checkout-button")?.addEventListener("click", () => {
     if (!cart.length) {
       if (note) note.textContent = "Add at least one product to review an order.";
@@ -1052,6 +1293,11 @@ function initCatalogue() {
   const search = document.querySelector("#catalogue-search");
   const count = document.querySelector("#catalogue-result-count");
   let currentFilter = "all";
+  const params = new URLSearchParams(window.location.search);
+  const initialSearch = params.get("search");
+  const initialFilter = params.get("filter");
+  if (initialSearch && search) search.value = initialSearch;
+  if (initialFilter) currentFilter = initialFilter;
 
   function renderCatalogue() {
     const query = (search?.value || "").trim().toLowerCase();
@@ -1092,6 +1338,9 @@ function initCatalogue() {
   });
 
   search?.addEventListener("input", renderCatalogue);
+  filters.forEach((filter) => {
+    filter.classList.toggle("is-active", filter.dataset.catalogueFilter === currentFilter);
+  });
   renderCatalogue();
 }
 
@@ -1100,28 +1349,72 @@ function initCocktails() {
   if (!grid) return;
 
   const filters = document.querySelectorAll(".cocktail-filter");
+  const search = document.querySelector("#cocktail-search");
+  const count = document.querySelector("#cocktail-result-count");
   let currentFilter = "all";
+  const params = new URLSearchParams(window.location.search);
+  const initialSearch = params.get("search");
+  const initialFilter = params.get("filter");
+  if (initialSearch && search) search.value = initialSearch;
+  if (initialFilter) currentFilter = initialFilter;
+
+  function renderIngredient(ingredient) {
+    const name = escapeHTML(ingredient.name);
+    if (!ingredient.product) return `<li><span>${name}</span></li>`;
+    return `
+      <li>
+        <a href="${ingredient.product.href}">
+          <span>${name}</span>
+          <small>${ingredient.product.channel}</small>
+        </a>
+      </li>
+    `;
+  }
 
   function renderCocktails() {
+    const query = (search?.value || "").trim().toLowerCase();
     const visible = cocktails.filter((cocktail) => {
-      return currentFilter === "all" || cocktail.category.split(" ").includes(currentFilter);
+      const categoryMatch = currentFilter === "all" || cocktail.tags.includes(currentFilter);
+      const searchMatch = [cocktail.name, cocktail.service, cocktail.method, cocktail.ingredients.join(" "), cocktail.tags.join(" ")]
+        .join(" ")
+        .toLowerCase()
+        .includes(query);
+      return categoryMatch && searchMatch;
     });
 
     grid.innerHTML = visible
       .map(
         (cocktail) => `
-          <article class="cocktail-card">
-            <span>${cocktail.category.replaceAll("-", " ")}</span>
-            <h3>${cocktail.name}</h3>
-            <p>${cocktail.note}</p>
+          <article class="cocktail-card recipe-card">
+            <div class="recipe-card-head">
+              <span>${escapeHTML(cocktail.service)}</span>
+              <strong>${cocktail.productCount} linked product${cocktail.productCount === 1 ? "" : "s"}</strong>
+            </div>
+            <h3>${escapeHTML(cocktail.name)}</h3>
+            <ol class="ingredient-list">
+              ${cocktail.linkedIngredients.map(renderIngredient).join("")}
+            </ol>
             <dl>
-              <div><dt>Build</dt><dd>${cocktail.build}</dd></div>
-              <div><dt>Method</dt><dd>${cocktail.method}</dd></div>
+              <div><dt>Method</dt><dd>${escapeHTML(cocktail.method)}</dd></div>
             </dl>
+            <footer class="recipe-tags">
+              ${cocktail.tags.map((tag) => `<span>${escapeHTML(tag.replace("-", " "))}</span>`).join("")}
+            </footer>
           </article>
         `,
       )
       .join("");
+
+    if (!visible.length) {
+      grid.innerHTML = `
+        <article class="cocktail-card recipe-card">
+          <span>No matches</span>
+          <h3>No recipes found.</h3>
+          <p>Try a product name like Ginger Beer, Bourbon, Tonic, or Bitters.</p>
+        </article>
+      `;
+    }
+    if (count) count.textContent = `${visible.length} recipe${visible.length === 1 ? "" : "s"}`;
   }
 
   filters.forEach((filter) => {
@@ -1132,6 +1425,10 @@ function initCocktails() {
     });
   });
 
+  search?.addEventListener("input", renderCocktails);
+  filters.forEach((filter) => {
+    filter.classList.toggle("is-active", filter.dataset.cocktailFilter === currentFilter);
+  });
   renderCocktails();
 }
 
