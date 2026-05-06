@@ -1,0 +1,599 @@
+[
+  {
+    "id": "the_stump",
+    "name": "The Stump",
+    "ingredients": [
+      "2 oz Bourbon",
+      "Root Beer",
+      "Fresh lime zest"
+    ],
+    "method": "Pour bourbon over ice. Top with Root Beer. Express lime zest over surface and drop in.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "kentucky_mule",
+    "name": "Kentucky Mule",
+    "ingredients": [
+      "2 oz Bourbon",
+      "4 oz Ginger Beer",
+      "¾ oz lime juice",
+      "2 dashes Aromatic Bitters"
+    ],
+    "method": "Pour bourbon and lime over ice. Top with ginger beer and bitters. Stir once.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "the_hollow",
+    "name": "The Hollow",
+    "ingredients": [
+      "2 oz Single Barrel Bourbon",
+      "1 bar spoon Barrel-Aged Honey",
+      "3 dashes Aromatic Bitters",
+      "1 Cherry"
+    ],
+    "method": "Stir honey and bitters. Add ice and bourbon. Stir 20 rotations. Garnish with orange peel and cherry.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "cave_highball",
+    "name": "Cave Highball",
+    "ingredients": [
+      "2 oz Small Batch Bourbon",
+      "4 oz Premium Tonic",
+      "1 dash Orange Bitters"
+    ],
+    "method": "Fill glass with ice. Add bourbon, then tonic, then bitters. Stir gently.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "bardstown_sour",
+    "name": "Bardstown Sour",
+    "ingredients": [
+      "2 oz Bottled in Bond Bourbon",
+      "¾ oz lemon juice",
+      "¾ oz honey syrup",
+      "1 egg white",
+      "2 dashes Aromatic Bitters"
+    ],
+    "method": "Dry shake all but bitters. Add ice and shake hard. Double strain. Dash bitters on foam.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "rye_manhattan",
+    "name": "Rye Manhattan",
+    "ingredients": [
+      "2 oz Rye Whiskey",
+      "1 oz sweet vermouth",
+      "3 dashes Aromatic Bitters",
+      "1 Cherry"
+    ],
+    "method": "Stir ingredients with ice for 30 rotations. Strain into chilled coupe. Add cherry.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "wheated_and_cola",
+    "name": "Wheated & Cola",
+    "ingredients": [
+      "2 oz Wheated Bourbon",
+      "Cola",
+      "Lime wedge"
+    ],
+    "method": "Pour bourbon over ice. Top with cola. Squeeze and drop lime.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "the_reserve_sipper",
+    "name": "The Reserve Sipper",
+    "ingredients": [
+      "2 oz Reserve Bourbon",
+      "1 drop Still Water (optional)"
+    ],
+    "method": "Pour neat. Add water drop if desired. Serve in rocks glass.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "smoky_paloma",
+    "name": "Smoky Paloma",
+    "ingredients": [
+      "2 oz Rye Whiskey",
+      "1 oz grapefruit juice",
+      "½ oz lime juice",
+      "Lemon soda",
+      "Smoked Salt rim"
+    ],
+    "method": "Rim glass with salt. Shake rye and juices. Strain into glass over ice. Top with lemon soda.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "rickhouse_julep",
+    "name": "Rickhouse Julep",
+    "ingredients": [
+      "2½ oz Small Batch Bourbon",
+      "1 bar spoon honey",
+      "8 mint leaves",
+      "Crushed ice"
+    ],
+    "method": "Muddle mint and honey. Fill with crushed ice. Add bourbon. Stir until frosted. Garnish with mint.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "bourbon_ginger_smash",
+    "name": "Bourbon Ginger Smash",
+    "ingredients": [
+      "2 oz Original",
+      "3 ginger slices",
+      "¾ oz lemon juice",
+      "½ oz simple syrup",
+      "Ginger Ale"
+    ],
+    "method": "Muddle ginger. Add bourbon, lemon, and syrup. Shake hard. Double strain over ice. Top with ginger ale.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "rye_sazerac",
+    "name": "Rye Sazerac",
+    "ingredients": [
+      "2 oz Rye Whiskey",
+      "1 sugar cube",
+      "3 dashes Aromatic Bitters",
+      "Absinthe rinse",
+      "Lemon peel"
+    ],
+    "method": "Rinse glass with absinthe. Muddle sugar, bitters, and water. Add rye and ice. Stir and strain neat. Express lemon peel and discard.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "wheated_cherry_sour",
+    "name": "Wheated Cherry Sour",
+    "ingredients": [
+      "2 oz Wheated",
+      "1 oz cherry juice",
+      "¾ oz lemon juice",
+      "1 egg white",
+      "2 dashes Orange Bitters"
+    ],
+    "method": "Dry shake all but bitters. Add ice and shake hard. Double strain. Add bitters and cherry.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "bib_hot_toddy",
+    "name": "BiB Hot Toddy",
+    "ingredients": [
+      "2 oz Bottled in Bond Bourbon",
+      "1 tbsp honey",
+      "½ oz lemon juice",
+      "4 oz hot water",
+      "Cinnamon stick"
+    ],
+    "method": "Combine honey, lemon, and bourbon in mug. Top with hot water. Stir with cinnamon stick.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "blood_orange_boulevardier",
+    "name": "Blood Orange Boulevardier",
+    "ingredients": [
+      "1½ oz Single Barrel Bourbon",
+      "1 oz Campari",
+      "1 oz sweet vermouth",
+      "½ oz Blood Orange"
+    ],
+    "method": "Stir bourbon, Campari, and vermouth. Strain over large ice cube. Top with blood orange soda.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "perthshire_negroni",
+    "name": "Perthshire Negroni",
+    "ingredients": [
+      "1 oz Cask Rested Gin",
+      "1 oz Campari",
+      "1 oz sweet vermouth",
+      "1 dash Orange Bitters"
+    ],
+    "method": "Stir all ingredients with ice. Strain into rocks glass over large cube.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "highland_and_tonic",
+    "name": "Highland & Tonic",
+    "ingredients": [
+      "2 oz Highland Gin",
+      "4 oz Elderflower Tonic"
+    ],
+    "method": "Build in glass over ice. Do not stir.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "highland_gimlet",
+    "name": "Highland Gimlet",
+    "ingredients": [
+      "2 oz Highland Gin",
+      "¾ oz lime juice",
+      "½ oz simple syrup"
+    ],
+    "method": "Shake hard with ice. Double strain into chilled coupe.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "aromatic_highball",
+    "name": "Aromatic Highball",
+    "ingredients": [
+      "2 oz Highland Gin",
+      "4 oz Aromatic Tonic",
+      "1 dash Aromatic Bitters"
+    ],
+    "method": "Pour gin over ice. Top with tonic and bitters. Stir once.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "heather_collins",
+    "name": "Heather Collins",
+    "ingredients": [
+      "2 oz Highland Gin",
+      "1 oz lemon juice",
+      "½ oz simple syrup",
+      "Club Soda"
+    ],
+    "method": "Shake gin, lemon, and syrup. Strain over ice. Top with club soda.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "cask_rested_old_fashioned",
+    "name": "Cask Rested Old Fashioned",
+    "ingredients": [
+      "2 oz Cask Rested Gin",
+      "1 bar spoon honey",
+      "2 dashes Orange Bitters",
+      "1 dash Aromatic Bitters"
+    ],
+    "method": "Stir honey and bitters. Add large cube and gin. Stir 20 rotations. Express orange peel.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "bitter_lemon_and_gin",
+    "name": "Bitter Lemon & Gin",
+    "ingredients": [
+      "2 oz Highland Gin",
+      "4 oz Bitter Lemon"
+    ],
+    "method": "Build in glass over ice. Stir once.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "the_last_light",
+    "name": "The Last Light",
+    "ingredients": [
+      "1½ oz Highland Gin",
+      "¾ oz elderflower liqueur",
+      "¾ oz lemon juice",
+      "Sparkling Water"
+    ],
+    "method": "Shake gin, liqueur, and lemon. Strain into flute or coupe. Top with sparkling water.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "ros_spritz",
+    "name": "Rosé Spritz",
+    "ingredients": [
+      "3 oz Estate Rosé",
+      "2 oz Sparkling Water",
+      "1 oz Blood Orange"
+    ],
+    "method": "Build over ice in wine glass. Stir gently.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "starlight_royale",
+    "name": "Starlight Royale",
+    "ingredients": [
+      "5 oz Starlight & Steel Sparkling",
+      "1 bar spoon honey",
+      "2 dashes Orange Bitters"
+    ],
+    "method": "Add honey and bitters to flute. Top slowly with sparkling wine.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "still_small_spritz",
+    "name": "Still Small Spritz",
+    "ingredients": [
+      "3 oz Chardonnay",
+      "2 oz Elderflower Tonic",
+      "cucumber",
+      "mint"
+    ],
+    "method": "Build over ice. Add cucumber, top with tonic. Garnish with mint.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "radio_silence_sangria",
+    "name": "Radio Silence Sangria",
+    "ingredients": [
+      "1 bottle Red Blend",
+      "2 oz honey",
+      "4 oz Blood Orange",
+      "Seasonal fruit",
+      "Cinnamon"
+    ],
+    "method": "Steep wine, honey, and fruit 4+ hours. Serve over ice topped with blood orange soda.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "tuscan_spritz",
+    "name": "Tuscan Spritz",
+    "ingredients": [
+      "3 oz Chianti",
+      "2 oz Ginger Ale",
+      "Rosemary sprig"
+    ],
+    "method": "Build over ice in wine glass. Top with ginger ale. Add slapped rosemary.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "sparkling_lemon_drop",
+    "name": "Sparkling Lemon Drop",
+    "ingredients": [
+      "3 oz Starlight & Steel Sparkling",
+      "½ oz lemon juice",
+      "¼ oz simple syrup",
+      "1 oz Lemon"
+    ],
+    "method": "Shake lemon and syrup. Strain into flute. Top with sparkling wine and lemon soda.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "ros_paloma",
+    "name": "Rosé Paloma",
+    "ingredients": [
+      "3 oz Estate Rosé",
+      "1 oz grapefruit juice",
+      "1 oz Club Soda",
+      "Smoked Salt rim"
+    ],
+    "method": "Rim glass with salt. Build over ice. Top with club soda.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "chardonnay_ginger_fizz",
+    "name": "Chardonnay Ginger Fizz",
+    "ingredients": [
+      "3 oz Chardonnay",
+      "2 oz Ginger Beer",
+      "Lemon zest"
+    ],
+    "method": "Build over ice. Top with ginger beer. Add lemon zest.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "wake_up_call",
+    "name": "Wake Up Call",
+    "ingredients": [
+      "6 oz Cola",
+      "1 cooled espresso shot",
+      "Lemon zest"
+    ],
+    "method": "Pour espresso over ice. Top slowly with cola. Express lemon zest.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "cherry_float",
+    "name": "Cherry Float",
+    "ingredients": [
+      "8 oz Cream Soda",
+      "1 scoop vanilla gelato",
+      "1 squeezed cherry"
+    ],
+    "method": "Place gelato in glass. Squeeze cherry over top. Top slowly with cream soda.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "golden_child",
+    "name": "Golden Child",
+    "ingredients": [
+      "5 oz Ginger Beer",
+      "2 oz blood orange juice",
+      "Lemon zest"
+    ],
+    "method": "Pour juice over ice. Top with ginger beer. Express lemon zest.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "limestone_spritz",
+    "name": "Limestone Spritz",
+    "ingredients": [
+      "4 oz Blood Orange",
+      "2 oz Aromatic Tonic",
+      "Rosemary"
+    ],
+    "method": "Build over ice. Add slapped rosemary.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "the_stillwater",
+    "name": "The Stillwater",
+    "ingredients": [
+      "6 oz Elderflower Tonic",
+      "½ oz Tonic Syrup",
+      "Cucumber",
+      "Mint"
+    ],
+    "method": "Muddle cucumber and mint. Add ice and syrup. Top with tonic.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "porch_swing",
+    "name": "Porch Swing",
+    "ingredients": [
+      "6 oz Lemon",
+      "1 bar spoon honey",
+      "4 mint leaves",
+      "½ oz lemon juice"
+    ],
+    "method": "Dissolve honey in lemon juice. Add ice and mint. Top with lemon soda.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "root_beer_float",
+    "name": "Root Beer Float",
+    "ingredients": [
+      "8 oz Root Beer",
+      "2 scoops vanilla ice cream"
+    ],
+    "method": "Place ice cream in glass. Top slowly with root beer.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "bitter_sunset",
+    "name": "Bitter Sunset",
+    "ingredients": [
+      "5 oz Bitter Lemon",
+      "1 oz grapefruit juice",
+      "¼ oz Tonic Syrup",
+      "Smoked Salt rim"
+    ],
+    "method": "Rim glass with salt. Combine juice and syrup. Top with bitter lemon.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "ginger_highball",
+    "name": "Ginger Highball",
+    "ingredients": [
+      "6 oz Ginger Ale",
+      "½ oz lime juice",
+      "Mint",
+      "1 dash Bitters"
+    ],
+    "method": "Build over ice. Add lime and ginger ale. Float bitters and add mint.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "sparkling_honey_lemon",
+    "name": "Sparkling Honey Lemon",
+    "ingredients": [
+      "6 oz Sparkling Water",
+      "1 tsp honey",
+      "½ oz lemon juice",
+      "pinch Smoked Salt"
+    ],
+    "method": "Dissolve honey in lemon juice and salt. Add ice. Top with sparkling water.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "cola_lime_cooler",
+    "name": "Cola Lime Cooler",
+    "ingredients": [
+      "4 oz Cola",
+      "2 oz Club Soda",
+      "1 oz lime juice"
+    ],
+    "method": "Add lime and cola to ice. Top with club soda.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "cream_and_orange",
+    "name": "Cream & Orange",
+    "ingredients": [
+      "4 oz Cream Soda",
+      "4 oz Blood Orange"
+    ],
+    "method": "Build over crushed ice. Layer cream soda over blood orange using a spoon.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "the_architect",
+    "name": "The Architect",
+    "ingredients": [
+      "2 oz Vodka",
+      "1 oz blackberry puree",
+      "¾ oz lemon juice",
+      "2 oz Ginger Beer"
+    ],
+    "method": "Shake vodka, puree, and lemon. Strain over crushed ice. Top with ginger beer.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "botanical_garden",
+    "name": "Botanical Garden",
+    "ingredients": [
+      "2 oz Gin",
+      "¾ oz grapefruit juice",
+      "½ oz simple syrup",
+      "3 basil leaves",
+      "Splash of Tonic"
+    ],
+    "method": "Muddle basil. Add gin, grapefruit, and syrup. Shake hard. Strain over fresh ice. Top with tonic.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "the_journeyman",
+    "name": "The Journeyman",
+    "ingredients": [
+      "2 oz Aged Rum",
+      "½ oz cold brew coffee",
+      "¼ oz maple syrup",
+      "2 dashes Orange Bitters"
+    ],
+    "method": "Stir all ingredients with ice for 20 rotations. Serve over a large cube with an orange peel.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "bluegrass_botanical",
+    "name": "Bluegrass Botanical",
+    "ingredients": [
+      "2 oz Vodka",
+      "¾ oz elderflower liqueur",
+      "½ oz lime juice",
+      "cucumber slice",
+      "black pepper"
+    ],
+    "method": "Muddle cucumber. Shake with vodka, liqueur, and lime. Strain into a coupe. Garnish with cracked black pepper.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "appalachian_smoke",
+    "name": "Appalachian Smoke",
+    "ingredients": [
+      "2 oz Blanco Tequila",
+      "½ oz Mezcal",
+      "¾ oz lime juice",
+      "½ oz smoked honey syrup"
+    ],
+    "method": "Shake all ingredients with ice. Strain into a rocks glass over fresh ice. Garnish with a lime wheel.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "the_plumb_line",
+    "name": "The Plumb Line",
+    "ingredients": [
+      "2 oz Bourbon",
+      "1 tbsp plum jam",
+      "¾ oz lemon juice",
+      "2 dashes Aromatic Bitters"
+    ],
+    "method": "Shake bourbon, jam, lemon, and bitters vigorously. Double strain into a chilled coupe.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "sunset_over_frankfort",
+    "name": "Sunset Over Frankfort",
+    "ingredients": [
+      "1 oz Bourbon",
+      "1 oz Aperol",
+      "¾ oz lemon juice",
+      "2 oz grapefruit soda"
+    ],
+    "method": "Shake bourbon, Aperol, and lemon. Strain into a Collins glass over ice. Top with grapefruit soda.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  },
+  {
+    "id": "spiced_pear_smash",
+    "name": "Spiced Pear Smash",
+    "ingredients": [
+      "2 oz Vodka",
+      "1 oz pear nectar",
+      "½ oz lemon juice",
+      "pinch of cinnamon"
+    ],
+    "method": "Shake all ingredients with ice. Strain into a rocks glass. Garnish with a cinnamon stick.",
+    "source": "data/hatfield/hatfield_cocktails.csv"
+  }
+]

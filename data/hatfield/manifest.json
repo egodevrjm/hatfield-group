@@ -1,0 +1,38 @@
+{
+  "name": "hatfield_canon",
+  "schema_version": "1.0.0",
+  "primary_data_file": "data/hatfield/hatfield_canon.json",
+  "purpose": "Structured Hatfield Group canon for product, venue, cocktail, ownership, distribution, public-knowledge, and renderer/MCP lookup.",
+  "collections": {
+    "group": "Hatfield Group ownership, scale, leadership, source conflicts, and relationship to Walker Holdings.",
+    "divisions": "Operating divisions, scale, revenue, employee counts, leaders, public scale, and Alex relationship.",
+    "products": "Canon product catalogue across bourbon, Limestone Springs, Scotland spirits, wines, provisions, barware, merchandise, and future/not-for-sale products.",
+    "venues": "Company-owned and planned venues across restaurants, inns, clubs, distilleries, Still House, wine estates, and production facilities.",
+    "cocktails": "Hatfield cocktail recipe guide sourced from data/hatfield/hatfield_cocktails.csv.",
+    "franchise_operations": "Franchise terms, open locations, buildout/signed locations, support operations, financials, and projections.",
+    "distribution_and_channels": "Sales channels, geography, product-category revenue, and captive Hatfield supply channels.",
+    "public_knowledge": "What the public knows, what is not public, and how product photos should be interpreted.",
+    "business_renderer_contract": "Required files, lookup policy, and example answers for Hatfield scenes."
+  },
+  "counts": {
+    "divisions": 10,
+    "products": 56,
+    "venues": 42,
+    "cocktails": 51,
+    "franchised_bar_grill_open": 17,
+    "franchised_inns_open": 5
+  },
+  "load_with": [
+    "HATFIELD.md",
+    "HATFIELD_GROUP.md",
+    "HATFIELD_PRODUCTS.md",
+    "PUBLIC_KNOWLEDGE.md"
+  ],
+  "canonical_answers": {
+    "public_knows_family_owns_hatfield": true,
+    "hatfield_products_are_canon_props": true,
+    "limestone_springs_is_fever_tree_scale": true,
+    "hatfield_owns_venues": true,
+    "alex_runs_hatfield": false
+  }
+}

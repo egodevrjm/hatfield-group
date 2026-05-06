@@ -1,0 +1,1650 @@
+{
+  "schema_version": "1.0.0",
+  "canon_scope": "Hatfield Group structured canon for object, product, venue, ownership, public-knowledge, and business-renderer use",
+  "story_ceiling_date": "June 2025",
+  "source_files": [
+    "HATFIELD.md",
+    "HATFIELD_GROUP.md",
+    "HATFIELD_PRODUCTS.md",
+    "HATFIELD_DISTILLERY.md",
+    "HATFIELD_LIMESTONE.md",
+    "HATFIELD_BAR_GRILL.md",
+    "HATFIELD_INNS.md",
+    "HATFIELD_STAVE.md",
+    "HATFIELD_STILL_HOUSE.md",
+    "HATFIELD_WINES.md",
+    "HATFIELD_LICENSING.md",
+    "HATFIELD_SCOTLAND.md",
+    "PUBLIC_KNOWLEDGE.md",
+    "WALKER_HOLDINGS.md"
+  ],
+  "global_rules": {
+    "stated_fact_protocol": "When Ryan states a Hatfield object, venue, product, action, or setting, treat it as complete fact. Do not add witnesses, backstory, upgraded business meaning, or emotional interpretation unless Ryan states it.",
+    "photo_identification": "Hatfield products, venues, menus, signs, room-service trays, gift baskets, bar shelves, bottles, labels, and merchandise are canon-recognisable if listed here or in a Hatfield source file.",
+    "public_inference": "If Alex posts, texts, shares, or is photographed with Hatfield products or inside a Hatfield venue, the public/business/media inference is immediately: that is his family's company.",
+    "not_an_endorsement": "Before the Rule expires, a Hatfield product photo is family-business adjacency, not a commercial endorsement, paid campaign, or new brand deal.",
+    "do_not_flatten": "Do not flatten Hatfield objects into generic bourbon, water, wine, restaurant, hotel, or merch props.",
+    "do_not_explain_in_scene": "Hatfield products and venues can simply appear in prose. Characters who know the world do not need brochure copy.",
+    "alex_business_role": "Alex has family familiarity and owner-family access. He has no management role, no operational input, no seat at any Hatfield table, and does not discuss P&L, franchise strategy, distribution, or marketing at depth.",
+    "staff_tone": "Hatfield staff are professional and warm, especially where they know Alex. They are not deferential, fanlike, or obsequious.",
+    "venues_rule": "Hatfield owns venues as well as products. Restaurants, inns, clubs, destination restaurants, distilleries, visitor experiences, wine estate restaurants/tasting rooms, guesthouses, and franchised venues are part of the Hatfield footprint.",
+    "limestone_rule": "Limestone Springs is Fever-Tree-scale: premium mixers, tonics, sodas, sparkling water, still water, airline/hotel/retail/on-trade distribution in 30+ countries. Never reduce it to just bottled water."
+  },
+  "public_knowledge": {
+    "known_to_public": [
+      "Walker Holdings is Rosie Walker's family enterprise.",
+      "Hatfield Group is majority-owned by Walker Holdings.",
+      "Rosie Walker acquired Hatfield Distillery in 1978 after Homer Wilson became attached to the bourbon.",
+      "Hatfield is a real operating business, not a celebrity vanity brand.",
+      "Hatfield operates across bourbon, restaurants, inns, The Stave global private members' club network, fine dining, wines, Limestone Springs beverages, Scotland development, provisions, licensing, merchandise, and franchise operations.",
+      "The public can connect Alex Wilson to Hatfield without a discovery beat."
+    ],
+    "not_public": [
+      "Alex's private relationship to Hatfield staff",
+      "which bottles are in Alex's personal collection",
+      "how often Alex drinks a specific expression at home",
+      "AW Assets registrations",
+      "internal board conversations",
+      "private supply logistics",
+      "the emotional meaning of the birthday barrel beyond public/industry knowledge that it existed"
+    ],
+    "product_photo_rule": {
+      "first_inference": "That is his family's company.",
+      "possible_second_inference": "Soft public signal / family-business adjacency.",
+      "forbidden_inference_before_rule_expiry": "A commercial endorsement or paid campaign."
+    }
+  },
+  "group": {
+    "id": "hatfield_group",
+    "name": "Hatfield Group",
+    "type": "diversified hospitality, spirits, wine, beverage, food, licensing, and merchandise company",
+    "founded": "1978 under Walker ownership; original distillery founded 1952",
+    "hq": "Louisville, Kentucky",
+    "ceo": "David Buckner",
+    "majority_owner": "Walker Holdings LLC",
+    "valuation_usd": "~$2.3-2.8B",
+    "annual_revenue_usd": "~$835M",
+    "employees": "~1,715 company employees plus franchise partner employees",
+    "company_owned_locations": "~40",
+    "franchised_locations": "~33-42 open or in build-out",
+    "projected_revenue_2028_usd": "~$1.3-1.6B",
+    "capital_structure": "Walker Holdings majority owner. No external debt. Expansion funded through retained earnings and Walker Holdings capital allocation.",
+    "board": [
+      "Eleanor Vance",
+      "David Buckner",
+      "independent directors"
+    ],
+    "origin_story": "Homer liked Hatfield whiskey. Rosie bought the distillery in 1978. That is the origin story.",
+    "relationship_to_walker_holdings": {
+      "separate_company": true,
+      "own_ceo": true,
+      "own_board": true,
+      "own_hr_finance_marketing_operations": true,
+      "walker_role": "Majority owner, board oversight, capital allocation, legal/PR escalation when family name is involved.",
+      "not_true": [
+        "Eleanor runs Hatfield day-to-day",
+        "Homer consults on operations",
+        "Rosie visits to oversee the business",
+        "Alex manages Hatfield"
+      ]
+    },
+    "source_conflicts": [
+      {
+        "field": "Hatfield Distillery revenue/employees",
+        "preferred_value": "~$115M, ~80 in current HATFIELD_GROUP division overview",
+        "legacy_value": "~$95M, ~65 in HATFIELD_DISTILLERY and WALKER_HOLDINGS summaries",
+        "resolution": "Use current HATFIELD_GROUP for group rollup; use distillery file for operational detail unless exact financial precision is required."
+      },
+      {
+        "field": "Hatfield Licensing revenue/employees",
+        "preferred_value": "~$115M, ~30 in current HATFIELD_GROUP",
+        "legacy_value": "~$95M, ~25 in HATFIELD_LICENSING and WALKER_HOLDINGS summaries",
+        "resolution": "Use current HATFIELD_GROUP for group rollup; retain licensing file as detail with earlier figures."
+      },
+      {
+        "field": "Hatfield Wines production",
+        "preferred_value": "~38,500 cases in financial overview",
+        "alternate_value": "~35,000 cases in vital statistics",
+        "resolution": "Treat as ramping; use range-like wording when exact cases are unnecessary."
+      }
+    ]
+  },
+  "divisions": [
+    {
+      "id": "hatfield_distillery_spirits",
+      "name": "Hatfield Distillery & Spirits",
+      "category": "spirits",
+      "location": "Bardstown, Kentucky",
+      "leader": "Carolyn Hatfield-Moore, Master Distiller",
+      "reports_to": "David Buckner",
+      "annual_revenue_usd": "~$115M group rollup; older source detail ~$95M",
+      "employees": "~80 group rollup; older source detail ~65",
+      "public_scale": "respected small-to-mid-scale Kentucky bourbon distillery with national and international distribution",
+      "distribution": "All 50 US states plus UK, EU, Japan, Australia, duty-free select airports",
+      "signature_role": "Original Hatfield business and credibility anchor",
+      "alex_relationship": "Grew up visiting; knows Carolyn; drinks Hatfield Single Barrel neat; understands bourbon genuinely; does not manage production."
+    },
+    {
+      "id": "limestone_springs",
+      "name": "Limestone Springs Beverage Co.",
+      "category": "premium non-alcoholic beverages",
+      "location": "Frankfort, Kentucky",
+      "leader": "Managing Director, Limestone Springs",
+      "reports_to": "David Buckner",
+      "annual_revenue_usd": "~$110M",
+      "employees": "~85",
+      "production": "~15M cases/year",
+      "public_scale": "Fever-Tree-scale premium soda, mixer, tonic, sparkling water, still water, and craft-soda company",
+      "distribution": "30+ countries; US national, UK, EU, Japan, Australia, Middle East, Southeast Asia; premium on-trade, retail, airline, hotel, duty-free, e-commerce",
+      "signature_role": "Breakout non-alcoholic beverage division and mandatory mixer/water supplier across Hatfield venues",
+      "alex_relationship": "Knows the water and ginger beer from the compound and Hatfield restaurants; probably does not know full global scale."
+    },
+    {
+      "id": "hatfield_bar_grill",
+      "name": "Hatfield Bar & Grill",
+      "category": "restaurants",
+      "locations": "16 company-owned locations plus franchise programme",
+      "leader": "VP of Hospitality Operations via regional managers",
+      "reports_to": "David Buckner",
+      "annual_revenue_usd": "~$140M company-owned",
+      "employees": "~450+",
+      "public_scale": "national upscale casual bourbon-forward restaurant chain with international expansion",
+      "average_check": "$55-75 per person; London ~£60-80",
+      "signature_role": "Most public-facing Hatfield venue brand and major bourbon trial channel",
+      "alex_relationship": "Lexington flagship is his local. He can reserve rooms by text, orders Hatfield Single Barrel neat, and is known by staff there."
+    },
+    {
+      "id": "hatfield_inns",
+      "name": "Hatfield Inns",
+      "category": "boutique hotels",
+      "locations": "8 company-owned properties plus franchise programme",
+      "leader": "VP of Hospitality Operations via regional managers",
+      "reports_to": "David Buckner",
+      "annual_revenue_usd": "~$95M",
+      "employees": "~220",
+      "rooms": "~480 company-owned rooms",
+      "average_nightly_rate": "$185-350; UK £250-450 depending property",
+      "public_scale": "mid-to-upper boutique hotels with bourbon hospitality identity",
+      "signature_role": "Bourbon-tourism and urban boutique hospitality lodging layer",
+      "alex_relationship": "Alex has homes and usually does not stay at Hatfield Inns; he knows they exist as family business infrastructure."
+    },
+    {
+      "id": "the_stave",
+      "name": "The Stave",
+      "category": "premium global private members' club network",
+      "locations": "8 open clubs: London, New York, Los Angeles, Nashville, Miami, Austin, Paris, Dubai; Chicago 2026, Tokyo 2027, Milan 2027, Toronto 2028 pipeline",
+      "leader": "President, The Stave Network plus club GMs",
+      "reports_to": "VP Hospitality Operations -> David Buckner",
+      "annual_revenue_usd": "~$95M current network",
+      "employees": "~520 across open clubs",
+      "members": "~41,000 total across open clubs",
+      "membership_fee": "Market-dependent: ~$3,500-7,500 / £3,500-6,500 / EUR4,000-7,000 annually",
+      "joining_fee": "Market-dependent: ~$5,000-15,000 equivalent",
+      "waitlist": "3-12 months depending market",
+      "public_scale": "Zero Bond-ish scale and heat with Hatfield-specific whiskey, music, food, events, and strict listening rooms",
+      "signature_role": "Cultural/social members' club network with serious listening rooms as the protected inner sanctum",
+      "alex_relationship": "Family access across the network, especially London; uses it for bourbon, dinner, private rooms, social nights, and listening-room sessions; does not host or manage."
+    },
+    {
+      "id": "still_house",
+      "name": "Still House",
+      "category": "destination restaurants",
+      "locations": "Bardstown, Kentucky and Perthshire, Scotland",
+      "leader": "Marcus Boyle in Bardstown; Catriona Reid in Scotland",
+      "reports_to": "David Buckner via hospitality structure",
+      "annual_revenue_usd": "~$22M combined",
+      "employees": "~75 combined",
+      "public_scale": "serious destination restaurants on distillery grounds; Bardstown is James Beard-recognised",
+      "signature_role": "Prestige food register and distillery hospitality at serious restaurant quality",
+      "alex_relationship": "Occasion restaurant for family dinners and visits, not his regular haunt."
+    },
+    {
+      "id": "hatfield_wines",
+      "name": "Hatfield Wines",
+      "category": "wine estates",
+      "locations": "Napa Valley, California and Chianti Classico, Tuscany",
+      "leader": "Isabelle Durand, winemaker; Marco Ferrini resident winemaker in Tuscany",
+      "reports_to": "Estate Directors -> David Buckner",
+      "annual_revenue_usd": "~$125M",
+      "employees": "~65",
+      "production": "~35,000-38,500 cases/year; Napa ~25,000 and Tuscany ramping",
+      "public_scale": "serious premium wine operation with tasting rooms, restaurants, and private villa guesthouses",
+      "signature_role": "Premium wine/estate hospitality pillar across California and Italy",
+      "alex_relationship": "Drinks wine confidently, knows favorites from both estates, has been to Napa and Tuscany, does not run it."
+    },
+    {
+      "id": "hatfield_licensing_provisions_merchandise",
+      "name": "Hatfield Licensing, Provisions & Merchandise",
+      "category": "brand licensing, franchise operations, retail goods",
+      "location": "Louisville, Kentucky",
+      "leader": "VP of Licensing & Franchise",
+      "reports_to": "David Buckner",
+      "annual_revenue_usd": "~$115M group rollup; older source detail ~$95M",
+      "employees": "~30 group rollup; older source detail ~25",
+      "public_scale": "franchise and brand-extension engine for restaurants, inns, provisions, glassware, barware, apparel, and supply margin",
+      "signature_role": "Turns Hatfield from 30+ company-owned properties into 100+ worldwide brand footprint through franchise and licensing",
+      "alex_relationship": "He likely knows the bourbon and bars, but not the full provisions/franchise/merchandise machinery."
+    },
+    {
+      "id": "hatfield_scotland",
+      "name": "Hatfield Scotland",
+      "category": "Scottish spirits and hospitality",
+      "location": "Perthshire, Scotland near Aberfeldy",
+      "leader": "Fiona MacAllister, Distillery Head; Rory Irvine, Gin Master",
+      "reports_to": "Distillery Director -> David Buckner",
+      "annual_revenue_usd": "~$18M current; ramping",
+      "employees": "~55",
+      "public_scale": "new-build Perthshire distillery producing gin now and aging Scotch single malt for later release",
+      "signature_role": "Second spirits tradition and long-term Scotch prestige play",
+      "alex_relationship": "Has visited once; treated as a knowledgeable visitor, not a manager."
+    },
+    {
+      "id": "corporate_hq",
+      "name": "Hatfield Corporate HQ",
+      "category": "corporate operations",
+      "location": "Louisville, Kentucky",
+      "leader": "David Buckner",
+      "employees": "~25",
+      "functions": [
+        "finance",
+        "HR",
+        "marketing",
+        "operations",
+        "legal",
+        "supply chain",
+        "board reporting"
+      ],
+      "public_scale": "professionally staffed corporate structure, separate from Walker Holdings",
+      "alex_relationship": "Alex has no corporate role and is not in day-to-day communications."
+    }
+  ],
+  "products": [
+    {
+      "id": "hatfield_original",
+      "name": "Hatfield Original",
+      "division_id": "hatfield_distillery_spirits",
+      "category": "bourbon",
+      "type": "Kentucky straight bourbon",
+      "proof": "80",
+      "age": "4-year",
+      "retail_price": "~$28-32",
+      "distribution": "National plus international; common retail/bar presence; all Hatfield Bar & Grill locations",
+      "profile": "Caramel, vanilla, light oak, clean finish",
+      "scene_recognition": "Everyday bottle; volume driver; common retail/bar presence"
+    },
+    {
+      "id": "hatfield_small_batch",
+      "name": "Hatfield Small Batch",
+      "division_id": "hatfield_distillery_spirits",
+      "category": "bourbon",
+      "proof": "90",
+      "age": "6-year",
+      "retail_price": "~$45-55",
+      "distribution": "National plus select international; quality spirits retailers and all Hatfield venues",
+      "profile": "Toasted oak, dark honey, baking spice, dried fruit, medium finish",
+      "scene_recognition": "Better house pour; serious but accessible"
+    },
+    {
+      "id": "hatfield_single_barrel",
+      "name": "Hatfield Single Barrel",
+      "division_id": "hatfield_distillery_spirits",
+      "category": "bourbon",
+      "proof": "94",
+      "age": "8-year",
+      "retail_price": "~$75-90",
+      "distribution": "National plus select international; allocated in some markets; priority to Hatfield venues and The Stave",
+      "profile": "Rich caramel, leather, dark chocolate, toasted pecans, dried cherry, long warm finish",
+      "awards": "Multiple Double Gold at San Francisco World Spirits Competition",
+      "alex_relationship": "Alex's usual Hatfield pour, neat, two fingers, no ice, no water.",
+      "scene_recognition": "Barrel number on label; Alex's pour"
+    },
+    {
+      "id": "hatfield_rye",
+      "name": "Hatfield Rye",
+      "division_id": "hatfield_distillery_spirits",
+      "category": "rye whiskey",
+      "proof": "92",
+      "age": "5-year",
+      "mash_bill": "95% rye, 5% malted barley",
+      "retail_price": "~$38-45",
+      "distribution": "National plus select international",
+      "profile": "Black pepper, cinnamon, mint, dried herbs, clean spice, crisp finish",
+      "scene_recognition": "Whiskey-drinker bottle; spice profile"
+    },
+    {
+      "id": "hatfield_reserve",
+      "name": "Hatfield Reserve",
+      "division_id": "hatfield_distillery_spirits",
+      "category": "bourbon",
+      "proof": "100",
+      "age": "12-year",
+      "retail_price": "~$175-200",
+      "annual_release": "~3,000 bottles/year",
+      "distribution": "Allocated, waitlisted, Hatfield properties and select premium retailers",
+      "profile": "Dark Manuka honey, saddle leather, black walnut, pipe tobacco, dried figs, finish that lingers for minutes",
+      "scene_recognition": "Collector bottle; annual limited release; allocated and expensive"
+    },
+    {
+      "id": "hatfield_cave_select",
+      "name": "Hatfield Cave Select",
+      "division_id": "hatfield_distillery_spirits",
+      "category": "cave-aged bourbon",
+      "proof": "variable proof",
+      "age": "15-21 year",
+      "retail_price": "~$500-800 when available",
+      "distribution": "Hatfield properties only; some bottles through The Stave membership; some lottery allocation",
+      "profile": "Extraordinary depth, no harshness despite age, honey/leather/dried fruit, finishes measured in minutes",
+      "scene_recognition": "Ultra-limited; Hatfield properties / The Stave membership"
+    },
+    {
+      "id": "hatfield_alex_wilson_21_year",
+      "name": "The Hatfield Alex Wilson 21-Year Cave-Aged Bourbon",
+      "division_id": "hatfield_distillery_spirits",
+      "category": "private family heirloom bourbon",
+      "canon_status": "private_not_retail",
+      "proof": "natural 90 proof",
+      "age": "21-year",
+      "barrel_date": "Laid down June 22, 2003; opened June 22, 2024",
+      "bottles": "220 produced; 200 remain; 10 opened at party; 10 gifted to guests",
+      "insured_value": "$100,000 per bottle",
+      "distribution": "AW Assets/private collection only; not for sale",
+      "profile": "Dark Manuka honey, ancient leather, dried Mission figs, toasted pecans, deep dusty cocoa, creamy vanilla, soft pipe tobacco, long finish",
+      "scene_recognition": "Private numbered bottle; do not render as a retail product"
+    },
+    {
+      "id": "hatfield_wheated_bourbon",
+      "name": "Hatfield Wheated Bourbon",
+      "division_id": "hatfield_distillery_spirits",
+      "category": "wheated bourbon",
+      "proof": "90",
+      "age": "7-year",
+      "retail_price": "~$55-65",
+      "distribution": "National; strong in Weller/Maker's drinker markets",
+      "profile": "Soft caramel, vanilla, baked apple, light spice, smooth finish",
+      "scene_recognition": "Softer bourbon expression"
+    },
+    {
+      "id": "hatfield_bottled_in_bond",
+      "name": "Hatfield Bottled in Bond",
+      "division_id": "hatfield_distillery_spirits",
+      "category": "bonded bourbon",
+      "proof": "100",
+      "age": "4-year minimum",
+      "retail_price": "~$42-50",
+      "distribution": "National",
+      "profile": "Bright, precise, corn sweetness, oak structure, rye spice, clean long finish",
+      "scene_recognition": "Whiskey-educated drinker marker"
+    },
+    {
+      "id": "hatfield_kentucky_straight_malt",
+      "name": "Hatfield Kentucky Straight Malt Whiskey",
+      "division_id": "hatfield_distillery_spirits",
+      "category": "American malt whiskey",
+      "proof": "88",
+      "age": "4-year",
+      "retail_price": "~$85-100",
+      "distribution": "Limited national; premium bottle shops, The Stave, Still House",
+      "profile": "Stone fruit, light heather honey, toasted grain, gentle oak",
+      "scene_recognition": "Carolyn's experimental permanent addition"
+    },
+    {
+      "id": "limestone_sparkling_water",
+      "name": "Limestone Springs Sparkling Water",
+      "division_id": "limestone_springs",
+      "category": "sparkling mineral water",
+      "formats": "330ml and 750ml glass on-trade; 500ml and 1L PET retail",
+      "retail_price": "$2.50-4.00 US; £2.00-3.50 UK",
+      "distribution": "All Hatfield properties, premium hospitality, retail, global channels",
+      "scene_recognition": "Table bottle, fridge bottle, room-service bottle"
+    },
+    {
+      "id": "limestone_still_water",
+      "name": "Limestone Springs Still Water",
+      "division_id": "limestone_springs",
+      "category": "still mineral water",
+      "formats": "330ml and 750ml glass on-trade; 500ml and 1L PET retail",
+      "retail_price": "$2.00-3.50 US; £1.80-3.00 UK",
+      "distribution": "All Hatfield properties, premium hospitality, retail, global channels",
+      "scene_recognition": "House water at Hatfield properties"
+    },
+    {
+      "id": "limestone_premium_tonic",
+      "name": "Limestone Springs Premium Tonic",
+      "division_id": "limestone_springs",
+      "category": "premium tonic water",
+      "formats": "200ml glass bottles, 500ml retail bottles, 4-packs",
+      "retail_price": "$6-8 per 4-pack",
+      "competitors": "Fever-Tree, Q Mixers, East Imperial",
+      "profile": "Natural quinine, Kentucky limestone water, subtle citrus, lighter and cleaner than many premium tonics",
+      "scene_recognition": "Fever-Tree competitor; bar-standard 200ml bottle"
+    },
+    {
+      "id": "limestone_light_tonic",
+      "name": "Limestone Springs Light Tonic",
+      "division_id": "limestone_springs",
+      "category": "lower-sugar tonic water",
+      "formats": "same as Premium Tonic",
+      "scene_recognition": "Premium mixer shelf; lower-sugar option"
+    },
+    {
+      "id": "limestone_elderflower_tonic",
+      "name": "Limestone Springs Elderflower Tonic",
+      "division_id": "limestone_springs",
+      "category": "floral tonic water",
+      "formats": "200ml glass bottles",
+      "distribution": "Strong UK/EU familiarity",
+      "scene_recognition": "Floral tonic; European bar shelf"
+    },
+    {
+      "id": "limestone_aromatic_tonic",
+      "name": "Limestone Springs Aromatic Tonic",
+      "division_id": "limestone_springs",
+      "category": "aromatic tonic water",
+      "formats": "200ml glass bottles",
+      "profile": "Pink-tinged, Angostura-style aromatics",
+      "scene_recognition": "G&T / highball mixer"
+    },
+    {
+      "id": "limestone_ginger_beer",
+      "name": "Limestone Springs Ginger Beer",
+      "division_id": "limestone_springs",
+      "category": "ginger beer",
+      "formats": "200ml glass bottles, 330ml cans, 4-packs",
+      "retail_price": "$6-8 per 4-pack",
+      "profile": "Spicy real ginger root, noticeable heat",
+      "scene_recognition": "Bartender favourite; Kentucky Mule default"
+    },
+    {
+      "id": "limestone_ginger_ale",
+      "name": "Limestone Springs Ginger Ale",
+      "division_id": "limestone_springs",
+      "category": "ginger ale",
+      "formats": "330ml cans and 500ml bottles",
+      "profile": "Lighter, sweeter, less spicy than ginger beer",
+      "scene_recognition": "Whiskey highball mixer"
+    },
+    {
+      "id": "limestone_cola",
+      "name": "Limestone Springs Cola",
+      "division_id": "limestone_springs",
+      "category": "craft soda",
+      "formats": "330ml glass bottles and cans",
+      "retail_price": "$2.50-3.50 per bottle",
+      "profile": "Real vanilla, kola nut extract, cinnamon, citrus oils, no high-fructose corn syrup",
+      "scene_recognition": "Bourbon-and-cola / premium soda bottle"
+    },
+    {
+      "id": "limestone_lemon",
+      "name": "Limestone Springs Lemon",
+      "division_id": "limestone_springs",
+      "category": "craft lemon soda",
+      "formats": "330ml glass bottles and cans",
+      "profile": "Real lemon juice, light sweetness, high carbonation",
+      "scene_recognition": "Adult lemon soda; picnic/fridge/restaurant soda"
+    },
+    {
+      "id": "limestone_orange",
+      "name": "Limestone Springs Orange",
+      "division_id": "limestone_springs",
+      "category": "blood orange soda",
+      "formats": "330ml glass bottles and cans",
+      "profile": "Tart, slightly bitter, Sicilian blood orange profile",
+      "scene_recognition": "Premium soda bottle/can"
+    },
+    {
+      "id": "limestone_root_beer",
+      "name": "Limestone Springs Root Beer",
+      "division_id": "limestone_springs",
+      "category": "root beer",
+      "formats": "330ml glass bottles and cans",
+      "profile": "Sassafras, vanilla, wintergreen, Kentucky heritage recipe",
+      "scene_recognition": "Compound barbecue / Americana register"
+    },
+    {
+      "id": "limestone_cream_soda",
+      "name": "Limestone Springs Cream Soda",
+      "division_id": "limestone_springs",
+      "category": "cream soda",
+      "formats": "330ml glass bottles and cans",
+      "profile": "Real vanilla bean, rich and smooth",
+      "scene_recognition": "Casual soda"
+    },
+    {
+      "id": "limestone_bitter_lemon",
+      "name": "Limestone Springs Bitter Lemon",
+      "division_id": "limestone_springs",
+      "category": "bitter lemon mixer",
+      "formats": "200ml glass bottles",
+      "profile": "Quinine plus lemon",
+      "distribution": "Strong in European markets",
+      "scene_recognition": "European bar shelf"
+    },
+    {
+      "id": "limestone_soda_water_club_soda",
+      "name": "Limestone Springs Soda Water / Club Soda",
+      "division_id": "limestone_springs",
+      "category": "club soda",
+      "formats": "200ml glass bottles, 750ml glass bottles",
+      "scene_recognition": "Highballs, spritzes, basic bar service"
+    },
+    {
+      "id": "limestone_tonic_syrup",
+      "name": "Limestone Springs Tonic Syrup",
+      "division_id": "limestone_springs",
+      "category": "concentrated tonic syrup",
+      "formats": "500ml bottles",
+      "retail_price": "$14-18",
+      "scene_recognition": "Home-bar/professional-bar product"
+    },
+    {
+      "id": "hatfield_highland_gin",
+      "name": "Hatfield Highland Gin",
+      "division_id": "hatfield_scotland",
+      "category": "London Dry style gin",
+      "abv": "43.5%",
+      "retail_price": "£38-42 / $48-55",
+      "volume": "~18,000 cases/year scaling up",
+      "distribution": "UK national, US through Hatfield network, EU growing, every Hatfield venue",
+      "botanicals": "Bulgarian juniper, coriander seed, angelica root, fresh lemon and orange peel from Tuscany estate, heather flower, thistle, orris root",
+      "profile": "Floral, citrus-forward, heather in background, clean juniper finish",
+      "scene_recognition": "Current Scotland product; pairs with Limestone Springs Premium Tonic"
+    },
+    {
+      "id": "hatfield_highland_gin_cask_rested",
+      "name": "Hatfield Highland Gin - Cask Rested",
+      "division_id": "hatfield_scotland",
+      "category": "cask-rested gin",
+      "abv": "46%",
+      "retail_price": "£48-55 / $60-70",
+      "volume": "~4,000 cases/year",
+      "distribution": "The Stave, specialty retailers, direct",
+      "profile": "Same gin rested 3 months in ex-Hatfield bourbon casks; warmth, vanilla, light amber colour",
+      "scene_recognition": "More limited Scotland gin; food-friendly and complex"
+    },
+    {
+      "id": "hatfield_perthshire_single_malt",
+      "name": "Hatfield Perthshire Single Malt",
+      "division_id": "hatfield_scotland",
+      "category": "Scotch single malt",
+      "canon_status": "future_product_not_yet_available",
+      "production_status": "Barrels filling since 2025",
+      "earliest_legal_release": "2028",
+      "target_release_window": "2030 for a 5-year expression; 2035 for first serious 10-year",
+      "profile_anticipated": "Floral, green apple, light honey, gentle vanilla from ex-bourbon casks, heather in background",
+      "scene_rule": "Do not write scenes where Alex or anyone drinks Hatfield Scotch whisky before 2030 at the earliest."
+    },
+    {
+      "id": "the_hollow_cabernet",
+      "name": "The Hollow Cabernet Sauvignon",
+      "division_id": "hatfield_wines",
+      "category": "Napa Cabernet Sauvignon",
+      "grape": "100% Cabernet Sauvignon, estate fruit, oldest vines planted 1985",
+      "production": "~3,000 cases",
+      "retail_price": "$175-200",
+      "aging": "22 months French oak, 40% new",
+      "profile": "Blackcurrant, graphite, dried herbs, cedar, violet, integrated tannins, iron minerality",
+      "critical_reception": "Wine Advocate 96 for 2021; Wine Spectator 94 for 2022",
+      "distribution": "Mailing list, DTC, The Stave, Still House, select Hatfield properties, premium restaurants",
+      "scene_recognition": "Main red; serious dinner table bottle"
+    },
+    {
+      "id": "radio_silence_red_blend",
+      "name": "Radio Silence Red Blend",
+      "division_id": "hatfield_wines",
+      "category": "Napa red blend",
+      "grape": "Cabernet Sauvignon, Merlot, Cabernet Franc, Petit Verdot; vintage percentages vary",
+      "production": "~5,000 cases",
+      "retail_price": "$85-110",
+      "aging": "18 months French oak, 30% new",
+      "profile": "Plum, black cherry, dark chocolate, Mediterranean herbs, silky tannins",
+      "critical_reception": "Wine Advocate 93 for 2021; consistent 90-94 range",
+      "distribution": "Wider than The Hollow; quality wine shops, restaurant lists, Hatfield Bar & Grill by-the-glass",
+      "scene_recognition": "Rosie/Homer-adjacent name; still a real wine product"
+    },
+    {
+      "id": "a_still_small_voice_white",
+      "name": "A Still Small Voice White",
+      "division_id": "hatfield_wines",
+      "category": "Napa Chardonnay",
+      "grape": "100% Chardonnay, estate fruit, cooler microclimate block",
+      "production": "~4,000 cases",
+      "retail_price": "$55-70",
+      "aging": "12 months French oak, 20% new, plus 4 months stainless steel",
+      "profile": "Lemon curd, white peach, flint, wet stone, saline; restrained, not buttery",
+      "critical_reception": "Wine Advocate 92 for 2022",
+      "distribution": "National plus growing international; strong restaurant placement",
+      "scene_recognition": "Dinner / terrace / warm-weather bottle"
+    },
+    {
+      "id": "starlight_and_steel_sparkling",
+      "name": "Starlight & Steel Sparkling",
+      "division_id": "hatfield_wines",
+      "category": "Napa sparkling wine",
+      "grape": "Chardonnay ~60%, Pinot Noir ~40%, traditional method",
+      "production": "~2,500 cases",
+      "retail_price": "$75-95",
+      "aging": "24 months on lees",
+      "profile": "Fine mousse, green apple, brioche, toasted almond, citrus zest, bone dry",
+      "critical_reception": "Wine Spectator 91 NV",
+      "distribution": "National, all Hatfield properties, event and celebration market",
+      "scene_recognition": "Party, reception, brunch, celebration"
+    },
+    {
+      "id": "estate_rose",
+      "name": "Estate Rose",
+      "division_id": "hatfield_wines",
+      "category": "seasonal rose",
+      "grape": "Grenache and Mourvedre from partner vineyard in Paso Robles",
+      "production": "~3,000 cases",
+      "retail_price": "$32-38",
+      "aging": "Stainless steel only",
+      "profile": "Pale salmon, strawberry, white flowers, melon, hint of garrigue, dry and crisp",
+      "distribution": "Seasonal spring release, widely available, Hatfield Bar & Grill by-the-glass in warm months",
+      "scene_recognition": "Summer / terrace / Sardinia-compatible bottle"
+    },
+    {
+      "id": "hatfield_chianti_classico",
+      "name": "Hatfield Chianti Classico",
+      "division_id": "hatfield_wines",
+      "category": "Chianti Classico DOCG",
+      "grape": "Sangiovese-dominant",
+      "production": "~8,000 cases",
+      "aging": "12-14 months in large Slavonian oak",
+      "profile": "Accessible, elegant, genuine Tuscan table wine",
+      "scene_recognition": "Italian table bottle"
+    },
+    {
+      "id": "hatfield_chianti_gran_selezione",
+      "name": "Hatfield Chianti Classico Gran Selezione",
+      "division_id": "hatfield_wines",
+      "category": "premium Chianti Classico",
+      "grape": "Single-vineyard old-vine Sangiovese",
+      "production": "~2,500 cases",
+      "aging": "24+ months in large oak and older French barrique",
+      "profile": "Flagship Tuscan wine; critical attention building",
+      "scene_recognition": "More serious Tuscan bottle"
+    },
+    {
+      "id": "hatfield_toscana_igt",
+      "name": "Hatfield Toscana IGT",
+      "division_id": "hatfield_wines",
+      "category": "Super Tuscan-style estate wine",
+      "grape": "Sangiovese-forward blend with Colorino and Merlot",
+      "production": "~3,000 cases",
+      "profile": "International-palate premium Italian red",
+      "scene_recognition": "Premium Italian red"
+    },
+    {
+      "id": "hatfield_original_hot_sauce",
+      "name": "Hatfield Original Hot Sauce",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "provisions",
+      "function": "anchor SKU",
+      "formats": "5oz and 10oz",
+      "retail_price": "$7-9",
+      "distribution": "National availability including Whole Foods",
+      "profile": "Cayenne/vinegar medium heat",
+      "scene_recognition": "Restaurant table / gift basket"
+    },
+    {
+      "id": "hatfield_reserve_hot_sauce",
+      "name": "Hatfield Reserve Hot Sauce",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "provisions",
+      "function": "premium line extension",
+      "formats": "5oz",
+      "retail_price": "$12-15",
+      "distribution": "Limited distribution",
+      "profile": "Apple-cider base, aged mash, Small Batch reduction",
+      "scene_recognition": "Gift set / table condiment"
+    },
+    {
+      "id": "hatfield_bourbon_bbq_sauce",
+      "name": "Hatfield Bourbon BBQ Sauce",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "provisions",
+      "function": "seasonal volume driver",
+      "formats": "16oz",
+      "retail_price": "$9-12",
+      "profile": "Bourbon-reduced with no final alcohol",
+      "scene_recognition": "Cookout / kitchen / pantry"
+    },
+    {
+      "id": "hatfield_smoky_dry_rub",
+      "name": "Hatfield Smoky Dry Rub",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "provisions",
+      "formats": "6oz",
+      "retail_price": "$8-10",
+      "profile": "Smoked paprika and brown sugar blend",
+      "scene_recognition": "Grill/cookout context"
+    },
+    {
+      "id": "hatfield_steak_sauce",
+      "name": "Hatfield Steak Sauce",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "provisions",
+      "formats": "8oz",
+      "retail_price": "$8-10",
+      "launch_year": "2023",
+      "profile": "Fruit/malt-vinegar profile",
+      "scene_recognition": "Bar & Grill / home pantry"
+    },
+    {
+      "id": "hatfield_bourbon_mustard",
+      "name": "Hatfield Bourbon Mustard",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "provisions",
+      "formats": "8oz",
+      "retail_price": "$7-9",
+      "profile": "Whole-grain bourbon-infused",
+      "scene_recognition": "Sandwich/charcuterie/gift basket"
+    },
+    {
+      "id": "hatfield_cocktail_cherries",
+      "name": "Hatfield Cocktail Cherries",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "bar product",
+      "formats": "10oz",
+      "retail_price": "$14-16",
+      "profile": "Bourbon-soaked cherries",
+      "scene_recognition": "Home bar / cocktail kit"
+    },
+    {
+      "id": "hatfield_cocktail_bitters",
+      "name": "Hatfield Cocktail Bitters",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "bar product",
+      "formats": "2oz",
+      "retail_price": "$12-14",
+      "variants": "aromatic and orange",
+      "scene_recognition": "Cocktail kit / bar rail"
+    },
+    {
+      "id": "hatfield_barrel_aged_honey",
+      "name": "Hatfield Barrel-Aged Honey",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "provisions",
+      "formats": "8oz",
+      "retail_price": "$12-15",
+      "profile": "Kentucky wildflower honey aged in spent barrels; used at Bar & Grill",
+      "scene_recognition": "Gift basket / breakfast / cheese board"
+    },
+    {
+      "id": "hatfield_smoked_salt",
+      "name": "Hatfield Smoked Salt",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "provisions",
+      "formats": "4oz",
+      "retail_price": "$9-11",
+      "scene_recognition": "Kitchen/gift product"
+    },
+    {
+      "id": "hatfield_heavy_bottom_rocks_glass",
+      "name": "Hatfield Heavy-Bottom Rocks Glass",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "barware",
+      "retail_price": "$28 individual; $95 set of 4",
+      "usage": "Used at all Hatfield Bar & Grill locations and The Stave",
+      "scene_recognition": "Signature lowball glass; heavy base"
+    },
+    {
+      "id": "hatfield_highball_glass",
+      "name": "Hatfield Highball Glass",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "barware",
+      "retail_price": "$75 set of 4",
+      "scene_recognition": "Highballs / Limestone Springs pairings"
+    },
+    {
+      "id": "hatfield_tasting_glass",
+      "name": "Hatfield Tasting Glass",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "barware",
+      "retail_price": "$22 individual; $75 set of 4",
+      "usage": "Distillery tours and Stave tasting events",
+      "scene_recognition": "Bourbon tasting glass"
+    },
+    {
+      "id": "hatfield_decanter",
+      "name": "Hatfield Decanter",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "barware",
+      "retail_price": "$125",
+      "profile": "Lead-free crystal, clean lines, stoppered",
+      "scene_recognition": "Home bar / gift"
+    },
+    {
+      "id": "hatfield_bar_spoon",
+      "name": "Hatfield Bar Spoon",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "bar tool",
+      "retail_price": "$18",
+      "scene_recognition": "Cocktail kit"
+    },
+    {
+      "id": "hatfield_jigger",
+      "name": "Hatfield Jigger",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "bar tool",
+      "retail_price": "$22",
+      "scene_recognition": "Cocktail kit"
+    },
+    {
+      "id": "hatfield_ice_pick",
+      "name": "Hatfield Ice Pick",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "bar tool",
+      "retail_price": "$35",
+      "usage": "Tool at the Still House bar",
+      "scene_recognition": "Cocktail kit / hand-chipped ice"
+    },
+    {
+      "id": "hatfield_cocktail_kit",
+      "name": "Hatfield Cocktail Kit",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "barware bundle",
+      "retail_price": "$120",
+      "contents": "Spoon, jigger, strainer, muddler, ice pick in leather roll",
+      "scene_recognition": "Holiday best-seller / gift set"
+    },
+    {
+      "id": "hatfield_apparel",
+      "name": "Hatfield Apparel",
+      "division_id": "hatfield_licensing_provisions_merchandise",
+      "category": "apparel merchandise",
+      "items": [
+        "Hatfield logo tee, heavyweight cotton, minimal branding, $35",
+        "Hatfield work shirt, chambray, embroidered chest logo, $75",
+        "Hatfield apron, waxed canvas, $65",
+        "hats/caps, $30-45"
+      ],
+      "scene_rule": "Do not overuse on Alex unless Ryan states it.",
+      "scene_recognition": "Hatfield locations merchandise"
+    }
+  ],
+  "venues": [
+    {
+      "id": "hatfield_distillery_bardstown",
+      "name": "Hatfield Distillery",
+      "division_id": "hatfield_distillery_spirits",
+      "type": "working bourbon distillery and visitor experience",
+      "location": "Bardstown, Kentucky",
+      "status": "operational",
+      "features": [
+        "85-acre property",
+        "production floor",
+        "bottling hall",
+        "14 rickhouses",
+        "limestone cave aging program",
+        "visitor centre and gift shop"
+      ],
+      "tours": [
+        {
+          "name": "Standard distillery tour",
+          "duration": "75 minutes",
+          "price": "$25",
+          "cap": "20 visitors",
+          "includes": "production walkthrough, rickhouse visit, 3-4 expression tasting, gift shop"
+        },
+        {
+          "name": "Reserve experience",
+          "duration": "2 hours",
+          "price": "$85",
+          "cap": "8-10 guests",
+          "includes": "extended production detail, full-range tasting including Reserve"
+        },
+        {
+          "name": "Cave experience",
+          "duration": "3 hours",
+          "price": "$250",
+          "cap": "4-6 guests",
+          "includes": "cave access, aging science, barrel inspection, direct cave-barrel tasting"
+        }
+      ],
+      "scene_rule": "No Alex Wilson tour. Staff confirm birthday barrel if asked directly and redirect to Cave Select."
+    },
+    {
+      "id": "bar_grill_lexington",
+      "name": "Hatfield Bar & Grill Lexington",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant flagship",
+      "location": "Vine Street, downtown Lexington, Kentucky",
+      "opened": "early 1980s",
+      "features": [
+        "corner standalone brick building",
+        "main bar 16 seats",
+        "dining room 65 seats",
+        "private dining room 24 seats",
+        "bourbon tasting room 8 seats"
+      ],
+      "guest_profile": "racing people, horse country families, business lunches, UK students, bourbon tourists, longtime locals",
+      "alex_relationship": "His local; staff know him; preferred corner bar seat near window; Hatfield Single Barrel neat, two fingers; can reserve tasting room/private dining by text."
+    },
+    {
+      "id": "bar_grill_louisville",
+      "name": "Hatfield Bar & Grill Louisville",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "East Market District / NuLu, Louisville, Kentucky",
+      "opened": "late 1980s",
+      "guest_profile": "bourbon industry people, distillery tourists, Louisville business community"
+    },
+    {
+      "id": "bar_grill_nashville",
+      "name": "Hatfield Bar & Grill Nashville",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "The Gulch, Nashville, Tennessee",
+      "opened": "early 1990s",
+      "guest_profile": "music industry, racing people, Nashville food scene regulars, tourists beyond Broadway",
+      "notes": "One of highest-revenue locations"
+    },
+    {
+      "id": "bar_grill_atlanta",
+      "name": "Hatfield Bar & Grill Atlanta",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "Buckhead, Atlanta, Georgia",
+      "opened": "early 2000s"
+    },
+    {
+      "id": "bar_grill_new_orleans",
+      "name": "Hatfield Bar & Grill New Orleans",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "Warehouse District, New Orleans, Louisiana",
+      "opened": "early 2000s",
+      "notes": "Menu adapts with New Orleans culinary tradition"
+    },
+    {
+      "id": "bar_grill_memphis",
+      "name": "Hatfield Bar & Grill Memphis",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "South Main Arts District, Memphis, Tennessee",
+      "opened": "mid-2000s",
+      "notes": "Low-key acoustic live music on weekends"
+    },
+    {
+      "id": "bar_grill_cincinnati",
+      "name": "Hatfield Bar & Grill Cincinnati",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "Over-the-Rhine, Cincinnati, Ohio",
+      "opened": "mid-2000s"
+    },
+    {
+      "id": "bar_grill_indianapolis",
+      "name": "Hatfield Bar & Grill Indianapolis",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "Mass Ave, Indianapolis, Indiana",
+      "opened": "mid-2000s"
+    },
+    {
+      "id": "bar_grill_columbus",
+      "name": "Hatfield Bar & Grill Columbus",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "Short North Arts District, Columbus, Ohio",
+      "opened": "late 2000s"
+    },
+    {
+      "id": "bar_grill_chicago",
+      "name": "Hatfield Bar & Grill Chicago",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "River North, Chicago, Illinois",
+      "opened": "early 2010s",
+      "alex_relationship": "Uses when in Chicago; fewer people know him as family, more recognise him as Alex Wilson; Kevin manages entry."
+    },
+    {
+      "id": "bar_grill_los_angeles",
+      "name": "Hatfield Bar & Grill Los Angeles",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "West Hollywood / Melrose, Los Angeles, California",
+      "opened": "mid-2010s",
+      "guest_profile": "entertainment, music, management, brunch crowd"
+    },
+    {
+      "id": "bar_grill_miami",
+      "name": "Hatfield Bar & Grill Miami",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "Wynwood, Miami, Florida",
+      "opened": "mid-2010s"
+    },
+    {
+      "id": "bar_grill_austin",
+      "name": "Hatfield Bar & Grill Austin",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "East Austin / East 6th Street corridor, Austin, Texas",
+      "opened": "mid-2010s",
+      "notes": "Acoustic sets Thursday-Saturday; SXSW week significant revenue event"
+    },
+    {
+      "id": "bar_grill_san_francisco",
+      "name": "Hatfield Bar & Grill San Francisco",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "Jackson Square / Financial District edge, San Francisco, California",
+      "opened": "late 2010s"
+    },
+    {
+      "id": "bar_grill_london",
+      "name": "Hatfield Bar & Grill London",
+      "division_id": "hatfield_bar_grill",
+      "type": "company-owned restaurant",
+      "location": "Shepherd Market area, Mayfair, London",
+      "opened": "2023",
+      "guest_profile": "American expats, British bourbon enthusiasts, Mayfair regulars, finance crowd, Stave members",
+      "notes": "First international location; exceeding projections; Friday/Saturday waitlist within first six months"
+    },
+    {
+      "id": "hatfield_inn_bardstown_distillery",
+      "name": "Hatfield Inn Bardstown - The Distillery Inn",
+      "division_id": "hatfield_inns",
+      "type": "company-owned boutique hotel",
+      "location": "Adjacent to Hatfield Distillery, Bardstown, Kentucky",
+      "opened": "late 1990s",
+      "rooms": 45,
+      "rate": "$185-250/night",
+      "guest_profile": "bourbon tourists, distillery tour guests, bourbon trail travelers, industry visitors"
+    },
+    {
+      "id": "hatfield_inn_bardstown_stillwater",
+      "name": "Hatfield Inn Bardstown - The Stillwater Inn",
+      "division_id": "hatfield_inns",
+      "type": "company-owned boutique hotel",
+      "location": "Downtown Bardstown historic district",
+      "opened": "mid-2000s",
+      "rooms": 32,
+      "rate": "$220-300/night"
+    },
+    {
+      "id": "hatfield_inn_louisville",
+      "name": "Hatfield Inn Louisville",
+      "division_id": "hatfield_inns",
+      "type": "company-owned boutique hotel",
+      "location": "East Market District / NuLu, Louisville, Kentucky",
+      "opened": "mid-2000s",
+      "rooms": 85,
+      "rate": "$220-350/night",
+      "notes": "Largest Hatfield Inn; adjacent to Louisville Bar & Grill; Derby week booked a year ahead"
+    },
+    {
+      "id": "hatfield_inn_lexington_vine_street",
+      "name": "Hatfield Inn Lexington - Vine Street",
+      "division_id": "hatfield_inns",
+      "type": "company-owned boutique hotel",
+      "location": "Downtown Lexington, Kentucky",
+      "opened": "late 2000s",
+      "rooms": 55,
+      "rate": "$195-280/night",
+      "notes": "Two blocks from Bar & Grill flagship"
+    },
+    {
+      "id": "hatfield_inn_keeneland_lodge",
+      "name": "Hatfield Inn Lexington - Keeneland Lodge",
+      "division_id": "hatfield_inns",
+      "type": "company-owned boutique hotel",
+      "location": "Keeneland area, rural edge of Lexington",
+      "opened": "early 2010s",
+      "rooms": 40,
+      "rate": "$250-400/night",
+      "guest_profile": "serious racing people, breeders, trainers, owners"
+    },
+    {
+      "id": "hatfield_inn_nashville",
+      "name": "Hatfield Inn Nashville",
+      "division_id": "hatfield_inns",
+      "type": "company-owned boutique hotel",
+      "location": "The Gulch, Nashville, Tennessee",
+      "opened": "early 2010s",
+      "rooms": 70,
+      "rate": "$230-320/night"
+    },
+    {
+      "id": "hatfield_inn_london",
+      "name": "Hatfield Inn London",
+      "division_id": "hatfield_inns",
+      "type": "company-owned boutique hotel",
+      "location": "Marylebone, London",
+      "opened": "2024",
+      "rooms": 55,
+      "rate": "£280-450/night",
+      "notes": "First international Hatfield Inn; member-rate partnership with The Stave"
+    },
+    {
+      "id": "hatfield_inn_edinburgh",
+      "name": "Hatfield Inn Edinburgh",
+      "division_id": "hatfield_inns",
+      "type": "company-owned boutique hotel",
+      "location": "New Town, Edinburgh",
+      "opened": "2025",
+      "rooms": 42,
+      "rate": "£250-380/night",
+      "notes": "Second international Inn; Georgian townhouse conversion; Festival season major revenue event"
+    },
+    {
+      "id": "the_stave_london",
+      "name": "The Stave London",
+      "division_id": "the_stave",
+      "type": "private members' club",
+      "location": "Soho, London",
+      "opened": "2015",
+      "members": "~5,800",
+      "features": [
+        "multiple bars",
+        "larger dining rooms",
+        "members' floors",
+        "private rooms",
+        "events floor",
+        "32-seat original listening room"
+      ],
+      "membership": {
+        "annual_fee": "£3,500-6,500",
+        "joining_fee": "market-dependent",
+        "waitlist": "6-12 months",
+        "selection": "cultural/social usefulness, music/film/fashion/art/media/business/spirits connection, staff reputation, sponsorship or credible institutional route"
+      },
+      "alex_relationship": "Family access; bar team knows his Hatfield Single Barrel neat; Listening Director knows his taste."
+    },
+    {
+      "id": "the_stave_new_york",
+      "name": "The Stave New York",
+      "division_id": "the_stave",
+      "type": "private members' club",
+      "location": "NoHo, New York",
+      "opened": "2019",
+      "members": "~7,200",
+      "register": "Zero Bond-adjacent heat: music, fashion, film, tech, art, political-family kids",
+      "listening_room_capacity": "45-60",
+      "alex_relationship": "Private room, late drinks, occasional dinner, listening-room sessions when someone trusted is programming."
+    },
+    {
+      "id": "the_stave_los_angeles",
+      "name": "The Stave Los Angeles",
+      "division_id": "the_stave",
+      "type": "private members' club",
+      "location": "West Hollywood, Los Angeles",
+      "opened": "2021",
+      "members": "~6,400",
+      "register": "film, music, management, fashion, producers, agents, celebrity-adjacent culture",
+      "listening_room_capacity": "45-60"
+    },
+    {
+      "id": "the_stave_nashville",
+      "name": "The Stave Nashville",
+      "division_id": "the_stave",
+      "type": "private members' club",
+      "location": "Wedgewood-Houston, Nashville",
+      "opened": "2022",
+      "members": "~4,200",
+      "register": "songwriters, producers, publishers, touring musicians, country/indie crossover",
+      "listening_room_capacity": "36-50"
+    },
+    {
+      "id": "the_stave_miami",
+      "name": "The Stave Miami",
+      "division_id": "the_stave",
+      "type": "private members' club",
+      "location": "Design District, Miami",
+      "opened": "2023",
+      "members": "~5,000",
+      "register": "Art Basel, Latin American money, fashion, hospitality, nightlife without nightclub chaos",
+      "listening_room_capacity": "45-60"
+    },
+    {
+      "id": "the_stave_austin",
+      "name": "The Stave Austin",
+      "division_id": "the_stave",
+      "type": "private members' club",
+      "location": "East Austin, Austin",
+      "opened": "2024",
+      "members": "~3,800",
+      "register": "SXSW, founders, music, food scene, touring artists, tech/art overlap",
+      "listening_room_capacity": "36-50"
+    },
+    {
+      "id": "the_stave_paris",
+      "name": "The Stave Paris",
+      "division_id": "the_stave",
+      "type": "private members' club",
+      "location": "Le Marais edge, Paris",
+      "opened": "2024",
+      "members": "~4,600",
+      "register": "fashion, art, film, music, old families with young cultural heirs",
+      "listening_room_capacity": "36-50"
+    },
+    {
+      "id": "the_stave_dubai",
+      "name": "The Stave Dubai",
+      "division_id": "the_stave",
+      "type": "private members' club",
+      "location": "DIFC, Dubai",
+      "opened": "2025",
+      "members": "~4,200",
+      "register": "business, luxury hospitality, global members, private events, careful alcohol/licensing operation",
+      "listening_room_capacity": "45-60"
+    },
+    {
+      "id": "the_stave_chicago",
+      "name": "The Stave Chicago",
+      "division_id": "the_stave",
+      "type": "planned private members' club",
+      "location": "Chicago, River North / West Loop under evaluation",
+      "target_opening": "2026",
+      "status": "planned"
+    },
+    {
+      "id": "the_stave_tokyo",
+      "name": "The Stave Tokyo",
+      "division_id": "the_stave",
+      "type": "planned private members' club",
+      "location": "Tokyo, likely Roppongi or Azabu-Juban",
+      "target_opening": "2027",
+      "status": "planned"
+    },
+    {
+      "id": "the_stave_milan",
+      "name": "The Stave Milan",
+      "division_id": "the_stave",
+      "type": "planned private members' club",
+      "location": "Milan",
+      "target_opening": "2027",
+      "status": "planned"
+    },
+    {
+      "id": "the_stave_toronto",
+      "name": "The Stave Toronto",
+      "division_id": "the_stave",
+      "type": "planned private members' club",
+      "location": "Toronto",
+      "target_opening": "2028",
+      "status": "planned"
+    },
+    {
+      "id": "still_house_bardstown",
+      "name": "Still House Bardstown",
+      "division_id": "still_house",
+      "type": "destination restaurant",
+      "location": "Adjacent to Hatfield Distillery, Bardstown, Kentucky",
+      "chef": "Marcus Boyle",
+      "seats": 65,
+      "annual_revenue_usd": "~$12M",
+      "average_dinner": "$95-140 before drinks",
+      "tasting_menu": "$165, optional bourbon pairing +$85",
+      "awards": "James Beard Award - Best Chef: Southeast, Marcus Boyle, 2023; semifinalist 2019, 2020, 2022",
+      "signature_dishes": [
+        "Bourbon Barrel-Aged Beef",
+        "Smoked Lamb Shoulder",
+        "Country Ham & Fig",
+        "The Bourbon Flight Course",
+        "Pawpaw Dessert"
+      ],
+      "alex_relationship": "Occasion restaurant; Homer's 80th birthday dinner was here; Alex knows Marcus; orders bourbon barrel-aged beef often."
+    },
+    {
+      "id": "still_house_scotland",
+      "name": "Still House Scotland",
+      "division_id": "still_house",
+      "type": "destination restaurant",
+      "location": "Hatfield Scotland distillery grounds, Perthshire",
+      "chef": "Catriona Reid",
+      "seats": "45 inside, 20 covered terrace",
+      "status": "operational",
+      "menu_register": "Scottish larder, French technique, Nordic restraint; no tourist cliches",
+      "recognition_goal": "Michelin medium-term ambition",
+      "scene_rule": "Do not conflate with Bardstown; different chef, menu, landscape, same philosophy."
+    },
+    {
+      "id": "hatfield_wines_napa_estate",
+      "name": "Hatfield Wines Napa Estate",
+      "division_id": "hatfield_wines",
+      "type": "wine estate with tasting room, restaurant, and villa guesthouse",
+      "location": "Napa Valley east of St. Helena, California",
+      "acreage": "~120 acres total, ~80 acres under vine",
+      "production": "~25,000 cases/year",
+      "features": [
+        "gravity-flow winery",
+        "barrel room",
+        "in-house bottling line",
+        "appointment-only tasting room max 12 guests",
+        "estate restaurant seats 40 inside and 30 terrace",
+        "six-bedroom villa guesthouse with pool"
+      ],
+      "rates_tasting": "$75-150 per tasting",
+      "notes": "Formerly Walker Wines; rebranded Hatfield Wines in 2024."
+    },
+    {
+      "id": "hatfield_wines_tuscany_estate",
+      "name": "Hatfield Wines Tuscany Estate",
+      "division_id": "hatfield_wines",
+      "type": "Chianti Classico estate with tasting room, restaurant, and villa guesthouse",
+      "location": "Between Radda in Chianti and Gaiole in Chianti, Tuscany",
+      "acreage": "~80 acres total, ~55 acres under vine",
+      "production": "~13,500 cases/year ramping",
+      "features": [
+        "restored farmhouse winery",
+        "hillside barrel room",
+        "appointment-only tasting room max 10 guests",
+        "estate restaurant seats 30 inside and 20 terrace",
+        "eight-bedroom villa guesthouse across two connected buildings"
+      ],
+      "rates_tasting": "€80-180 per tasting",
+      "notes": "Acquired 2023; opened under Hatfield Wines in 2024."
+    },
+    {
+      "id": "limestone_springs_frankfort_facility",
+      "name": "Limestone Springs Frankfort Facility",
+      "division_id": "limestone_springs",
+      "type": "beverage production facility and HQ",
+      "location": "Frankfort, Kentucky",
+      "features": [
+        "glass bottle line",
+        "PET line",
+        "canning line",
+        "blending and flavouring room",
+        "QC laboratory",
+        "cold storage and warehouse",
+        "shipping/logistics"
+      ],
+      "source": "natural limestone spring on company-owned land",
+      "capacity_note": "spring can support 3-4x current production volume without stress"
+    },
+    {
+      "id": "hatfield_scotland_distillery",
+      "name": "Hatfield Scotland Distillery",
+      "division_id": "hatfield_scotland",
+      "type": "new-build Scottish distillery and visitor experience",
+      "location": "Perthshire near Aberfeldy, Scotland",
+      "status": "operational since 2025",
+      "features": [
+        "on-site granite spring",
+        "two copper pot stills",
+        "six Douglas fir washbacks",
+        "two traditional dunnage warehouses",
+        "dedicated gin still",
+        "visitor experience",
+        "event space capacity 60"
+      ],
+      "tours": [
+        {
+          "name": "Distillery Tour",
+          "duration": "90 minutes",
+          "price": "£25",
+          "includes": "production walkthrough and three-dram tasting: gin, cask-rested gin, new-make spirit"
+        },
+        {
+          "name": "Premium Tasting",
+          "duration": "2.5 hours",
+          "price": "£120",
+          "cap": "8",
+          "includes": "deeper process, more drams, barrel tasting, lunch at Still House Scotland"
+        }
+      ]
+    }
+  ],
+  "franchise_operations": {
+    "division_id": "hatfield_licensing_provisions_merchandise",
+    "status": "active early growth",
+    "total_franchised_locations": "~33-42 open or in build-out",
+    "growth_rate": "adding 15-20 locations/year",
+    "rule": "A franchised Hatfield location is still just Hatfield in scene. Do not flag ownership structure unless it matters.",
+    "bar_grill_franchise_terms": {
+      "franchise_fee": "$175,000",
+      "royalty": "5.5% gross revenue",
+      "marketing_fund": "2% gross revenue",
+      "mandatory_supply": "full Hatfield bourbon and Limestone Springs mixers/water",
+      "training": "8 weeks, 4 HQ plus 4 Lexington flagship",
+      "territory": "metro exclusivity with protected radius",
+      "term": "10 years with renewal option",
+      "estimated_investment": "$1.5-3.5M",
+      "allowed_variation": "~40% regional menu adaptation within approved framework"
+    },
+    "inn_franchise_terms": {
+      "franchise_fee": "$250,000",
+      "royalty": "6% gross revenue",
+      "marketing_fund": "2% gross revenue",
+      "mandatory_supply": "Hatfield bourbon, Limestone Springs water, Provisions amenities",
+      "training": "6 weeks HQ plus immersion at Louisville/Nashville company-owned Inn",
+      "required_bourbon_integration": "lobby bourbon bar, in-room tasting card, education evenings",
+      "term": "15 years",
+      "estimated_investment": "$8-20M"
+    },
+    "franchised_bar_grill_locations_open": [
+      "Dallas Uptown / Knox-Henderson, 2024",
+      "Houston Montrose, 2024",
+      "Denver RiNo, 2024",
+      "Washington DC Georgetown, 2024",
+      "Boston Back Bay, 2024",
+      "Charlotte South End, 2024",
+      "Savannah Historic District, 2025",
+      "Seattle Capitol Hill, 2025",
+      "Portland Pearl District, 2025",
+      "Minneapolis North Loop, 2025",
+      "Tampa Hyde Park, 2025",
+      "Pittsburgh Lawrenceville, 2025",
+      "San Diego Little Italy, 2025",
+      "Scottsdale Old Town, 2025",
+      "Dublin Temple Bar area, 2025",
+      "Toronto King West, 2025",
+      "Sydney Surry Hills, 2025"
+    ],
+    "franchised_bar_grill_locations_buildout_signed": [
+      "Nashville second location",
+      "Philadelphia",
+      "Detroit",
+      "Kansas City",
+      "St. Louis",
+      "Melbourne",
+      "Edinburgh",
+      "Amsterdam",
+      "Munich"
+    ],
+    "franchised_inns_open": [
+      "Savannah, 38 rooms, 2024",
+      "Charleston, 42 rooms, 2024",
+      "Dallas, 55 rooms, 2025",
+      "Dublin, 35 rooms, 2025",
+      "Napa Valley, 28 rooms, 2025"
+    ],
+    "franchised_inns_buildout_signed": [
+      "Toronto",
+      "Sydney",
+      "Washington DC",
+      "Asheville",
+      "Fredericksburg TX",
+      "Bath UK",
+      "Bruges"
+    ],
+    "support_operations": [
+      "site selection",
+      "design review",
+      "training",
+      "supply chain setup",
+      "opening support",
+      "quarterly unannounced quality audits",
+      "annual bourbon education refreshers",
+      "marketing templates and campaigns",
+      "performance benchmarking"
+    ],
+    "financials": {
+      "provisions_product_sales": "~$28M",
+      "bg_franchise_fees": "~$5M",
+      "bg_franchise_royalties": "~$18M",
+      "bg_marketing_fund": "~$7M pass-through",
+      "inn_franchise_fees": "~$2M",
+      "inn_franchise_royalties": "~$8M",
+      "inn_marketing_fund": "~$3M pass-through",
+      "bourbon_product_supply_margin": "~$24M",
+      "total_older_source": "~$95M"
+    },
+    "projections": [
+      {
+        "year": 2024,
+        "franchised_bar_grill": "~8",
+        "franchised_inns": "~2",
+        "franchise_revenue": "~$30M"
+      },
+      {
+        "year": 2025,
+        "franchised_bar_grill": "~25",
+        "franchised_inns": "~8",
+        "franchise_revenue": "~$67M"
+      },
+      {
+        "year": 2026,
+        "franchised_bar_grill": "~40",
+        "franchised_inns": "~15",
+        "franchise_revenue": "~$110M"
+      },
+      {
+        "year": 2027,
+        "franchised_bar_grill": "~60",
+        "franchised_inns": "~22",
+        "franchise_revenue": "~$160M"
+      },
+      {
+        "year": 2028,
+        "franchised_bar_grill": "~80+",
+        "franchised_inns": "~30+",
+        "franchise_revenue": "~$220M+"
+      }
+    ]
+  },
+  "distribution_and_channels": {
+    "distillery": {
+      "domestic": "All 50 states via three-tier system",
+      "international": [
+        "United Kingdom",
+        "European Union",
+        "Japan",
+        "Australia",
+        "select duty-free"
+      ],
+      "volume_split": {
+        "Original": "~55%",
+        "Small Batch": "~20%",
+        "Single Barrel": "~12%",
+        "Rye": "~8%",
+        "Reserve_Cave_Select": "~5%"
+      }
+    },
+    "limestone_springs": {
+      "on_trade": "~55% of revenue; bars, restaurants, hotels",
+      "off_trade": "~30% of revenue; retail/grocery/specialty",
+      "ecommerce_dtc": "~15% of revenue; subscriptions, Amazon, DTC website",
+      "hatfield_properties": "~8% of Limestone revenue as captive channel across Hatfield Bar & Grill, 8 Stave clubs, Hatfield Inns, and Still House",
+      "airlines": "Premium cabin contracts with two undisclosed major carriers",
+      "retail_us": [
+        "Whole Foods",
+        "specialty food retailers",
+        "Total Wine & More",
+        "Kroger select markets",
+        "Publix select markets",
+        "Amazon/DTC"
+      ],
+      "retail_uk": [
+        "Waitrose",
+        "Sainsbury's premium aisle",
+        "independent food retailers",
+        "Ocado"
+      ],
+      "retail_global": [
+        "EU premium grocery/specialty",
+        "Japan premium import channels",
+        "Australia Dan Murphy's and independents",
+        "Dubai/Abu Dhabi premium hospitality"
+      ],
+      "revenue_by_product_category": {
+        "tonic_waters": "~$35M / 32%",
+        "ginger_beer_ale": "~$22M / 20%",
+        "sparkling_water": "~$18M / 16%",
+        "craft_sodas": "~$16M / 15%",
+        "still_water": "~$8M / 7%",
+        "cocktail_mixers_syrups": "~$6M / 5%",
+        "gift_sets_bundles": "~$5M / 5%"
+      }
+    },
+    "wines": {
+      "regions": [
+        "US national",
+        "UK",
+        "EU",
+        "Japan",
+        "Australia",
+        "Italian domestic"
+      ],
+      "channels": {
+        "wholesale_distribution": "~45%",
+        "dtc_mailing_list": "~20%",
+        "tasting_rooms_events": "~15%",
+        "restaurants": "~10%",
+        "guesthouse_accommodation": "~10%"
+      }
+    },
+    "provisions_merchandise": {
+      "channels": [
+        "Hatfield Bar & Grill locations",
+        "The Stave",
+        "Hatfield Distillery visitor centre",
+        "Hatfield Wines tasting rooms",
+        "DTC website",
+        "Total Wine & More",
+        "specialty kitchen stores",
+        "Selfridges UK under evaluation"
+      ],
+      "manufacturing_model": "Recipes/IP/specs controlled by Hatfield; manufacturing licensed to co-packers; partner production/distribution"
+    }
+  },
+  "business_renderer_contract": {
+    "must_load_for_hatfield_scene": [
+      "HATFIELD.md",
+      "HATFIELD_GROUP.md",
+      "HATFIELD_PRODUCTS.md",
+      "PUBLIC_KNOWLEDGE.md",
+      "data/hatfield/hatfield_canon.json"
+    ],
+    "load_subfile_when": {
+      "bourbon_or_distillery_detail": "HATFIELD_DISTILLERY.md",
+      "limestone_springs_detail": "HATFIELD_LIMESTONE.md",
+      "restaurant_scene": "HATFIELD_BAR_GRILL.md",
+      "hotel_scene": "HATFIELD_INNS.md",
+      "stave_scene": "HATFIELD_STAVE.md",
+      "still_house_scene": "HATFIELD_STILL_HOUSE.md",
+      "wine_scene": "HATFIELD_WINES.md",
+      "franchise_or_provisions_scene": "HATFIELD_LICENSING.md",
+      "scotland_scene": "HATFIELD_SCOTLAND.md"
+    },
+    "answer_policy": [
+      "Identify product or venue by canonical name if visible or named.",
+      "State public inference as family-business adjacency when Alex is pictured with it.",
+      "Do not invent new products, labels, locations, executives, or endorsements.",
+      "If a requested product is not in JSON/source files, say not canon-established rather than improvising.",
+      "If exact figures conflict across files, prefer HATFIELD_GROUP current group rollup and mention conflict only in audit/business contexts."
+    ],
+    "example_answers": [
+      {
+        "question": "Does the public know Alex's family owns the entire Hatfield group?",
+        "answer": "Yes. Walker Holdings' majority ownership of Hatfield Group is public business knowledge, and the public can connect Alex to Hatfield without a discovery beat."
+      },
+      {
+        "question": "If Alex posts a few Hatfield products, are they non-canon props?",
+        "answer": "No. They are canon Hatfield products if listed in this JSON or Hatfield source files. The public reads them as family-business adjacency, not an endorsement before the Rule expires."
+      },
+      {
+        "question": "Is Limestone Springs just water?",
+        "answer": "No. It is a Fever-Tree-scale global premium mixer, tonic, soda, sparkling-water, and craft-soda company with 30+ country distribution."
+      },
+      {
+        "question": "Does Hatfield own venues?",
+        "answer": "Yes. Hatfield owns and operates restaurants, inns, The Stave, Still House, distilleries/visitor experiences, wine estate tasting rooms/restaurants, and estate guesthouses, plus franchised hospitality locations."
+      }
+    ]
+  }
+}
