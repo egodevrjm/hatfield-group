@@ -1,2 +1,7 @@
-.netlify/
 .DS_Store
+.vercel/
+**/.vercel/
+node_modules/
+**/node_modules/
+sites/*/design/
+sites/alex-wilson/assets/rejected-family-office-assets/

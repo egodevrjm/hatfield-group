@@ -1,38 +1,17 @@
-# Hatfield Group Website
+# Alex Wilson world — public websites
 
-Static multi-page website for Hatfield Group.
+The public-facing static websites for the fictional Alex Wilson story world. This repository intentionally contains only finished website material; private canon, company bibles, financial records and working story files remain outside it.
 
-## Deploy
+Hatfield occupies the repository root to preserve the existing Netlify project. A deploy-only Hatfield mirror and the remaining sites are independent Vercel project roots:
 
-This site is static HTML/CSS/JavaScript. For Netlify:
+- `sites/hatfield`
+- `sites/walker-holdings`
+- `sites/wilsonwalker`
+- `sites/phoenix-media`
+- `sites/limestone-springs`
+- `sites/albury-acoustics`
+- `sites/alex-wilson`
 
-- Base directory: `.`
-- Build command: leave empty
-- Publish directory: `.`
+All sites are plain static HTML, CSS and JavaScript. Generated pages are committed as deployable output; their private source registers remain in the world-building workspace.
 
-The `netlify.toml` file already sets the publish directory.
-
-## MCP Endpoint
-
-The site also deploys a read-only Hatfield MCP endpoint as a Netlify Function:
-
-- Local/function path: `netlify/functions/hatfield-mcp.mts`
-- Public path after deploy: `/mcp/hatfield`
-- Production URL: `https://hatfield-group.netlify.app/mcp/hatfield`
-
-It exposes products, venues, and cocktails through MCP-style JSON-RPC methods:
-
-- `tools/list`
-- `tools/call`
-- `resources/list`
-- `resources/read`
-
-Useful tool names include `search_products`, `search_venues`, `search_cocktails`, `get_cocktail`, `cocktails_for_product`, and global `search`.
-
-Example request:
-
-```bash
-curl https://hatfield-group.netlify.app/mcp/hatfield \
-  -H 'content-type: application/json' \
-  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"cocktails_for_product","arguments":{"product_query":"Limestone Springs Ginger Beer"}}}'
-```
+The existing public Hatfield MCP data and Netlify function remain in `data/hatfield` and `netlify/functions`; they are deliberately separate from the private company bible.

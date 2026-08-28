@@ -1,0 +1,2 @@
+document.querySelectorAll('.nav-toggle').forEach(button=>button.addEventListener('click',()=>{const header=button.closest('header');const open=header.classList.toggle('open');button.setAttribute('aria-expanded',String(open))}));
+(()=>{const s=document.createElement('script');s.src=new URL('../group-switcher.js',document.currentScript.src);s.dataset.currentSite='limestone';document.head.append(s)})();

@@ -25,7 +25,7 @@ If your MCP client needs a config entry, point it at:
       "command": "uv",
       "args": [
         "run",
-        "/Users/ryanmorrison/ALEX WILSON UNIVERSE/aw_v11/hatfield_site/mcp_servers/hatfield/server.py"
+        "/absolute/path/to/hatfield-group/mcp_servers/hatfield/server.py"
       ]
     }
   }
